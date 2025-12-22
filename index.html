@@ -427,20 +427,7 @@
     <header>
     <img src="fxlogo2.0.png" alt="FzLogo">
     <div class="driversButton" onclick="SwitchToDrivers()">The Drivers</div>
-    <script>
-        function SwitchToDrivers()
-        {
-            window.location.href = "Drivers.html";
-        }
-    </script>
     <div class="calendarButton" onclick="SwitchToCalendar()">Calendar</div>
-    <script>
-        function SwitchToCalendar()
-        {
-            
-            window.location.href = "CalendarPage.html";
-        }
-    </script>
     <div class="standingsButton">STANDINGS</div>
 </header>
     <div class="container">
@@ -720,56 +707,14 @@
     <STRONG>Any reference is purely casual, any character too.</STRONG>
     <br>
     <button onclick="Order()" style="background-color: #42424e; border-radius: 20px;"> [DEBUG] Sort</buttononclick></button>
-    <script>
-        function Order()
-        {
-const panel = document.querySelector('.panel'); 
-const teamPanel = document.querySelector('.teamPanel')
-const rows = Array.from(panel.querySelectorAll('.row'));
-const teamRows = Array.from(teamPanel.querySelectorAll('.rowTeams'));
-
-rows
-  .sort((a, b) => {
-      const pointsA = parseInt(a.querySelector('.points').innerText);
-      const pointsB = parseInt(b.querySelector('.points').innerText);
-      return pointsB - pointsA;
-  })
-  .forEach((row, index) => {
-      panel.appendChild(row);
-      row.querySelector('.pos').innerText = index + 1;
-  });
-
-teamRows
-  .sort((c, d) => {
-      const pointsC = parseInt(c.querySelector('.teamPoints').innerText);
-      const pointsD = parseInt(d.querySelector('.teamPoints').innerText);
-      return pointsD - pointsC;
-  })
-  .forEach((rowTeams, indexV) => {
-      teamPanel.appendChild(rowTeams);
-      rowTeams.querySelector('.teamPos').innerText = indexV + 1;
-  });
-}
-</script>
 <br>
     <a href="mailto:simonepappalardi0@gmail.com">For any info click here to open the direct link to my email</a><br>
     (click the button on the right if the link above doesn't work for you)
     <button onclick="CopyClipboard()" style="background-color: #42424e; border-radius: 20px;">Copia</button>
-    <script>
-        function CopyClipboard() {
-            const email = "simonepappalardi0@gmail.com";
-            navigator.clipboard.writeText(email)
-                .then(() => {
-                    alert("Email copied!");
-                })
-                .catch(err => {
-                    alert("Errore nella copia: " + err);
-                });
-        }
-    </script>
     <br>THIS SITE IS PRIVATE AND WAS MADE AND IS USED EXCLUSIVELY FOR PERSONAL USE
     <br>Redistribution is highly forbidden!
     <br>La ridistribuzione è severamente vietata!
 </footer>
+<script src="scripts.js"></script>
 </body>
 </html>

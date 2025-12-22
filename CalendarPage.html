@@ -226,20 +226,8 @@
     <header>
             <img src="fxlogo2.0.png" alt="FzLogo">
     <div class="driversButton" onclick="SwitchToDrivers()">The Drivers</div>
-    <script>
-        function SwitchToDrivers()
-        {
-            window.location.href = "Drivers.html";
-        }
-    </script>
     <div class="calendarButton">Calendar</div>
     <div class="standingsButton" onclick="SwitchToStandings()">STANDINGS</div>
-        <script>
-        function SwitchToStandings()
-        {
-            window.location.href = "index.html";
-        }
-    </script>
     </header>
 
     <main>
@@ -407,22 +395,10 @@
     <a href="mailto:simonepappalardi0@gmail.com">PFor any info click here to open the direct link to my email</a><br>
     (click the button on the right if the link above doesn't work for you)
     <button onclick="CopyClipboard()" style="background-color: #42424e; border-radius: 20px;">Copia</button>
-    <script>
-        function CopyClipboard() {
-            const email = "simonepappalardi0@gmail.com";
-            navigator.clipboard.writeText(email)
-                .then(() => {
-                    alert("Email copiata correttamente!");
-                })
-                .catch(err => {
-                    alert("Errore nella copia: " + err);
-                });
-        }
-    </script>
     <br>THIS SITE IS PRIVATE AND WAS MADE AND IS USED EXCLUSIVELY FOR PERSONAL USE
     <br>Redistribution is highly forbidden!
     <br>La ridistribuzione è severamente vietata!
 </footer>
-
+<script src="main.js"></script>
 </body>
 </html>
