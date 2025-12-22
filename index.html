@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9D6RSG5F2R"></script>
     <script>
           window.dataLayer = window.dataLayer || [];
@@ -42,6 +41,7 @@
             box-shadow: 0 10px 10px rgba(0,0,0,0.6);
             margin-bottom: 50px;
             min-height: 270px;
+            position: relative;
         }
             header img {
                 display: block;
@@ -60,7 +60,8 @@
             }
 
         body {
-            background: linear-gradient(150deg, #E10600, #2C2C35, #15151E);
+            background: repeating-linear-gradient(170deg, #E10600, #2C2C35, #15151E 2000px);
+            background-repeat: repeat;
             color: #ffffff;
             flex-direction: column;
             padding: 40px;
@@ -332,6 +333,71 @@
             object-fit: cover;
         }
 
+        .standingsButton{
+            border-radius: 10px;
+            background-color: transparent; 
+            cursor:pointer;
+            margin-top: 5px;
+            margin-bottom: 0;
+            font-size: 38px;
+            letter-spacing: 2px;
+            font-weight: 200px;
+            color: #15151E;
+            transition-duration: 0.4s;
+            position: absolute;
+            top: 190px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-decoration: underline;
+        }
+        .standingsButton:hover{
+            color: #ccc;
+            text-decoration: underline #ccc;
+            background-color: #15151e50;
+        }
+        .calendarButton{
+            border-radius: 10px;
+            background-color: transparent; 
+            cursor:pointer;
+            margin-top: 5px;
+            margin-bottom: 0;
+            font-size: 28px;
+            letter-spacing: 1px;
+            font-weight: 200px;
+            color: #15151E;
+            transition-duration: 0.4s;
+            top: 190px;
+            left: 25%;
+            transform: translateX(-20%);
+            position: absolute;
+        }
+        .calendarButton:hover{
+            color: #ccc;
+            text-decoration: underline #ccc;
+            background-color: #15151e50;
+        }
+
+        .driversButton{
+            border-radius: 10px     ;
+            background-color: transparent; 
+            cursor:pointer;
+            margin-top: 5px;
+            margin-bottom: 0;
+            font-size: 28px;
+            letter-spacing: 1px;
+            font-weight: 200px;
+            color: #15151E;
+            transition-duration: 0.4s;
+            position: absolute;
+            top: 190px;
+            left: 10%;
+            transform: translateX(-70%);
+        }
+        .driversButton:hover{
+            color: #ccc;
+            background-color: #15151e50;
+        }
+
         /* Responsive */
         @media (max-width: 900px) {
             .container {
@@ -360,17 +426,32 @@
 <body onload="Order()">
     <header>
     <img src="fxlogo2.0.png" alt="FzLogo">
-    <p>STANDINGS</p>
+    <div class="driversButton" onclick="SwitchToDrivers()">The Drivers</div>
+    <script>
+        function SwitchToDrivers()
+        {
+            window.location.href = "Drivers.html";
+        }
+    </script>
+    <div class="calendarButton" onclick="SwitchToCalendar()">Calendar</div>
+    <script>
+        function SwitchToCalendar()
+        {
+            
+            window.location.href = "CalendarPage.html";
+        }
+    </script>
+    <div class="standingsButton">STANDINGS</div>
 </header>
     <div class="container">
         <!-- PILOTI -->
         <div class="panel">
-            <h2>Classifica Piloti</h2>
+            <h2>Drivers' Standings</h2>
 
             <div class="table-header">
                 <div>Pos</div>
-                <div>Pilota</div>
-                <div>Punti</div>
+                <div>Driver</div>
+                <div>Points</div>
             </div>
 
             <div class="row">
@@ -423,25 +504,25 @@
         </div>
                 <!-- COSTRUTTORI -->
         <div class="teamPanel">
-            <h2>Classifica Costruttori</h2>
+            <h2>Constructors' Standings</h2>
 
             <div class="table-header">
                 <div>Pos</div>
                 <div>Team</div>
-                <div>Punti</div>
+                <div>Points</div>
             </div>
 
             <div class="rowTeams">
                 <div class="teamPos">1</div>
                 <img src="https://upload.wikimedia.org/wikipedia/it/thumb/e/e8/Logo_della_Lotus.svg/1200px-Logo_della_Lotus.svg.png" alt="LotusLogo">
-                <div class="teamName">Lotus FZ Team</div>
+                <div class="teamName">LotusRenault</div>
                 <div class="teamPoints">0</div>
             </div>
 
             <div class="rowTeams">
                 <div class="teamPos">2</div>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mercedes-Logo.svg/2048px-Mercedes-Logo.svg.png" alt="MercedesLogo">
-                <div class="teamName">Mercedes Amg Petronas F1 Team</div>
+                <div class="teamName">Mercedes Amg Petronas FZ Team</div>
                 <div class="teamPoints">0</div>
             </div>
 
@@ -464,7 +545,7 @@
     
     <div class="container-races"> 
         <div class="panel-races"> 
-            <h2>Races History</h2>
+            <h2>Race History</h2>
 
         <div class="row-race">
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAKlBMVEX///8AkkbOKzd2t43egYYAjz7NHy4Wlk7OND75/PoAk0j7///bhIfMKzaIpjcKAAABCklEQVR4nO3Q2RGAIBQEsIeg4NV/u1axM34kJaRazN4rZxxbTDlx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDj5/8mMuXqdKffzrpgPKxrVWd5HIaUAAAAASUVORK5CYII=" alt="ItalyGPFlag">
@@ -474,10 +555,10 @@
             <div class="table-panel">
                 <div class="table-header2">
                     <div class="col pos">Pos</div>
-                    <div class="col name">Pilota</div>
-                    <div class="col lap">Giro Veloce</div>
+                    <div class="col name">Driver</div>
+                    <div class="col lap">Best Lap</div>
                     <div class="col spacer"></div>
-                    <div class="col points">Punti</div>
+                    <div class="col points">Points</div>
                 </div>
 
                 <div class="table-row">
@@ -554,10 +635,10 @@
             <div class="table-panel">
                 <div class="table-header2">
                     <div class="col pos">Pos</div>
-                    <div class="col name">Pilota</div>
-                    <div class="col lap">Giro Veloce</div>
+                    <div class="col name">Driver</div>
+                    <div class="col lap">Best Lap</div>
                     <div class="col spacer"></div>
-                    <div class="col points">Punti</div>
+                    <div class="col points">Points</div>
                 </div>
                 <div class="table-row">
                      <div class="col pos">1</div>
@@ -630,13 +711,11 @@
 
 
         </div>
-    
-        
     </div>
 
 
 <footer>
-    V. 1.0.0
+    V. 1.1.0
     <br>
     <STRONG>Any reference is purely casual, any character too.</STRONG>
     <br>
@@ -673,15 +752,15 @@ teamRows
 }
 </script>
 <br>
-    <a href="mailto:simonepappalardi0@gmail.com">Per qualsiasi informazione cliccare qui per il collegamento diretto alla mia email</a><br>
-    (in caso il link sopra non dovesse funzionare cliccando il pulsante qui di lato l'email sarà copiata direttamente negli appunti)
+    <a href="mailto:simonepappalardi0@gmail.com">For any info click here to open the direct link to my email</a><br>
+    (click the button on the right if the link above doesn't work for you)
     <button onclick="CopyClipboard()" style="background-color: #42424e; border-radius: 20px;">Copia</button>
     <script>
         function CopyClipboard() {
             const email = "simonepappalardi0@gmail.com";
             navigator.clipboard.writeText(email)
                 .then(() => {
-                    alert("Email copiata correttamente!");
+                    alert("Email copied!");
                 })
                 .catch(err => {
                     alert("Errore nella copia: " + err);
@@ -694,6 +773,3 @@ teamRows
 </footer>
 </body>
 </html>
-
-
-
