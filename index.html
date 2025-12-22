@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Classifiche Campionato</title>
+    <style>
+    *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            caret-color: transparent;
+    }
+        @font-face {
+            font-family: "F1 Bold";
+            src: url('Fonts/Formula1-Bold.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: "F1 SemiBold";
+            src: url('Fonts/Formula1-Display-SemiBold.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: "F1 Regular";
+            src: url('Fonts/Formula1-Regular1.ttf') format('truetype');
+        }
+        header {
+            background-color: #2c2c356e;
+            border-radius: 30px;
+            color: #15151E;
+            text-align: center;
+            font-size: 25px;
+            font-family: 'F1 Bold';
+            box-shadow: 0 10px 10px rgba(0,0,0,0.6);
+            margin-bottom: 50px;
+            min-height: 270px;
+        }
+            header img {
+                display: block;
+                margin: 0 auto;
+                max-width: 500px;
+                min-width: 400px
+                
+            }
+
+            header p {
+                margin-top: 5px;
+                margin-bottom: 0;
+                font-size: 38px;
+                letter-spacing: 2px;
+                font-weight: 200px;
+            }
+
+        body {
+            background: linear-gradient(150deg, #E10600, #2C2C35, #15151E);
+            color: #ffffff;
+            flex-direction: column;
+            padding: 40px;
+            margin: 0px;
+            min-height: 100vh;
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            gap: 100px;
+            max-width: 1700px;
+            margin: 0 auto;
+            min-height: 30px;
+        }
+        
+        .panel, .teamPanel {
+            flex: 1;
+            background: #1E1E26;
+            border-radius: 8px;
+            padding: 25px;
+            min-width: 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(2px);
+            max-height: 80vh;
+            overflow-y: auto;
+            
+        }
+
+            .panel h2, .teamPanel h2 {
+                text-align: center;
+                margin-bottom: 20px;
+                font-family: 'F1 SemiBold';
+                color: #ffffe6;
+                font-size: 24px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                border-bottom: 2px solid rgba(255,255,255,0.2);
+                padding-bottom: 10px;
+            }
+            
+        .table-header,
+        .rowTeams {
+            display: grid;
+            grid-template-columns: 50px 50px 1fr 80px;
+            align-items: center;
+            padding: 10px 15px;
+        }
+        .row {
+            display: grid;
+            grid-template-columns: 50px 1fr 80px;
+            align-items: center;
+            padding: 10px 15px;
+        }
+        .table-header {
+            font-family: "F1 Regular";
+            font-weight: bold;
+            font-size: 14px;
+            opacity: 0.8;
+            display: grid;
+            grid-template-columns: 50px 1fr 80px;
+            padding: 10px 15px;
+            align-items: center;
+        }
+
+        .row,.rowTeams {
+            margin-top: 8px;
+            font-family: "F1 Regular";
+            background: rgba(0, 0, 0, 0.35);
+            border-radius: 10px;
+            transition: transform 0.2s 
+        }
+
+            .row:hover,.rowTeams:hover {
+                transform: scale(1.02);
+                background: rgba(255, 255, 255, 0.12);
+            }
+
+        .pos, .teamPos {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .name .teamName{
+            padding-left: 10px;
+        }
+
+        .points .teamPoints{
+            text-align: right;
+            font-weight: bold;
+        }
+
+
+        .container-races{
+            flex: 1;
+            display: flex;
+            gap: 100px;
+            max-width: 1700px;
+            margin: 0 auto;
+            min-height: 30px;
+        }
+        .rowTeams img
+        {
+            display: flex;
+            margin-left: 10px;
+            width: 30px;  
+            height: 30px; 
+            object-fit: cover; 
+            border-radius: 4px; 
+        }
+        .panel-races
+        {
+            flex: 1;
+            background: #1E1E26;
+            border-radius: 8px;
+            padding: 25px;
+            min-width: 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(2px);
+            
+            overflow-y: auto;
+            
+        }
+
+            .panel-races h2 {
+                text-align: center;
+                margin-bottom: 20px;
+                font-family: 'F1 SemiBold';
+                color: #ffffe6;
+                font-size: 24px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                border-bottom: 2px solid rgba(255,255,255,0.2);
+                padding-bottom: 10px;
+            }
+        .container-raceInfos
+        {
+            flex: 1;
+            display: flex;
+            gap: 100px;
+            max-width: 1700px;
+            margin: 0 auto;
+            min-height: 30px;
+            
+        }
+        .row-race{
+            background: rgba(0, 0, 0, 0.35);
+            margin-top: 8px;
+            font-family: "F1 Regular";
+            border-radius: 10px;
+            padding: 15px;
+        }
+        .row-race img {
+            margin-left: 30px;
+            width: 50px;  
+            height: 30px; 
+            object-fit: cover; 
+            border-radius: 4px; 
+        }
+        .circuitName {
+            font-family: "F1 Bold";
+            padding: 30px;
+            font-size: xx-large;
+            letter-spacing: 1px;       
+        }
+
+        .table-panel {
+        display: flex;
+        flex-direction: column;
+        background: #1E1E26;
+        padding: 15px;
+        border-radius: 8px;
+        max-width: 660px;
+        margin-top: 20px;
+        margin-left: 40px;
+        max-height: 350px;
+        }
+
+        .table-header2,
+        .table-row {
+        display: grid;
+        grid-template-columns: 40px 350px 140px 20px 60px; 
+        align-items: center;
+        padding: 5px 0;
+        }
+
+        .table-header2 {
+            
+        font-weight: bold;
+        color: #ccc;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        margin-bottom: 5px;
+        }
+
+        .flexbox{
+            background-color: grey;
+            border-radius: 4px;
+            width: 10px;
+            height: 20px;
+            display: inline-block; 
+        }
+        .flexboxMercedes
+        {
+            background-color: rgb(91, 255, 219);
+            border-radius: 4px;
+            width: 10px;
+            height: 20px;
+            display: inline-block; 
+        }
+        .flexboxLotus
+        {
+            background-color: rgb(172, 126, 0);
+            border-radius: 4px;
+            width: 10px;
+            height: 20px;
+            display: inline-block; 
+        }
+        .flexboxWilliams
+        {
+            background-color: rgb(1, 102, 255);
+            border-radius: 4px;
+            width: 10px;
+            height: 20px;
+            display: inline-block; 
+        }
+        .flexboxRedbull
+        {
+            background-color: rgb(14, 0, 206);
+            border-radius: 4px;
+            width: 10px;
+            height: 20px;
+            display: inline-block; 
+        }
+        .col.name{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .col.lap{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #ccc
+        }
+
+        .table-row {
+        color: #fff;
+        }
+
+        .gallery {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            border-radius: 6px;
+            
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .gallery img {
+            border-radius: 6px;
+            width: 500px;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    
+        footer{
+            background-color: #1e1e26a9;
+            color: #42424e;
+            text-align: center;
+            bottom:0;
+            margin-top: 170px;
+            gap: 10px;
+            margin-bottom: -40px;
+            margin-left: -40px;
+            margin-right: -40px;
+            padding: 10px;
+            row-gap: 10px;
+        }
+</style>
+
+
+
+</head>
+<body onload="Order()">
+    <header>
+    <img src="fxlogo2.0.png" alt="FzLogo">
+    <p>STANDINGS</p>
+</header>
+    <div class="container">
+        <!-- PILOTI -->
+        <div class="panel">
+            <h2>Classifica Piloti</h2>
+
+            <div class="table-header">
+                <div>Pos</div>
+                <div>Pilota</div>
+                <div>Punti</div>
+            </div>
+
+            <div class="row">
+                <div class="pos">1</div>
+                <div class="name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxMercedes"></span>Sir Perry</div>
+                <div class="points">0</div>
+            </div>
+
+            <div class="row">
+                <div class="pos">2</div>
+                <div class="name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxLotus"></span>Kimi Fernandes</div>
+                <div class="points">0</div>
+            </div>
+
+            <div class="row">
+                <div class="pos">3</div>
+                <div class="name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxLotus"></span>Alvaro Preguica</div>
+                <div class="points">0</div>
+            </div>
+
+            <div class="row">
+                <div class="pos">4</div>
+                <div class="name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxWilliams"></span>Pablo Carpincho</div>
+                <div class="points">0</div>
+            </div>
+            
+            <div class="row">
+                <div class="pos">5</div>
+                <div class="name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxWilliams"></span>Twenty-Miles</div>
+                <div class="points">0</div>
+            </div>
+            
+            <div class="row">
+                <div class="pos">6</div>
+                <div class="name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxMercedes"></span>Doggy</div>
+                <div class="points">0</div>
+            </div>
+            
+            <div class="row">
+                <div class="pos">7</div>
+                <div class="name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxRedbull"></span>Luca</div>
+                <div class="points">0</div>
+            </div>
+            
+            <div class="row">
+                <div class="pos">8</div>
+                <div class="name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxRedbull"></span>L'altro</div>
+                <div class="points">0</div>
+            </div>
+        </div>
+                <!-- COSTRUTTORI -->
+        <div class="teamPanel">
+            <h2>Classifica Costruttori</h2>
+
+            <div class="table-header">
+                <div>Pos</div>
+                <div>Team</div>
+                <div>Punti</div>
+            </div>
+
+            <div class="rowTeams">
+                <div class="teamPos">1</div>
+                <img src="https://upload.wikimedia.org/wikipedia/it/thumb/e/e8/Logo_della_Lotus.svg/1200px-Logo_della_Lotus.svg.png" alt="LotusLogo">
+                <div class="teamName">LotusRenault</div>
+                <div class="teamPoints">0</div>
+            </div>
+
+            <div class="rowTeams">
+                <div class="teamPos">2</div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Mercedes-Logo.svg/2048px-Mercedes-Logo.svg.png" alt="MercedesLogo">
+                <div class="teamName">Mercedes Amg Petronas F1 Team</div>
+                <div class="teamPoints">0</div>
+            </div>
+
+            <div class="rowTeams">
+                <div class="teamPos">3</div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Logo_Williams_F1.png/1200px-Logo_Williams_F1.png" alt="WilliamsLogo" style="width: auto; margin: auto;" >
+                <div class="teamName">Williams Racing</div>
+                <div class="teamPoints">0</div>
+            </div>
+            <div class="rowTeams">
+                <div class="teamPos">4</div>
+                <img src="https://pngimg.com/uploads/red_bull/red_bull_PNG1.png" alt="RedbullLogo" style="width: auto; margin: auto;">
+                <div class="teamName">Redbull Racing</div>
+                <div class="teamPoints">0</div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    
+    <div class="container-races"> 
+        <div class="panel-races"> 
+            <h2>Races History</h2>
+
+        <div class="row-race">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAKlBMVEX///8AkkbOKzd2t43egYYAjz7NHy4Wlk7OND75/PoAk0j7///bhIfMKzaIpjcKAAABCklEQVR4nO3Q2RGAIBQEsIeg4NV/u1axM34kJaRazN4rZxxbTDlx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDj5/8mMuXqdKffzrpgPKxrVWd5HIaUAAAAASUVORK5CYII=" alt="ItalyGPFlag">
+                <span class="circuitName"> RACE X: Circuito [SAMPLE 1]</span>
+            
+                <div class="container-raceInfos">
+            <div class="table-panel">
+                <div class="table-header2">
+                    <div class="col pos">Pos</div>
+                    <div class="col name">Pilota</div>
+                    <div class="col lap">Giro Veloce</div>
+                    <div class="col spacer"></div>
+                    <div class="col points">Punti</div>
+                </div>
+
+                <div class="table-row">
+                     <div class="col pos">1</div>
+                    <div class="col name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxMercedes"></span>Sir Perry</div>
+                    <div class="col lap">  1:23:456</div>
+                    <div class="col spacer"></div>
+                    <div class="col points">+25</div>
+                </div>
+                <div class="table-row">
+                     <div class="col pos">2</div>
+                    <div class="col name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxLotus"></span>Kimi Fernandes</div>
+                    <div class="col lap", style="color:purple">  1:22:941</div>
+                    <div class="col spacer"></div>
+                    <div class="col points">+22</div>
+                </div>
+                <div class="table-row">
+                     <div class="col pos">3</div>
+                    <div class="col name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxRedbull"></span>L'altro</div>
+                    <div class="col lap">  1:22:951</div>
+                    <div class="col spacer"></div>
+                    <div class="col points">+18</div>
+                </div>
+                                <div class="table-row">
+                     <div class="col pos">4</div>
+                    <div class="col name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxMercedes"></span>Doggy</div>
+                    <div class="col lap">  1:25:452</div>
+                    <div class="col spacer"></div>
+                    <div class="col points">+15</div>
+                </div>
+                                <div class="table-row">
+                     <div class="col pos">5</div>
+                    <div class="col name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxLotus"></span>Alvaro Preguica</div>
+                    <div class="col lap">  1:24:721</div>
+                    <div class="col spacer"></div>
+                    <div class="col points">+10</div>
+                </div>
+                                <div class="table-row">
+                     <div class="col pos">6</div>
+                    <div class="col name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxWilliams"></span>Pablo Carpincho</div>
+                    <div class="col lap">  1:23:419</div>
+                    <div class="col spacer"></div>
+                    <div class="col points">+5</div>
+                </div>
+                <div class="table-row">
+                    <div class="col pos">7</div>
+                    <div class="col name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxRedbull"></span>Luca</div>
+                    <div class="col lap"></span>1:25:456</div>
+                    <div class="col spacer"></div>
+                    <div class="col points">+1</div>
+                </div>
+                <div class="table-row">
+                    <div class="col pos">8</div>
+                    <div class="col name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxWilliams"></span>Twenty-Miles</div>
+                    <div class="col lap">  2:53:120</div>
+                    <div class="col spacer"></div>
+                    <div class="col points">+0</div>
+                </div>
+
+            </div>
+            
+                <div class="gallery">
+                    <img src="https://cdn.discordapp.com/attachments/1073662874003714048/1257428161604489257/Screenshot_vrc_formula_alpha_2007_mc22_sanfran_1-6-124-21-27-41.jpg?ex=694a4e7b&is=6948fcfb&hm=281c36c3325eb69fca2ce6e59478e5ced1c9a80f9ba7ab0c1c8498d3e969eb3c&", alt="img1">
+                    <img src="https://cdn.discordapp.com/attachments/1073662874003714048/1257058308897116231/2champ.png?ex=694a4787&is=6948f607&hm=2c3abb70c32ab6e0fc291ce8131b2dd089cf4cbce31b4418fa761c066507dac8&", alt="img2">
+                    <img src="https://cdn.discordapp.com/attachments/1073662874003714048/1257053034802970624/Screenshot_vrc_formula_alpha_2007_mc22_toscana_30-5-124-21-6-58.jpg?ex=694a429e&is=6948f11e&hm=3ce793a9559ed18de0350627351cdd86d25cb6dfefc8412d72f82340d3ba8abe&", alt="img3">
+                </div>
+            </div>
+        </div>
+        <div class="row-race">
+                <img src="data:image/png;base64,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" alt="ItalyGPFlag">
+                <span class="circuitName"> RACE Y: Circuito [SAMPLE 2] </span>
+            
+                <div class="container-raceInfos">
+            <div class="table-panel">
+                <div class="table-header2">
+                    <div class="col pos">Pos</div>
+                    <div class="col name">Pilota</div>
+                    <div class="col lap">Giro Veloce</div>
+                    <div class="col spacer"></div>
+                    <div class="col points">Punti</div>
+                </div>
+                <div class="table-row">
+                     <div class="col pos">1</div>
+                    <div class="col name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxWilliams"></span>Pablo Carpincho</div>
+                    <div class="col lap", style="color: purple;">0:38:230</div>
+                    <div class="col spacer"></div>
+                    <div class="col points">+26</div>
+                </div>
+                <div class="table-row">
+                     <div class="col pos">2</div>
+                    <div class="col name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxLotus"></span>Kimi Fernandes</div>
+                    <div class="col lap">1.23.421</div>
+                    <div class="col spacer"></div>
+                    <div class="col points">+21</div>
+                </div>
+                <div class="table-row">
+                     <div class="col pos">3</div>
+                    <div class="col name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxMercedes"></span>Doggy</div>
+                    <div class="col lap">1.23.142</div>
+                    <div class="col spacer"></div>
+                    <div class="col points">+18</div>
+                </div>
+                <div class="table-row">
+                     <div class="col pos">4</div>
+                    <div class="col name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxRedbull"></span>L'altro</div>
+                    <div class="col lap">1:43:233</div>
+                    <div class="col spacer"></div>
+                    <div class="col points">+15</div>
+                </div>
+                <div class="table-row">
+                     <div class="col pos">5</div>
+                    <div class="col name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxLotus"></span>Alvaro Preguica</div>
+                    <div class="col lap">1:54:234</div>
+                    <div class="col spacer"></div>
+                    <div class="col points">+10</div>
+                </div>
+                <div class="table-row">
+                     <div class="col pos">6</div>
+                    <div class="col name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxRedbull"></span>Luca</div>
+                    <div class="col lap">1:23:933</div>
+                    <div class="col spacer"></div>
+                    <div class="col points">+5</div>
+                </div>
+                <div class="table-row">
+                     <div class="col pos">7</div>
+                    <div class="col name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxMercedes"></span>Sir Perry</div>
+                    <div class="col lap">1:03:435</div>
+                    <div class="col spacer"></div>
+                    <div class="col points">+1</div>
+                </div>
+                <div class="table-row">
+                     <div class="col pos">8</div>
+                    <div class="col name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxWilliams"></span>Twenty-Miles</div>
+                    <div class="col lap">99:12:023</div>
+                    <div class="col spacer"></div>
+                    <div class="col points">+0</div>
+                </div>
+
+            </div>
+            
+                <div class="gallery">
+                    <img src="https://preview.redd.it/fanculo-ora-parlo-io-di-cicciogamer89-v0-jjdyxthlqh2g1.jpeg?width=1170&format=pjpg&auto=webp&s=f6ef7a1e027cfdb285454fe4d3757c53c90c9191", alt="img2">
+                    <img src="https://cdn.discordapp.com/attachments/1073662874003714048/1237494130364645496/Screenshot_vrc_formula_alpha_2007_mc22_ks_monza66_7-4-124-21-46-54.jpg?ex=694a4bf8&is=6948fa78&hm=476ea374db4aa1030e661c601bb8dd00eb359e40b4ea4cf68781e9c107b74f27&", alt="img2">
+                    <img src="https://cdn.discordapp.com/attachments/1073662874003714048/1213944785878908988/Screenshot_lotus_exos_125_toscana_3-2-124-21-15-32.jpg?ex=694a516e&is=6948ffee&hm=390c97bf70a883f87683d4f3a1e7e88ada0f1c69d09fcad3ca1aa6b95b110405&", alt="img3">
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+
+        </div>
+    
+        
+    </div>
+
+
+<footer>
+    V. 1.0.0
+    <br>
+    <STRONG>Any reference is purely casual, any character too.</STRONG>
+    <br>
+    <button onclick="Order()" style="background-color: #42424e; border-radius: 20px;"> [DEBUG] Sort</buttononclick></button>
+    <script>
+        function Order()
+        {
+const panel = document.querySelector('.panel'); 
+const teamPanel = document.querySelector('.teamPanel')
+const rows = Array.from(panel.querySelectorAll('.row'));
+const teamRows = Array.from(teamPanel.querySelectorAll('.rowTeams'));
+
+rows
+  .sort((a, b) => {
+      const pointsA = parseInt(a.querySelector('.points').innerText);
+      const pointsB = parseInt(b.querySelector('.points').innerText);
+      return pointsB - pointsA;
+  })
+  .forEach((row, index) => {
+      panel.appendChild(row);
+      row.querySelector('.pos').innerText = index + 1;
+  });
+
+teamRows
+  .sort((c, d) => {
+      const pointsC = parseInt(c.querySelector('.teamPoints').innerText);
+      const pointsD = parseInt(d.querySelector('.teamPoints').innerText);
+      return pointsD - pointsC;
+  })
+  .forEach((rowTeams, indexV) => {
+      teamPanel.appendChild(rowTeams);
+      rowTeams.querySelector('.teamPos').innerText = indexV + 1;
+  });
+}
+</script>
+<br>
+    <a href="mailto:simonepappalardi0@gmail.com">Per qualsiasi informazione cliccare qui per il collegamento diretto alla mia email</a><br>
+    (in caso il link sopra non dovesse funzionare cliccando il pulsante qui di lato l'email sarà copiata direttamente negli appunti)
+    <button onclick="CopyClipboard()" style="background-color: #42424e; border-radius: 20px;">Copia</button>
+    <script>
+        function CopyClipboard() {
+            const email = "simonepappalardi0@gmail.com";
+            navigator.clipboard.writeText(email)
+                .then(() => {
+                    alert("Email copiata correttamente!");
+                })
+                .catch(err => {
+                    alert("Errore nella copia: " + err);
+                });
+        }
+    </script>
+    <br>THIS SITE IS PRIVATE AND WAS MADE AND IS USED EXCLUSIVELY FOR PERSONAL USE
+    <br>Redistribution is highly forbidden!
+    <br>La ridistribuzione è severamente vietata!
+</footer>
+</body>
+</html>
