@@ -31,10 +31,8 @@
             position: relative;
         }
             header img {
-                display: block;
-                margin: 0 auto;
-                max-width: 500px;
-                min-width: 400px;
+                margin-top: 70px;
+                scale : 130%;
             }
 
             header p {
@@ -519,4 +517,5 @@
             margin-right: -40px;
             padding: 10px;
             row-gap: 10px;
+
         }
