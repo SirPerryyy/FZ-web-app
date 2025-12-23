@@ -81,7 +81,6 @@
         }
         .standingsButton:hover{
             color: #ccc;
-            text-decoration: underline #ccc;
             background-color: #15151e50;
         }
         .calendarButton{
@@ -103,7 +102,6 @@
         }
         .calendarButton:hover{
             color: #ccc;
-            text-decoration: underline #ccc;
             background-color: #15151e50;
         }
 
@@ -519,3 +517,4 @@
             row-gap: 10px;
 
         }
+
