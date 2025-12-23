@@ -17,7 +17,7 @@
             font-family: "F1 Regular";
             src: url('Fonts/Formula1-Regular1.ttf') format('truetype');
         }
-                header {
+        header {
             background-color: #2c2c356e;
             border-radius: 30px;
             color: #15151E;
@@ -540,4 +540,5 @@
             margin-right: -40px;
             padding: 10px;
             row-gap: 10px;
+
         }
