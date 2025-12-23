@@ -395,11 +395,20 @@
             cursor: pointer;
             color: #15151E;
             position: absolute;
-            top: 75%;
+            top: 60%;
             left: 10%;
             transform: translateX(-50%);
             font-family: 'F1 Bold';
             
+        }
+        .currentPage{
+            display: none;
+            font-size: 19px;
+            top: 80%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            position: absolute;
         }
         .menu-button:hover{
             color: #ccc;
@@ -413,6 +422,11 @@
         @media (max-width: 1300px) {
             .container {
                 flex-direction: column;
+            }
+            .currentPage{
+                display: inherit;
+                color: #ccc;
+                font-family: "F1 Regular";
             }
             .gallery {
                 flex-wrap: wrap;
@@ -501,8 +515,7 @@
                 gap: 50px;
                 max-width: 500px;
                 margin: 0;
-                min-height: 30px;
-                max-height: 330px;
+                min-height: 330px;
             }
             .row-race{
                 background: rgba(0, 0, 0, 0.35);
@@ -530,6 +543,11 @@
         @media (max-width: 784px) {
             .container {
                 flex-direction: column;
+            }
+            .currentPage{
+                display: inherit;
+                color: #ccc;
+                font-family: "F1 Regular";
             }
             .gallery img{
                 width: 260px;
@@ -587,8 +605,9 @@
             }
 
             .menu-button {
-                display: block;
+                display: inherit;
                 color: #15151E;
+                left: 50%;
             }
             .table-panel {
                 display: flex;
@@ -608,8 +627,7 @@
                 gap: 50px;
                 max-width: 500px;
                 margin: 0;
-                min-height: 30px;
-                max-height: 330px;
+                min-height: 330px;
             }
             .row-race{
                 background: rgba(0, 0, 0, 0.35);
@@ -637,6 +655,11 @@
         @media (max-width: 738px) {
             .container {
                 flex-direction: column;
+            }
+            .currentPage{
+                display: inherit;
+                color: #ccc;
+                font-family: "F1 Regular";
             }
             .navMobileContainer.active{
                 
@@ -702,8 +725,8 @@
                 gap: 50px;
                 max-width: 100px;
                 margin: -5px;
-                min-height: 30px;
-                max-height: 330px;
+                padding-bottom: 10px;
+                min-height: 340px;
             }
             .row-race{
                 background: rgba(0, 0, 0, 0.35);
@@ -797,8 +820,9 @@
             }
 
             .menu-button {
-                display: block;
-                color: #1e1615;
+                display: inherit;
+                color: #15151E;
+                left: 50%;
             }
         }
         footer{
@@ -813,5 +837,4 @@
             margin-right: -40px;
             padding: 10px;
             row-gap: 10px;
-
         }
