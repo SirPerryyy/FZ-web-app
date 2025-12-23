@@ -786,8 +786,12 @@
             font-family: 'F1 Bold';
             box-shadow: 0 10px 10px rgba(0,0,0,0.6);
             margin-bottom: 50px;
-            min-height: 270px;
             position: relative;
+            min-height: 270px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             } 
             .header-img{
                 scale: 80%;
