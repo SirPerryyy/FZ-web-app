@@ -28,6 +28,10 @@
             margin-bottom: 50px;
             min-height: 270px;
             position: relative;
+                   display: flex;
+              flex-direction: column;
+           align-items: center;
+           justify-content: center;
         }
             header img {
                 max-width: 100%;
@@ -41,6 +45,7 @@
                 font-size: 38px;
                 letter-spacing: 2px;
                 font-weight: 200px;
+                   
             }
 
         body {
@@ -541,4 +546,5 @@
             row-gap: 10px;
 
         }
+
 
