@@ -17,6 +17,7 @@
             font-family: "F1 Regular";
             src: url('Fonts/Formula1-Regular1.ttf') format('truetype');
         }
+        
         header {
             background-color: #2c2c356e;
             border-radius: 30px;
@@ -28,15 +29,12 @@
             margin-bottom: 50px;
             min-height: 270px;
             position: relative;
-                   display: flex;
-              flex-direction: column;
-           align-items: center;
-           justify-content: center;
         }
             header img {
-                max-width: 100%;
-                  width: 80%;
-                  height: auto;
+                display: block;
+                margin: 0 auto;
+                max-width: 500px;
+                min-width: 400px;
             }
 
             header p {
@@ -45,9 +43,7 @@
                 font-size: 38px;
                 letter-spacing: 2px;
                 font-weight: 200px;
-                   
             }
-
         body {
             background: repeating-linear-gradient(170deg, #E10600, #2C2C35, #15151E 2000px);
             background-repeat: repeat;
@@ -242,7 +238,7 @@
             .currentPage{
                 display: inherit;
                 position: relative;
-                top: 170px; transform: scale(0.7); 
+                top: -20px; transform: scale(0.7); 
                 color:#ccc
             }
             .navMobileContainer.active{
@@ -315,9 +311,9 @@
                 flex-direction: column;
             }
             .currentPage{
-              display: inherit;
+                display: inherit;
                 position: relative;
-                top: 170px; transform: scale(0.7); 
+                top: -20px; transform: scale(0.7); 
                 color:#ccc
             }
             .navMobileContainer.active{
@@ -544,11 +540,4 @@
             margin-right: -40px;
             padding: 10px;
             row-gap: 10px;
-
         }
-
-
-
-
-
-
