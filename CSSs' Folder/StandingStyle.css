@@ -1,0 +1,833 @@
+    *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            caret-color: transparent;
+    }
+        @font-face {
+            font-family: "F1 Bold";
+            src: url('Fonts/Formula1-Bold.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: "F1 SemiBold";
+            src: url('Fonts/Formula1-Display-SemiBold.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: "F1 Regular";
+            src: url('Fonts/Formula1-Regular1.ttf') format('truetype');
+        }
+        header {
+            background-color: #2c2c356e;
+            border-radius: 30px;
+            color: #15151E;
+            text-align: center;
+            font-size: 25px;
+            font-family: 'F1 Bold';
+            box-shadow: 0 10px 10px rgba(0,0,0,0.6);
+            margin-bottom: 50px;
+            min-height: 270px;
+            position: relative;
+        }
+            header img {
+                display: block;
+                margin: 0 auto;
+                max-width: 500px;
+                min-width: 400px;
+            }
+
+            header p {
+                margin-top: 5px;
+                margin-bottom: 0;
+                font-size: 38px;
+                letter-spacing: 2px;
+                font-weight: 200px;
+            }
+
+        body {
+            background: repeating-linear-gradient(170deg, #E10600, #2C2C35, #15151E 2000px);
+            background-repeat: repeat;
+            color: #ffffff;
+            flex-direction: column;
+            padding: 40px;
+            margin: 0px;
+            min-height: 100vh;
+        }
+        .navMobile
+        {
+            display: none;
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            gap: 100px;
+            max-width: 1700px;
+            margin: 0 auto;
+            min-height: 30px;
+        }
+        
+        .panel, .teamPanel {
+            flex: 1;
+            background: #1E1E26;
+            border-radius: 8px;
+            padding: 25px;
+            min-width: 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(2px);
+            max-height: 80vh;
+            overflow-y: auto;
+            
+        }
+
+            .panel h2, .teamPanel h2 {
+                text-align: center;
+                margin-bottom: 20px;
+                font-family: 'F1 SemiBold';
+                color: #ffffe6;
+                font-size: 24px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                border-bottom: 2px solid rgba(255,255,255,0.2);
+                padding-bottom: 10px;
+            }
+            
+        .table-header,
+        .rowTeams {
+            display: grid;
+            grid-template-columns: 50px 50px 1fr 80px;
+            align-items: center;
+            padding: 10px 15px;
+        }
+        .row {
+            display: grid;
+            grid-template-columns: 50px 1fr 80px;
+            align-items: center;
+            padding: 10px 15px;
+        }
+        .table-header {
+            font-family: "F1 Regular";
+            font-weight: bold;
+            font-size: 14px;
+            opacity: 0.8;
+            display: grid;
+            grid-template-columns: 50px 1fr 80px;
+            padding: 10px 15px;
+            align-items: center;
+        }
+
+        .row,.rowTeams {
+            margin-top: 8px;
+            font-family: "F1 Regular";
+            background: rgba(0, 0, 0, 0.35);
+            border-radius: 10px;
+            transition: transform 0.2s 
+        }
+
+            .row:hover,.rowTeams:hover {
+                transform: scale(1.02);
+                background: rgba(255, 255, 255, 0.12);
+            }
+
+        .pos, .teamPos {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .name .teamName{
+            padding-left: 10px;
+        }
+
+        .points .teamPoints{
+            text-align: right;
+            font-weight: bold;
+        }
+
+
+        .container-races{
+            flex: 1;
+            display: flex;
+            gap: 100px;
+            max-width: 1700px;
+            margin: 0 auto;
+            min-height: 30px;
+        }
+        .rowTeams img
+        {
+            display: flex;
+            margin-left: 10px;
+            width: 30px;  
+            height: 30px; 
+            object-fit: cover; 
+            border-radius: 4px; 
+        }
+        .panel-races
+        {
+            flex: 1;
+            background: #1E1E26;
+            border-radius: 8px;
+            padding: 25px;
+            min-width: 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(2px);
+            
+            overflow-y: auto;
+            
+        }
+
+            .panel-races h2 {
+                text-align: center;
+                margin-bottom: 20px;
+                font-family: 'F1 SemiBold';
+                color: #ffffe6;
+                font-size: 24px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                border-bottom: 2px solid rgba(255,255,255,0.2);
+                padding-bottom: 10px;
+            }
+        .container-raceInfos
+        {
+            flex: 1;
+            display: flex;
+            gap: 100px;
+            max-width: 1700px;
+            margin: 0 auto;
+            min-height: 30px;
+            
+        }
+        .row-race{
+            background: rgba(0, 0, 0, 0.35);
+            margin-top: 8px;
+            font-family: "F1 Regular";
+            border-radius: 10px;
+            padding: 15px;
+        }
+        .row-race img {
+            margin-left: 30px;
+            width: 50px;  
+            height: 30px; 
+            object-fit: cover; 
+            border-radius: 4px; 
+        }
+        .circuitName {
+            font-family: "F1 Bold";
+            padding: 30px;
+            font-size: xx-large;
+            letter-spacing: 1px;       
+        }
+
+        .table-panel {
+        display: flex;
+        flex-direction: column;
+        background: #1E1E26;
+        padding: 15px;
+        border-radius: 8px;
+        max-width: 660px;
+        margin-top: 20px;
+        margin-left: 40px;
+        max-height: 350px;
+        }
+
+        .table-header2,
+        .table-row {
+        display: grid;
+        grid-template-columns: 40px 350px 140px 20px 60px; 
+        align-items: center;
+        padding: 5px 0;
+        }
+
+        .table-header2 {
+            
+        font-weight: bold;
+        color: #ccc;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        margin-bottom: 5px;
+        }
+
+        .flexbox{
+            background-color: grey;
+            border-radius: 4px;
+            width: 10px;
+            height: 20px;
+            display: inline-block; 
+        }
+        .flexboxMercedes
+        {
+            background-color: #00bbb5;
+            border-radius: 4px;
+            width: 10px;
+            height: 20px;
+            display: inline-block; 
+        }
+        .flexboxLotus
+        {
+            background-color: rgb(245, 208, 0);
+            border-radius: 4px;
+            width: 10px;
+            height: 20px;
+            display: inline-block; 
+        }
+        .flexboxWilliams
+        {
+            background-color: rgb(1, 102, 255);
+            border-radius: 4px;
+            width: 10px;
+            height: 20px;
+            display: inline-block; 
+        }
+        .flexboxRedbull
+        {
+            background-color: rgb(255, 255, 255);
+            border-radius: 4px;
+            width: 10px;
+            height: 20px;
+            display: inline-block; 
+        }
+        .col.name{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .col.lap{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #ccc
+        }
+
+        .table-row {
+        color: #fff;
+        }
+
+        .gallery {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            border-radius: 6px;
+            
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+            height: 90%;
+            
+        }
+
+        .gallery img {    
+            border-radius: 6px;
+            width: 500px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .standingsButton{
+            border-radius: 10px;
+            background-color: transparent; 
+            cursor:pointer;
+            margin-top: 5px;
+            padding: 6px 10px;
+            margin-bottom: 0;
+            font-size: 38px;
+            letter-spacing: 2px;
+            font-weight: 200px;
+            color: #15151E;
+            transition-duration: 0.4s;
+            position: absolute;
+            top: 190px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-decoration: underline;
+        }
+        .standingsButton:hover{
+            color: #ccc;
+            text-decoration: underline #ccc;
+            background-color: #15151e50;
+        }
+        .calendarButton{
+            padding: 6px 10px;
+            border-radius: 10px;
+            background-color: transparent; 
+            cursor:pointer;
+            margin-top: 5px;
+            margin-bottom: 0;
+            font-size: 28px;
+            letter-spacing: 1px;
+            font-weight: 200px;
+            color: #15151E;
+            transition-duration: 0.4s;
+            top: 190px;
+            left: 25%;
+            transform: translateX(-20%);
+            position: absolute;
+        }
+        .calendarButton:hover{
+            color: #ccc;
+            background-color: #15151e50;
+        }
+        .driversButton{
+            border-radius: 10px     ;
+            background-color: transparent; 
+            cursor:pointer;
+            margin-top: 5px;
+            margin-bottom: 0;
+            font-size: 28px;
+            letter-spacing: 1px;
+            font-weight: 200px;
+            padding: 6px 10px;
+            color: #15151E;
+            transition-duration: 0.4s;
+            position: absolute;
+            top: 190px;
+            left: 10%;
+            transform: translateX(-70%);
+        }
+        .driversButton:hover{
+            color: #ccc;
+            background-color: #15151e50;
+        }
+        .menu-button {
+            display: none;
+            padding: 6px 10px;
+            background: transparent;
+            border: none;
+            border-radius: 10px;
+            font-size: 32px;
+            cursor: pointer;
+            color: #15151E;
+            position: absolute;
+            top: 75%;
+            left: 10%;
+            transform: translateX(-50%);
+            font-family: 'F1 Bold';
+            
+        }
+        .menu-button:hover{
+            color: #ccc;
+            background-color: #15151e50;
+            text-decoration: underline #ccc;
+        }
+        .navMobileContainer{
+            display: none;
+        }
+        .currentPage{
+            display: none;
+        }
+        /* Responsive */
+        @media (max-width: 1300px) {
+            .container {
+                flex-direction: column;
+            }
+            .gallery {
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                display: table-row;
+                grid-template-rows: -50px -50px -50px;
+                border-radius: 6px;
+                object-fit: cover;
+            }
+            .gallery img{
+                width: 260px;
+                height: 160px;
+                object-fit:inherit;
+            }
+            .table-panel {
+                display: flex;
+                flex-direction: column;
+                background: #1E1E26;
+                padding: 5px;
+                border-radius: 8px;
+                max-width: 640px;
+                margin-top: 20px;
+                margin-left: 5px;
+                max-height: 330px;
+                height: 330px;
+            }
+            .navMobileContainer.active{
+                
+                display: flex;
+                flex-direction: column;   
+                align-items: center;      
+                gap: 20px;                
+                padding: 20px 0;
+            }
+            .currentPage{
+                display: inherit;
+                position: relative;
+                top: -20px; transform: scale(0.7); 
+                color:#ccc
+            }
+            .navMobileRow{
+                background: #15151e50;
+                font-family: "F1 Regular";
+                border-radius: 10px;
+                transition: ease-out 0.3s;
+                padding: 15px;
+                margin-bottom: 20px;         
+    
+                border-bottom: 2px solid #15151E;
+            }
+            .navMobileButton{
+                padding: 10px;
+                font-size: 20px;
+                cursor: pointer;
+                color:#E10600;
+                font-family: inherit;
+                font-style: bold;
+                background-color:#131327;
+                border: none;
+                border-radius: 3px;
+            }
+            .navMobileButton:hover{
+                color: #ccc;
+                
+            }
+            .nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                right: 20px;
+                flex-direction: column;
+                background: #1E1E26;
+                padding: 15px;
+                border-radius: 10px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+                z-index: 100;
+            }
+
+            .nav.active {
+                display: flex;
+            }
+
+            .menu-button {
+                display: inherit;
+                color: #15151E;
+                left: 50%;
+            }
+            .container-raceInfos
+            {
+                flex: 1;
+                display: flex;
+                gap: 50px;
+                max-width: 500px;
+                margin: 0;
+                min-height: 30px;
+                max-height: 330px;
+            }
+            .row-race{
+                background: rgba(0, 0, 0, 0.35);
+                margin-top: 8px;
+                font-family: "F1 Regular";
+                border-radius: 10px;
+                padding: 10px;
+            }
+            .circuitName{
+                font-family: "F1 Bold";
+                padding: 0px;
+                font-size: xx-large;
+                letter-spacing: 1px;
+            }
+            body {
+                background: repeating-linear-gradient(170deg, #E10600, #2C2C35, #15151E 2000px);
+                background-repeat: repeat;
+                color: #ffffff;
+                flex-direction: column;
+                padding: 40px;
+                margin: 0px;
+                min-height: 100vh;
+            }
+        }
+        @media (max-width: 784px) {
+            .container {
+                flex-direction: column;
+            }
+            .gallery img{
+                width: 260px;
+                height: 160px;
+                object-fit: cover;
+            }
+                        .navMobileContainer.active{
+                
+                display: flex;
+                flex-direction: column;   
+                align-items: center;      
+                gap: 20px;                
+                padding: 20px 0;
+            }
+            .navMobileRow{
+                background: #15151e50;
+                font-family: "F1 Regular";
+                border-radius: 10px;
+                transition: ease-out 0.3s;
+                padding: 15px;
+                margin-bottom: 20px;         
+    
+                border-bottom: 2px solid #15151E;
+            }
+            .navMobileButton{
+                padding: 10px;
+                font-size: 20px;
+                cursor: pointer;
+                color:#E10600;
+                font-family: inherit;
+                font-style: bold;
+                background-color:#131327;
+                border: none;
+                border-radius: 3px;
+            }
+            .navMobileButton:hover{
+                color: #ccc;
+                
+            }
+            .nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                right: 20px;
+                flex-direction: column;
+                background: #1E1E26;
+                padding: 15px;
+                border-radius: 10px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+                z-index: 100;
+            }
+
+            .nav.active {
+                display: flex;
+            }
+
+            .menu-button {
+                display: block;
+                color: #15151E;
+            }
+            .table-panel {
+                display: flex;
+                flex-direction: column;
+                background: #1E1E26;
+                padding: 5px;
+                border-radius: 8px;
+                max-width: 640px;
+                margin-top: 20px;
+                margin-left: 5px;
+                max-height: 350px;
+            }
+            .container-raceInfos
+            {
+                flex: 1;
+                display: flex;
+                gap: 50px;
+                max-width: 500px;
+                margin: 0;
+                min-height: 30px;
+                max-height: 330px;
+            }
+            .row-race{
+                background: rgba(0, 0, 0, 0.35);
+                margin-top: 8px;
+                font-family: "F1 Regular";
+                border-radius: 10px;
+                padding: 10px;
+            }
+            .circuitName{
+                font-family: "F1 Bold";
+                padding: 0px;
+                font-size: xx-large;
+                letter-spacing: 1px;
+            }
+            body {
+                background: repeating-linear-gradient(170deg, #E10600, #2C2C35, #15151E 2000px);
+                background-repeat: repeat;
+                color: #ffffff;
+                flex-direction: column;
+                padding: 10px;
+                margin: 0px;
+                min-height: 100vh;
+            }
+        }
+        @media (max-width: 738px) {
+            .container {
+                flex-direction: column;
+            }
+            .navMobileContainer.active{
+                
+                display: flex;
+                flex-direction: column;   
+                align-items: center;      
+                gap: 20px;                
+                padding: 20px 0;
+            }
+            .currentPage{
+                display: inherit;
+                position: relative;
+                top: 170px; transform: scale(0.7); 
+                color:#ccc
+            }
+            .navMobileRow{
+                background: #15151e50;
+                font-family: "F1 Regular";
+                border-radius: 10px;
+                transition: ease-out 0.3s;
+                padding: 15px;
+                margin-bottom: 20px;         
+    
+                border-bottom: 2px solid #15151E;
+            }
+            .navMobileButton{
+                padding: 10px;
+                font-size: 20px;
+                cursor: pointer;
+                color:#E10600;
+                font-family: inherit;
+                font-style: bold;
+                background-color:#131327;
+                border: none;
+                border-radius: 3px;
+            }
+            .navMobileButton:hover{
+                color: #ccc;
+                
+            }
+            .gallery {
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                display:table-column;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 5px;
+                border-radius: 6px;
+            }
+            .gallery img{
+                width: 200px;
+                height: 100px;
+                object-fit: cover;
+            }
+            .table-panel {
+                display: flex;
+                flex-direction: column;
+                background: #1E1E26;
+                padding: 2px;
+                border-radius: 8px;
+                max-width: auto;
+                margin-top: 20px;
+                margin-left: 5px;
+                max-height: 350px;
+            }
+            .container-raceInfos
+            {
+                flex: 1;
+                display: flex;
+                gap: 50px;
+                max-width: 100px;
+                margin: -5px;
+                min-height: 30px;
+                max-height: 330px;
+            }
+            .row-race{
+                background: rgba(0, 0, 0, 0.35);
+                margin-top: 8px;
+                font-family: "F1 Regular";
+                border-radius: 10px;
+                padding: 10px;
+            }
+            .circuitName{
+                font-family: "F1 Bold";
+                padding: 0px;
+                font-size: xx-large;
+                letter-spacing: 1px;
+            }
+            .rowTeams {
+                margin-top: 8px;
+                font-family: "F1 Regular";
+                background: rgba(0, 0, 0, 0.35);
+                border-radius: 10px;
+                transition: transform 0.2s;
+                
+            }
+            .table-row {
+                display: grid;
+                grid-template-columns: 40px 190px 0px 0px 60px; 
+                align-items: center;
+                padding: 5px 0;
+            }
+            .table-header2 {
+                font-weight: bold;
+                color: #ccc;
+                border-bottom: 1px solid rgba(255,255,255,0.2);
+                margin-bottom: 5px;
+                display: grid;
+                grid-template-columns: 40px 190px 0px 0px 60px;
+            }
+            .panel-races{
+                flex: 1;
+                background: #1E1E26;
+                border-radius: 8px;
+                padding: 15px;
+                min-width: 0;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+                backdrop-filter: blur(2px);
+            
+                overflow-y: auto;     
+            }  
+            body {
+                background: repeating-linear-gradient(170deg, #E10600, #222266, #131327 2000px);
+                background-repeat: repeat;
+                color: #ffffff;
+                flex-direction: column;
+                padding: 10px;
+                margin: 0px;
+                min-height: 100vh;
+            }
+            .header {
+            background-color: #2c2c356e;
+            border-radius: 30px;
+            color: #15151E;
+            text-align: center;
+            font-size: 25px;
+            font-family: 'F1 Bold';
+            box-shadow: 0 10px 10px rgba(0,0,0,0.6);
+            margin-bottom: 50px;
+            min-height: 270px;
+            position: relative;
+            } 
+            .header-img{
+                scale: 80%;
+                position: absolute;
+                align-self: center;
+                left: 37%;
+                transform: translateX(-50%);
+            }
+            .nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                right: 20px;
+                flex-direction: column;
+                background: #1E1E26;
+                padding: 15px;
+                border-radius: 10px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+                z-index: 100;
+            }
+
+            .nav.active {
+                display: flex;
+            }
+
+            .menu-button {
+                display: block;
+                color: #1e1615;
+            }
+        }
+        footer{
+            background-color: #1e1e26a9;
+            color: #42424e;
+            text-align: center;
+            bottom:0;
+            margin-top: 170px;
+            gap: 10px;
+            margin-bottom: -40px;
+            margin-left: -40px;
+            margin-right: -40px;
+            padding: 10px;
+            row-gap: 10px;
+        }

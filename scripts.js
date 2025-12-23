@@ -10,7 +10,6 @@ function CopyClipboard() {
         }
 function SwitchToCalendar()
         {
-            
             window.location.href = "CalendarPage.html";
         }
 function SwitchToDrivers()
@@ -50,3 +49,7 @@ teamRows
       rowTeams.querySelector('.teamPos').innerText = indexV + 1;
   });
 }
+function toggleMenu() {
+    document.querySelector('.navMobileContainer').classList.toggle('active');
+}
+console.log("SCRIPT LOADED");

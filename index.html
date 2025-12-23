@@ -9,427 +9,32 @@
 
           gtag('config', 'G-9D6RSG5F2R');
     </script>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FZ Web App</title>
     <link rel="icon" type="image/png" sizes="32x32" href="fxlogo2.0.png">
-    <style>
-    *{
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            caret-color: transparent;
-    }
-        @font-face {
-            font-family: "F1 Bold";
-            src: url('Fonts/Formula1-Bold.ttf') format('truetype');
-        }
-        @font-face {
-            font-family: "F1 SemiBold";
-            src: url('Fonts/Formula1-Display-SemiBold.ttf') format('truetype');
-        }
-        @font-face {
-            font-family: "F1 Regular";
-            src: url('Fonts/Formula1-Regular1.ttf') format('truetype');
-        }
-        header {
-            background-color: #2c2c356e;
-            border-radius: 30px;
-            color: #15151E;
-            text-align: center;
-            font-size: 25px;
-            font-family: 'F1 Bold';
-            box-shadow: 0 10px 10px rgba(0,0,0,0.6);
-            margin-bottom: 50px;
-            min-height: 270px;
-            position: relative;
-        }
-            header img {
-                display: block;
-                margin: 0 auto;
-                max-width: 500px;
-                min-width: 400px
-                
-            }
-
-            header p {
-                margin-top: 5px;
-                margin-bottom: 0;
-                font-size: 38px;
-                letter-spacing: 2px;
-                font-weight: 200px;
-            }
-
-        body {
-            background: repeating-linear-gradient(170deg, #E10600, #2C2C35, #15151E 2000px);
-            background-repeat: repeat;
-            color: #ffffff;
-            flex-direction: column;
-            padding: 40px;
-            margin: 0px;
-            min-height: 100vh;
-        }
-
-        .container {
-            flex: 1;
-            display: flex;
-            gap: 100px;
-            max-width: 1700px;
-            margin: 0 auto;
-            min-height: 30px;
-        }
-        
-        .panel, .teamPanel {
-            flex: 1;
-            background: #1E1E26;
-            border-radius: 8px;
-            padding: 25px;
-            min-width: 0;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            backdrop-filter: blur(2px);
-            max-height: 80vh;
-            overflow-y: auto;
-            
-        }
-
-            .panel h2, .teamPanel h2 {
-                text-align: center;
-                margin-bottom: 20px;
-                font-family: 'F1 SemiBold';
-                color: #ffffe6;
-                font-size: 24px;
-                letter-spacing: 1px;
-                text-transform: uppercase;
-                border-bottom: 2px solid rgba(255,255,255,0.2);
-                padding-bottom: 10px;
-            }
-            
-        .table-header,
-        .rowTeams {
-            display: grid;
-            grid-template-columns: 50px 50px 1fr 80px;
-            align-items: center;
-            padding: 10px 15px;
-        }
-        .row {
-            display: grid;
-            grid-template-columns: 50px 1fr 80px;
-            align-items: center;
-            padding: 10px 15px;
-        }
-        .table-header {
-            font-family: "F1 Regular";
-            font-weight: bold;
-            font-size: 14px;
-            opacity: 0.8;
-            display: grid;
-            grid-template-columns: 50px 1fr 80px;
-            padding: 10px 15px;
-            align-items: center;
-        }
-
-        .row,.rowTeams {
-            margin-top: 8px;
-            font-family: "F1 Regular";
-            background: rgba(0, 0, 0, 0.35);
-            border-radius: 10px;
-            transition: transform 0.2s 
-        }
-
-            .row:hover,.rowTeams:hover {
-                transform: scale(1.02);
-                background: rgba(255, 255, 255, 0.12);
-            }
-
-        .pos, .teamPos {
-            font-weight: bold;
-            text-align: center;
-        }
-
-        .name .teamName{
-            padding-left: 10px;
-        }
-
-        .points .teamPoints{
-            text-align: right;
-            font-weight: bold;
-        }
-
-
-        .container-races{
-            flex: 1;
-            display: flex;
-            gap: 100px;
-            max-width: 1700px;
-            margin: 0 auto;
-            min-height: 30px;
-        }
-        .rowTeams img
-        {
-            display: flex;
-            margin-left: 10px;
-            width: 30px;  
-            height: 30px; 
-            object-fit: cover; 
-            border-radius: 4px; 
-        }
-        .panel-races
-        {
-            flex: 1;
-            background: #1E1E26;
-            border-radius: 8px;
-            padding: 25px;
-            min-width: 0;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            backdrop-filter: blur(2px);
-            
-            overflow-y: auto;
-            
-        }
-
-            .panel-races h2 {
-                text-align: center;
-                margin-bottom: 20px;
-                font-family: 'F1 SemiBold';
-                color: #ffffe6;
-                font-size: 24px;
-                letter-spacing: 1px;
-                text-transform: uppercase;
-                border-bottom: 2px solid rgba(255,255,255,0.2);
-                padding-bottom: 10px;
-            }
-        .container-raceInfos
-        {
-            flex: 1;
-            display: flex;
-            gap: 100px;
-            max-width: 1700px;
-            margin: 0 auto;
-            min-height: 30px;
-            
-        }
-        .row-race{
-            background: rgba(0, 0, 0, 0.35);
-            margin-top: 8px;
-            font-family: "F1 Regular";
-            border-radius: 10px;
-            padding: 15px;
-        }
-        .row-race img {
-            margin-left: 30px;
-            width: 50px;  
-            height: 30px; 
-            object-fit: cover; 
-            border-radius: 4px; 
-        }
-        .circuitName {
-            font-family: "F1 Bold";
-            padding: 30px;
-            font-size: xx-large;
-            letter-spacing: 1px;       
-        }
-
-        .table-panel {
-        display: flex;
-        flex-direction: column;
-        background: #1E1E26;
-        padding: 15px;
-        border-radius: 8px;
-        max-width: 660px;
-        margin-top: 20px;
-        margin-left: 40px;
-        max-height: 350px;
-        }
-
-        .table-header2,
-        .table-row {
-        display: grid;
-        grid-template-columns: 40px 350px 140px 20px 60px; 
-        align-items: center;
-        padding: 5px 0;
-        }
-
-        .table-header2 {
-            
-        font-weight: bold;
-        color: #ccc;
-        border-bottom: 1px solid rgba(255,255,255,0.2);
-        margin-bottom: 5px;
-        }
-
-        .flexbox{
-            background-color: grey;
-            border-radius: 4px;
-            width: 10px;
-            height: 20px;
-            display: inline-block; 
-        }
-        .flexboxMercedes
-        {
-            background-color: rgb(91, 255, 219);
-            border-radius: 4px;
-            width: 10px;
-            height: 20px;
-            display: inline-block; 
-        }
-        .flexboxLotus
-        {
-            background-color: rgb(172, 126, 0);
-            border-radius: 4px;
-            width: 10px;
-            height: 20px;
-            display: inline-block; 
-        }
-        .flexboxWilliams
-        {
-            background-color: rgb(1, 102, 255);
-            border-radius: 4px;
-            width: 10px;
-            height: 20px;
-            display: inline-block; 
-        }
-        .flexboxRedbull
-        {
-            background-color: rgb(14, 0, 206);
-            border-radius: 4px;
-            width: 10px;
-            height: 20px;
-            display: inline-block; 
-        }
-        .col.name{
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        .col.lap{
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            color: #ccc
-        }
-
-        .table-row {
-        color: #fff;
-        }
-
-        .gallery {
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 10px;
-            border-radius: 6px;
-            
-        }
-
-        .gallery img:hover {
-            transform: scale(1.1);
-        }
-
-        .gallery img {
-            border-radius: 6px;
-            width: 500px;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .standingsButton{
-            border-radius: 10px;
-            background-color: transparent; 
-            cursor:pointer;
-            margin-top: 5px;
-            margin-bottom: 0;
-            font-size: 38px;
-            letter-spacing: 2px;
-            font-weight: 200px;
-            color: #15151E;
-            transition-duration: 0.4s;
-            position: absolute;
-            top: 190px;
-            left: 50%;
-            transform: translateX(-50%);
-            text-decoration: underline;
-        }
-        .standingsButton:hover{
-            color: #ccc;
-            text-decoration: underline #ccc;
-            background-color: #15151e50;
-        }
-        .calendarButton{
-            border-radius: 10px;
-            background-color: transparent; 
-            cursor:pointer;
-            margin-top: 5px;
-            margin-bottom: 0;
-            font-size: 28px;
-            letter-spacing: 1px;
-            font-weight: 200px;
-            color: #15151E;
-            transition-duration: 0.4s;
-            top: 190px;
-            left: 25%;
-            transform: translateX(-20%);
-            position: absolute;
-        }
-        .calendarButton:hover{
-            color: #ccc;
-            text-decoration: underline #ccc;
-            background-color: #15151e50;
-        }
-
-        .driversButton{
-            border-radius: 10px     ;
-            background-color: transparent; 
-            cursor:pointer;
-            margin-top: 5px;
-            margin-bottom: 0;
-            font-size: 28px;
-            letter-spacing: 1px;
-            font-weight: 200px;
-            color: #15151E;
-            transition-duration: 0.4s;
-            position: absolute;
-            top: 190px;
-            left: 10%;
-            transform: translateX(-70%);
-        }
-        .driversButton:hover{
-            color: #ccc;
-            background-color: #15151e50;
-        }
-
-        /* Responsive */
-        @media (max-width: 900px) {
-            .container {
-                flex-direction: column;
-            }
-        }
-    
-        footer{
-            background-color: #1e1e26a9;
-            color: #42424e;
-            text-align: center;
-            bottom:0;
-            margin-top: 170px;
-            gap: 10px;
-            margin-bottom: -40px;
-            margin-left: -40px;
-            margin-right: -40px;
-            padding: 10px;
-            row-gap: 10px;
-        }
-</style>
-
+    <link rel="stylesheet" href="CSSs' Folder\StandingStyle.css">
 
 
 </head>
 <body onload="Order()">
-    <header>
-    <img src="fxlogo2.0.png" alt="FzLogo">
-    <div class="driversButton" onclick="SwitchToDrivers()">The Drivers</div>
-    <div class="calendarButton" onclick="SwitchToCalendar()">Calendar</div>
-    <div class="standingsButton">STANDINGS</div>
+<header class="header">
+    <img class="header-img"src="fxlogo2.0.png" alt="FzLogo">
+    <nav class="nav">
+        <div class="driversButton" onclick="SwitchToDrivers()">The Drivers</div>
+        <div class="calendarButton" onclick="SwitchToCalendar()">Calendar</div>
+        <div class="standingsButton">STANDINGS</div>
+    </nav>
+    <button class="menu-button" onclick="toggleMenu()">NAVIGATE</button>
+            <div class="currentPage">Standings Page</div>
 </header>
+    <div class="navMobileContainer">
+    <div class="navMobileRow">
+        <button class="navMobileButton" onclick="SwitchToDrivers()">Drivers</button>
+        <button class="navMobileButton" onclick="SwitchToCalendar()">Calendar</button>
+    </div>
+</div>
+
+<main>
     <div class="container">
         <!-- PILOTI -->
         <div class="panel">
@@ -485,7 +90,7 @@
             
             <div class="row">
                 <div class="pos">8</div>
-                <div class="name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxRedbull"></span>L'altro</div>
+                <div class="name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxRedbull"></span>Bobbi</div>
                 <div class="points">0</div>
             </div>
         </div>
@@ -501,7 +106,7 @@
 
             <div class="rowTeams">
                 <div class="teamPos">1</div>
-                <img src="https://cdn.discordapp.com/attachments/1029777409660162100/1452774418903335035/image0.png?ex=694b091c&is=6949b79c&hm=83b1f8b134e2346834f5da339e50b0ad9481b7d94f12f8ef13c5baf98e81ed43&">
+                <img src="https://cdn.discordapp.com/attachments/1029777409660162100/1452774418903335035/image0.png?ex=694bb1dc&is=694a605c&hm=8efd81ad02187933241875a1a248f988356697fe99cdd380ea3dbafcf84509d7&" alt="LotusLogo">
                 <div class="teamName">Lotus FZ Team</div>
                 <div class="teamPoints">0</div>
             </div>
@@ -527,7 +132,7 @@
             </div>
         </div>
     </div>
-
+</main>
     <br><br><br><br>
     
     <div class="container-races"> 
@@ -538,7 +143,7 @@
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAKlBMVEX///8AkkbOKzd2t43egYYAjz7NHy4Wlk7OND75/PoAk0j7///bhIfMKzaIpjcKAAABCklEQVR4nO3Q2RGAIBQEsIeg4NV/u1axM34kJaRazN4rZxxbTDlx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDhx4sSJEydOnDj5/8mMuXqdKffzrpgPKxrVWd5HIaUAAAAASUVORK5CYII=" alt="ItalyGPFlag">
                 <span class="circuitName"> RACE X: Circuito [SAMPLE 1]</span>
             
-                <div class="container-raceInfos">
+        <div class="container-raceInfos">
             <div class="table-panel">
                 <div class="table-header2">
                     <div class="col pos">Pos</div>
@@ -564,7 +169,7 @@
                 </div>
                 <div class="table-row">
                      <div class="col pos">3</div>
-                    <div class="col name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxRedbull"></span>L'altro</div>
+                    <div class="col name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxRedbull"></span>Bobbi</div>
                     <div class="col lap">  1:22:951</div>
                     <div class="col spacer"></div>
                     <div class="col points">+18</div>
@@ -608,7 +213,7 @@
             </div>
             
                 <div class="gallery">
-                    <img src="https://cdn.discordapp.com/attachments/1073662874003714048/1257428161604489257/Screenshot_vrc_formula_alpha_2007_mc22_sanfran_1-6-124-21-27-41.jpg?ex=694a4e7b&is=6948fcfb&hm=281c36c3325eb69fca2ce6e59478e5ced1c9a80f9ba7ab0c1c8498d3e969eb3c&", alt="img1">
+                    <img src="https://cdn.discordapp.com/attachments/1073662874003714048/1257428161604489257/Screenshot_vrc_formula_alpha_2007_mc22_sanfran_1-6-124-21-27-41.jpg?ex=694a4e7b&is=6948fcfb&hm=281c36c3325eb69fca2ce6e59478e5ced1c9a80f9ba7ab0c1c8498d3e969eb3c&", alt="img1", style="max-width:100%;height:auto;">
                     <img src="https://cdn.discordapp.com/attachments/1073662874003714048/1257058308897116231/2champ.png?ex=694a4787&is=6948f607&hm=2c3abb70c32ab6e0fc291ce8131b2dd089cf4cbce31b4418fa761c066507dac8&", alt="img2">
                     <img src="https://cdn.discordapp.com/attachments/1073662874003714048/1257053034802970624/Screenshot_vrc_formula_alpha_2007_mc22_toscana_30-5-124-21-6-58.jpg?ex=694a429e&is=6948f11e&hm=3ce793a9559ed18de0350627351cdd86d25cb6dfefc8412d72f82340d3ba8abe&", alt="img3">
                 </div>
@@ -650,7 +255,7 @@
                 </div>
                 <div class="table-row">
                      <div class="col pos">4</div>
-                    <div class="col name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxRedbull"></span>L'altro</div>
+                    <div class="col name", style="display: flex; align-items: center; gap: 5px"> <span class="flexboxRedbull"></span>Bobbi</div>
                     <div class="col lap">1:43:233</div>
                     <div class="col spacer"></div>
                     <div class="col points">+15</div>
@@ -686,10 +291,10 @@
 
             </div>
             
-                <div class="gallery">
-                    <img src="https://preview.redd.it/fanculo-ora-parlo-io-di-cicciogamer89-v0-jjdyxthlqh2g1.jpeg?width=1170&format=pjpg&auto=webp&s=f6ef7a1e027cfdb285454fe4d3757c53c90c9191", alt="img2">
-                    <img src="https://cdn.discordapp.com/attachments/1073662874003714048/1237494130364645496/Screenshot_vrc_formula_alpha_2007_mc22_ks_monza66_7-4-124-21-46-54.jpg?ex=694a4bf8&is=6948fa78&hm=476ea374db4aa1030e661c601bb8dd00eb359e40b4ea4cf68781e9c107b74f27&", alt="img2">
-                    <img src="https://cdn.discordapp.com/attachments/1073662874003714048/1213944785878908988/Screenshot_lotus_exos_125_toscana_3-2-124-21-15-32.jpg?ex=694a516e&is=6948ffee&hm=390c97bf70a883f87683d4f3a1e7e88ada0f1c69d09fcad3ca1aa6b95b110405&", alt="img3">
+                <div class="gallery">    
+                    <img src="https://preview.redd.it/fanculo-ora-parlo-io-di-cicciogamer89-v0-jjdyxthlqh2g1.jpeg?width=1170&format=pjpg&auto=webp&s=f6ef7a1e027cfdb285454fe4d3757c53c90c9191" alt="img1">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.mkqVm5DKCDfQ2U0-TML4LwHaEK?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3", alt="img2">
+                    <img src="https://d2n9h2wits23hf.cloudfront.net/image/v1/static/6057949432001/3f848838-b09c-479f-9d96-238b61b146d1/93bd112f-33d2-4449-bac6-3c6f4acbb80f/864x486/match/image.jpg", alt="img3">
                 </div>
             </div>
         </div>
@@ -718,5 +323,3 @@
 <script src="scripts.js"></script>
 </body>
 </html>
-
-
