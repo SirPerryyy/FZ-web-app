@@ -364,23 +364,24 @@
             color: #ccc;
             background-color: #15151e50;
         }
-        .driversButton{
-            border-radius: 10px     ;
-            background-color: transparent; 
-            cursor:pointer;
-            margin-top: 5px;
-            margin-bottom: 0;
-            font-size: 28px;
-            letter-spacing: 1px;
-            font-weight: 200px;
-            padding: 6px 10px;
-            color: #15151E;
-            transition-duration: 0.4s;
-            position: absolute;
-            top: 190px;
-            left: 80%;
-            transform: translateX(-70%);
-        }
+.driversButton {
+    padding: 6px 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+    font-weight: 200px;
+    padding: 6px 10px;
+    color: #15151E;
+    transition-duration: 0.4s;
+    position: absolute;
+    top: 190px;
+    left: 80%;
+    transform: translateX(-70%);
+}
         .driversButton:hover{
             color: #ccc;
             background-color: #15151e50;
