@@ -397,8 +397,6 @@
             }
             .currentPage{
                 display: inherit;
-                position: relative;
-                top: 170px; transform: scale(0.7); 
                 color:#ccc
             }
             .panelCalenar{
@@ -541,3 +539,4 @@
             padding: 10px;
             row-gap: 10px;
         }
+
