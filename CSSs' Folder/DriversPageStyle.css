@@ -101,7 +101,6 @@
         }
         .calendarButton:hover{
             color: #ccc;
-            text-decoration: underline #ccc;
             background-color: #15151e50;
         }
 
@@ -428,4 +427,5 @@
             margin-right: -40px;
             padding: 10px;
             row-gap: 10px;
+
         }
