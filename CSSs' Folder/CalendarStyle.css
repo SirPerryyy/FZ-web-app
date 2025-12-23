@@ -140,6 +140,8 @@
             left: 10%;
             transform: translateX(-50%);
             font-family: 'F1 Bold';
+            background-color: #15151e44;
+            text-decoration: underline #15151e44;
             
         }
         .menu-button:hover{
@@ -541,4 +543,5 @@
             margin-right: -40px;
             padding: 10px;
             row-gap: 10px;
+
         }
