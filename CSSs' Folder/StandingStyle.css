@@ -16,7 +16,7 @@
             font-family: "F1 Regular";
             src: url('Fonts/Formula1-Regular1.ttf') format('truetype');
         }
-        header {
+        .header {
             background-color: #2c2c356e;
             border-radius: 30px;
             color: #15151E;
@@ -28,14 +28,14 @@
             min-height: 270px;
             position: relative;
         }
-            header img {
+            .header img {
                 display: block;
                 margin: 0 auto;
                 max-width: 500px;
                 min-width: 400px;
             }
 
-            header p {
+            .header p {
                 margin-top: 5px;
                 margin-bottom: 0;
                 font-size: 38px;
@@ -260,7 +260,7 @@
         }
         .flexboxLotus
         {
-            background-color: rgb(245, 208, 0);
+            background-color: #dba614;
             border-radius: 4px;
             width: 10px;
             height: 20px;
