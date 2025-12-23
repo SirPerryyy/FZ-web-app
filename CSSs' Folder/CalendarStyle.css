@@ -225,21 +225,12 @@
             font-size: xx-large;
             letter-spacing: 1px;       
         }
-        .currentPage{
-                display: none;
-            }
         .sprintRaceText{
             display: inherit;
         }
         @media (max-width: 1300px) {
             .container {
                 flex-direction: column;
-            }
-            .currentPage{
-                display: inherit;
-                position: relative;
-                top: -20px; transform: scale(0.7); 
-                color:#ccc
             }
             .navMobileContainer.active{
                 
@@ -309,12 +300,6 @@
         @media (max-width: 784px) {
             .container {
                 flex-direction: column;
-            }
-            .currentPage{
-                display: inherit;
-                position: relative;
-                top: -20px; transform: scale(0.7); 
-                color:#ccc
             }
             .navMobileContainer.active{
                 
@@ -394,10 +379,6 @@
         @media (max-width: 738px) {
             .container {
                 flex-direction: column;
-            }
-            .currentPage{
-                display: inherit;
-                color:#ccc
             }
             .panelCalenar{
                 flex: 1;
@@ -539,4 +520,3 @@
             padding: 10px;
             row-gap: 10px;
         }
-
