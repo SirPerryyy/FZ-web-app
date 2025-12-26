@@ -307,6 +307,7 @@
             background-color: rgba(255, 255, 255, 0.342);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
+                               cursor: pointer;
         }
 
         @media (max-width: 1300px) {
@@ -670,3 +671,4 @@
             row-gap: 10px;
 
         }
+
