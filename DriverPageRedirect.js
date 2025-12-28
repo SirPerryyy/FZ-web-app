@@ -49,6 +49,9 @@ async function LoadProfile()
     const cnsValue = document.querySelector('.cnsValue');
     const fylValue = document.querySelector('.fylValue');
     const rfxValue = document.querySelector('.rfxValue');
+    const constrTitl = document.querySelector('.constrTitles');
+
+    constrTitl.innerText = driver.constrTitles;
 
     ovrValue.innerText = driver.driverPanelPointsOVR.value;
     ovrValue.style.color = driver.driverPanelPointsOVR.color;
