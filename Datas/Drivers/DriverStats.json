@@ -4,6 +4,7 @@
       "value": 99,
       "color": "#eeca00"
     },
+      "constrTitles": 0,
       "attValue": 96,
       "expValue": 98,
       "pacValue": 99,
@@ -45,6 +46,7 @@
       "value": 97,
       "color": "#eeca00"
     },
+      "constrTitles": 2,
       "attValue": 97,
       "expValue": 96,
       "pacValue": 97,
@@ -86,6 +88,7 @@
       "value": 92,
       "color": "#acabab"
     },
+    "constrTitles": 2,
       "attValue": 89,
       "expValue": 91,
       "pacValue": 91,
@@ -127,6 +130,7 @@
       "value": 85,
       "color": "#2b2b2b"
     },
+    "constrTitles": 0,
       "attValue": 85,
       "expValue": 86,
       "pacValue": 84,
@@ -168,6 +172,7 @@
       "value": 89,
       "color": "#acabab"
     },
+    "constrTitles": 0,
       "attValue": 87,
       "expValue": 91,
       "pacValue": 89,
@@ -208,6 +213,7 @@
       "value": 77,
       "color": "#2b2b2b"
     },
+    "constrTitles": 0,
       "attValue": 75,
       "expValue": 79,
       "pacValue": 75,
@@ -249,6 +255,7 @@
       "value": "nd",
       "color": "#eeca00"
     },
+    "constrTitles": 0,
       "attValue": "nd",
       "expValue":  92,
       "pacValue": "nd",
@@ -290,6 +297,7 @@
       "value": "nd",
       "color": "#eeca00"
     },
+    "constrTitles": 0,
       "attValue": "nd",
       "expValue":  92,
       "pacValue": "nd",
@@ -327,6 +335,7 @@
     }
   }
 }
+
 
 
 
