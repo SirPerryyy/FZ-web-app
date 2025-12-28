@@ -66,7 +66,7 @@
         "championships": 0,
         "raceAttended": 35,
         "podiums": 30,
-        "raceBestPos": 1,
+        "raceBestPos": 2,
         "seasons": 3,
         "points": 335,
         "dnfs": 2,
@@ -107,7 +107,7 @@
         "championships": 0,
         "raceAttended": 33,
         "podiums": 20,
-        "raceBestPos": 1,
+        "raceBestPos": 3,
         "seasons": 3,
         "points": 262,
         "dnfs": 1,
@@ -148,7 +148,7 @@
         "championships": 0,
         "raceAttended": 26,
         "podiums": 14,
-        "raceBestPos": 1,
+        "raceBestPos": 4,
         "seasons": "2.5",
         "points": 174,
         "dnfs": 3,
@@ -189,7 +189,7 @@
         "championships": 0,
         "raceAttended": 25,
         "podiums": 2,
-        "raceBestPos": 1,
+        "raceBestPos": 4,
         "seasons": "2.5",
         "points": 63,
         "dnfs": 0,
@@ -327,6 +327,7 @@
     }
   }
 }
+
 
 
 
