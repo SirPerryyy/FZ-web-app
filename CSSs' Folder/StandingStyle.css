@@ -120,10 +120,14 @@
             transition: transform 0.2s 
         }
 
-            .row:hover,.rowTeams:hover {
+            .row:hover{
                 transform: scale(1.02);
                 background: rgba(255, 255, 255, 0.12);
                 cursor: pointer;
+            }
+            .rowTeams:hover{
+                transform: scale(1.02);
+                background: rgba(255, 255, 255, 0.12);
             }
 
         .pos, .teamPos {
@@ -841,4 +845,5 @@
             margin-right: -40px;
             padding: 10px;
             row-gap: 10px;
+
         }
