@@ -793,6 +793,7 @@
         }
         .driverPanelAllTimeStatsTitle{
             position:absolute;
+            text-wrap-mode: nowrap;
             font-size: 25px;
             font-family: 'F1 Regular';
             font-weight: bold;
