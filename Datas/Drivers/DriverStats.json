@@ -156,10 +156,10 @@
       },
     "driverInfo": {
         "name": "Pablo Carpincho",
-        "nameColor": "#b60000",
+        "nameColor": "#de3f00",
         "driverImage": "CSSs' Folder/DriversPictures/Pablo.png",
         "driverNumber": 38,
-        "driverTeamMainColor": "#de3f00",
+        "driverTeamMainColor": "#006ec9",
         "backgroundGradient": "linear-gradient(135deg, #006ec9, #b8e5ff98, #0087c59f, #006ace96)"
     }
   },
@@ -189,7 +189,7 @@
         "championships": 0,
         "raceAttended": 25,
         "podiums": 2,
-        "raceBestPos": 5,
+        "raceBestPos": 6,
         "seasons": "2.5",
         "points": 63,
         "dnfs": 0,
@@ -327,6 +327,7 @@
     }
   }
 }
+
 
 
 
