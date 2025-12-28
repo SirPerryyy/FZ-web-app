@@ -125,7 +125,7 @@
   "Pablo":{
     "driverPanelPointsOVR": {
       "value": 85,
-      "color": "#81501f"
+      "color": "#2b2b2b"
     },
       "attValue": 85,
       "expValue": 86,
@@ -159,7 +159,7 @@
         "nameColor": "#b60000",
         "driverImage": "CSSs' Folder/DriversPictures/Pablo.png",
         "driverNumber": 38,
-        "driverTeamMainColor": "#006ec9",
+        "driverTeamMainColor": "#de3f00",
         "backgroundGradient": "linear-gradient(135deg, #006ec9, #b8e5ff98, #0087c59f, #006ace96)"
     }
   },
@@ -241,7 +241,7 @@
         "driverImage": "CSSs' Folder/DriversPictures/Mattia.png",
         "driverNumber": 21,
         "driverTeamMainColor": "#006ec9",
-        "backgroundGradient": "linear-gradient(135deg, #fcce00, #131313, #968700e0, #3a3b0070)"
+        "backgroundGradient": "linear-gradient(135deg, #006ec9, #b8e5ff98, #0087c59f, #006ace96)"
     }
   },
   "Luca":{
@@ -327,6 +327,7 @@
     }
   }
 }
+
 
 
 
