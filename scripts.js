@@ -20,6 +20,10 @@ function SwitchToStandings()
         {
             window.location.href = "index.html";
         }
+function SwitchToStory()
+{
+    window.location.href = "Story.html";
+}
 function Order()
         {
 const panel = document.querySelector('.panel'); 
