@@ -775,6 +775,11 @@
                 color: #ccc;
                 font-family: "F1 Regular";
             }
+           .panel
+           {
+                max-height: 90vh;
+           }
+           
             .panel-story button{
             font-family: 'F1 Regular';
             font-size: large;
@@ -969,4 +974,5 @@
             margin-right: -40px;
             padding: 10px;
             row-gap: 10px;
+
         }
