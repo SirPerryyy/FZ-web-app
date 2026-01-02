@@ -362,7 +362,7 @@
         "raceAttended": 1,
         "podiums": 0,
         "raceBestPos": 8,
-        "seasons": "1",
+        "seasons": "2",
         "points": 9,
         "dnfs": 0,
         "wins":0
@@ -377,6 +377,7 @@
     }
   }
 }
+
 
 
 
