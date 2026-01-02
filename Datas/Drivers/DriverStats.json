@@ -354,7 +354,7 @@
         "nationalityFlag": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/330px-Flag_of_France.svg.png",
         "nationality": "FRA",
         "team": "Mercedes Brawn",
-        "pastTeams": "0",
+        "pastTeams": "1 (Mercedes)",
         "textColor" : "#ccc"
       },
     "allTimeStats": {
@@ -377,6 +377,7 @@
     }
   }
 }
+
 
 
 
