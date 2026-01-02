@@ -372,11 +372,12 @@
         "nameColor": "#2d8fff",
         "driverImage": "CSSs' Folder/DriversPictures/Pier.png",
         "driverNumber": 10,
-        "driverTeamMainColor": "#006ec9",
+        "driverTeamMainColor": "#d2f700",
         "backgroundGradient": "linear-gradient(135deg,#c4c4c4, #d9ff009c, #ffffff8c, #93b10070)"
     }
   }
 }
+
 
 
 
