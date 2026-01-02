@@ -59,14 +59,7 @@
         {
             display: none;
         }
-        .container {
-            flex: 1;
-            display: flex;
-            gap: 100px;
-            max-width: 1700px;
-            margin: 0 auto;
-            min-height: 30px;
-        }
+
         .standingsButton {
             padding: 6px 10px;
             background-color: transparent;
@@ -185,6 +178,15 @@
             min-width: 0;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             backdrop-filter: blur(2px);
+            height: 500px;
+            position:relative;
+        }
+        .driverPanelInvis{
+            flex: 1;
+            background: transparent;
+            border-radius: 8px;
+            padding: 25px;
+            min-width: 0;
             height: 500px;
             position:relative;
         }
