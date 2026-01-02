@@ -369,7 +369,7 @@
       },
     "driverInfo": {
         "name": "Pier La Mert",
-        "nameColor": "#2d8fff",
+        "nameColor": "#FF0000",
         "driverImage": "CSSs' Folder/DriversPictures/Pier.png",
         "driverNumber": 10,
         "driverTeamMainColor": "#d2f700",
@@ -377,6 +377,7 @@
     }
   }
 }
+
 
 
 
