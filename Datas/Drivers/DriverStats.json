@@ -333,8 +333,51 @@
         "driverTeamMainColor": "#eeeeee",
         "backgroundGradient": "linear-gradient(135deg, #eeeeee, #fc0800, #c7c7c769, #d1d1d1cb)"
     }
+  },
+    "Pier":{
+    "driverPanelPointsOVR": {
+      "value": 76,
+      "color": "#2b2b2b"
+    },
+          "constrTitles": 0,
+      "attValue": 76,
+      "expValue": 74,
+      "pacValue": 79,
+      "qlfValue": 75,
+      "stgValue": 81,
+      "fplValue": 88,
+      "defValue": 73,
+      "cnsValue": 80,
+      "fylValue": 74,
+      "rfxValue": 90,
+    "driverPanelDriverBiography": {
+        "nationalityFlag": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/330px-Flag_of_France.svg.png",
+        "nationality": "FRA",
+        "team": "Mercedes Brawn GP",
+        "pastTeams": "0",
+        "textColor" : "#ccc"
+      },
+    "allTimeStats": {
+        "championships": 0,
+        "raceAttended": 1,
+        "podiums": 0,
+        "raceBestPos": 8,
+        "seasons": "1",
+        "points": 9,
+        "dnfs": 0,
+        "wins":0
+      },
+    "driverInfo": {
+        "name": "Pier La Mert",
+        "nameColor": "#2d8fff",
+        "driverImage": "CSSs' Folder/DriversPictures/Pier.png",
+        "driverNumber": 10,
+        "driverTeamMainColor": "#006ec9",
+        "backgroundGradient": "linear-gradient(135deg,#c4c4c4, #d9ff009c, #ffffff8c, #93b10070)"
+    }
   }
 }
+
 
 
 
