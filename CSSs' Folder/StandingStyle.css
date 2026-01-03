@@ -417,7 +417,7 @@
         .donationsButton:hover{
             color: #ff0000;
             animation: pulse 1.2s infinite;
-            }
+        }
 
         @keyframes pulse{
             0%{
@@ -622,7 +622,9 @@
             border: 5px solid red;
             transition-duration: 0.1s;
         }
-
+        .donationsButtonMobile{
+                display: none;
+        }
         /* Responsive */
         @media (max-width: 1300px) {
             .container {
@@ -865,6 +867,28 @@
                 display: inherit;
                 color: #ccc;
                 font-family: "F1 Regular";
+            }
+            .donationsButtonMobile{
+                display: inline;
+            padding: 6px 10px;
+            border-radius: 10px;
+            background-color: transparent; 
+            cursor:pointer;
+            margin-top: 5px;
+            margin-bottom: 0;
+            font-size: 20px;
+            letter-spacing: 1px;
+            font-weight: 200px;
+            color: #15151E;
+            transition-duration: 0.4s;
+            top: 4px;
+            left: 8%;
+            position: absolute;
+            scale: 74%;
+            }
+            .donationsButtonMobile:hover{
+                color: #ff0000;
+                animation: pulse 1.2s infinite;
             }
             .panel{
                 max-height: 90vh;
