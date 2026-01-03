@@ -31,7 +31,7 @@ function DonationRead()
 }
 function RedirectPayPal()
 {
-    
+    window.location.href = 'https://www.paypal.com/donate/?hosted_button_id=Q64WX7D7WCGVA';
 }
 
 function Close(type){
@@ -69,3 +69,4 @@ function FireworksConfetti()
         confetti({ ...defaults, particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } });
     }, 250);
 }
+
