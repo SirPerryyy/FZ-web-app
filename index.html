@@ -16,7 +16,8 @@
 
 
 </head>
-<body onload="Order()">
+<body onload="Order(), DonationRead()">
+    <div class="modaloverlay"></div>
 <header class="header">
     <img class="header-img"src="Assets/Logos/fxlogo2.0.png" alt="FzLogo">
     <p class="currentPage">Standings Page</p>
@@ -24,6 +25,7 @@
         <div class="calendarButton" onclick="SwitchToCalendar()">Calendar</div>
         <div class="driversButton" onclick="SwitchToDrivers()">The Drivers</div>
         <div class="standingsButton">STANDINGS</div>
+        <div class="donationsButton" style="position: absolute; left:10px, ri">❤️Support the project</div>
     </nav>
     <button class="menu-button" onclick="toggleMenu()">NAVIGATE</button>
 </header>
@@ -35,6 +37,13 @@
 </div>
 
 <main>
+    <div class="donationsPanelDone">La tua donazione è andata a buon fine!<br><br>Ti ringraziamo di cuore!
+        <br><button class="closeButton" style="background-color: rgb(41, 248, 41)" onclick="Close()">Close</button>
+    </div>
+    <div class="donationsPanelFail">La tua donazione è stata annullata. <br><br>
+        <br><br><button class="closeButton" style="background-color: rgb(124, 0, 21)" onclick="Close()">Close</button>
+    </div>
+    
     <div class="container">
         <!-- PILOTI -->
         <div class="panel">
@@ -332,7 +341,7 @@
 
 
 <footer>
-    V. 1.4.6
+    V. 1.4.7
     <br>
     <STRONG>Any reference is purely casual, any character too.</STRONG>
     <br>
@@ -347,5 +356,7 @@
 </footer>
 <script src="scripts.js"></script>
 <script src="DriverPageRedirect.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="donations.js"></script>
 </body>
 </html>
