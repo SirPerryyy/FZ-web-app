@@ -9,10 +9,10 @@ async function LoadProfile()
 {
     const driverName = document.querySelector('.driverPanelName');
     const pageName =  document.querySelector('.currentName');
-    
+    const data;
     try {
         const response = await fetch('./Datas/Drivers/DriverStats.json');
-        const data = await response.json(); 
+        data = await response.json(); 
     }
     catch (FailedToFetchError) {
         driverName.innerText = "Error loading driver data : DRIVER NOT FOUND";
@@ -110,4 +110,5 @@ function Test(driver)
 {
     console.log(driver);
 }
+
 console.log("SCRIPT LOADED");
