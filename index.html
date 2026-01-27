@@ -9,6 +9,10 @@
 
           gtag('config', 'G-9D6RSG5F2R');
     </script>
+    <script src="scripts.js"></script>
+    <script src="DriverPageRedirect.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="donations.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FZ Web App</title>
     <link rel="icon" type="image/png" sizes="32x32" href="Assets/Logos/fxlogo2.0.png">
@@ -16,7 +20,7 @@
 
 
 </head>
-<body onload="Order(), DonationRead()">
+<body onload="DonationRead()">
     <div class="modaloverlay"></div>
 <header class="header">
     <img class="header-img"src="Assets/Logos/fxlogo2.0.png" alt="FzLogo">
@@ -153,6 +157,9 @@
                 <div class="teamPoints">0</div>
             </div>
         </div>
+        <script>
+            Order();
+        </script>
     </div>
 </main>
     <div class="container-story">
@@ -460,10 +467,6 @@
     <br>Redistribution is highly forbidden!
     <br>La ridistribuzione è severamente vietata!
 </footer>
-<script src="scripts.js"></script>
-<script src="DriverPageRedirect.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-<script src="donations.js"></script>
 </body>
 </html>
 
