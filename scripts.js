@@ -56,4 +56,3 @@ teamRows
 function toggleMenu() {
     document.querySelector('.navMobileContainer').classList.toggle('active');
 }
-console.log("SCRIPT LOADED");
