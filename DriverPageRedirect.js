@@ -103,4 +103,3 @@ function Test(driver)
 {
     console.log(driver);
 }
-console.log("SCRIPT LOADED");
