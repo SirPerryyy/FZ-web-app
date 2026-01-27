@@ -7,9 +7,18 @@ function RedirectToProfile(driverID)
 
 async function LoadProfile()
 {
-
-    const response = await fetch('./Datas/Drivers/DriverStats.json');
-    const data = await response.json(); 
+    const driverName = document.querySelector('.driverPanelName');
+    const pageName =  document.querySelector('.currentName');
+    
+    try {
+        const response = await fetch('./Datas/Drivers/DriverStats.json');
+        const data = await response.json(); 
+    }
+    catch (FailedToFetchError) {
+        driverName.innerText = "Error loading driver data : DRIVER NOT FOUND";
+        pageName.innerText = "DRIVER NOT FOUND";
+        console.error('Error loading driver data:', FailedToFetchError);
+    }
 
     const params = new URLSearchParams(window.location.search);
     const driverID = params.get("id");
@@ -18,8 +27,6 @@ async function LoadProfile()
 
     console.log(driverID);
 
-    const pageName =  document.querySelector('.currentName');
-    const driverName = document.querySelector('.driverPanelName');
     const flag = document.querySelector('.nationalityFlag');
     const nationality = document.querySelector('.nationality');
     const team = document.querySelector('.team');
@@ -103,3 +110,4 @@ function Test(driver)
 {
     console.log(driver);
 }
+console.log("SCRIPT LOADED");
