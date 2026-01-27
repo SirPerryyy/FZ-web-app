@@ -9,21 +9,21 @@ async function LoadProfile()
 {
     const driverName = document.querySelector('.driverPanelName');
     const pageName =  document.querySelector('.currentName');
-    const data;
-    try {
-        const response = await fetch('./Datas/Drivers/DriverStats.json');
-        data = await response.json(); 
-    }
-    catch (FailedToFetchError) {
-        driverName.innerText = "Error loading driver data : DRIVER NOT FOUND";
-        pageName.innerText = "DRIVER NOT FOUND";
-        console.error('Error loading driver data:', FailedToFetchError);
-    }
+
+    const response = await fetch('./Datas/Drivers/DriverStats.json');
+    const data = await response.json();  
 
     const params = new URLSearchParams(window.location.search);
     const driverID = params.get("id");
 
     const driver = data[driverID];
+
+    if (driver === undefined) {
+        driverName.innerText = "Error loading driver data : DRIVER NOT FOUND";
+        pageName.innerText = "DRIVER NOT FOUND";
+        console.error("Driver data not found for ID:", driverID);
+        return;
+    }
 
     console.log(driverID);
 
@@ -110,5 +110,4 @@ function Test(driver)
 {
     console.log(driver);
 }
-
 console.log("SCRIPT LOADED");
