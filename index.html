@@ -9,10 +9,10 @@
 
           gtag('config', 'G-9D6RSG5F2R');
     </script>
-    <script src="scripts.js"></script>
-    <script src="DriverPageRedirect.js"></script>
+    <script src="Scripts/scripts.js"></script>
+    <script src="Scripts/DriverPageRedirect.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-    <script src="donations.js"></script>
+    <script src="Scripts/donations.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FZ Web App</title>
     <link rel="icon" type="image/png" sizes="32x32" href="Assets/Logos/fxlogo2.0.png">
@@ -174,13 +174,12 @@
             <button onclick="SwitchToStory()">FZ Story</button>
         </div>
     </div>
-
-    <br><br><br><br>
     
-    <div class="container-races"> 
+    <div class="container-races" style="margin-top: 70px;"> 
         <div class="panel-races"> 
             <h2>Race History</h2>
-                        <div class="row-race">
+
+        <div class="row-race">
                 <img src="https://th.bing.com/th/id/OIP.DM110MKHpi73BYcMBqoPuAHaEc?w=322&h=193&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="flag">
                 <span class="circuitName"> RACE 2: Bahrain</span>
             
@@ -261,10 +260,10 @@
             </div>
             
                 <div class="gallery">
-                    <img src="Assets/RaceImages/bar2.jpg", alt="img1">
-                    <img src="Assets/RaceImages/bar1.jpg", alt="img2">
-                    <img src="Assets/RaceImages/bar4.jpg", alt="img3">
-                    <img src="Assets/RaceImages/bar3.jpg", alt="img4">
+                    <img src="Assets/RaceImages/bar2.jpg", alt="img1" onclick="OpenImage(this.src)">
+                    <img src="Assets/RaceImages/bar1.jpg", alt="img2" onclick="OpenImage(this.src)">
+                    <img src="Assets/RaceImages/bar4.jpg", alt="img3" onclick="OpenImage(this.src)">
+                    <img src="Assets/RaceImages/bar3.jpg", alt="img4" onclick="OpenImage(this.src)">
                 </div>
             </div>
         </div>
@@ -350,9 +349,9 @@
             </div>
             
                 <div class="gallery">
-                    <img src="Assets/RaceImages/mel1.jpg", alt="img1">
-                    <img src="Assets/RaceImages/mel2.jpg", alt="img2">
-                    <img src="Assets/RaceImages/mel3.jpg", alt="img3">
+                    <img src="Assets/RaceImages/mel1.jpg", alt="img1"  onclick="OpenImage(this.src)">
+                    <img src="Assets/RaceImages/mel2.jpg", alt="img2"  onclick="OpenImage(this.src)">
+                    <img src="Assets/RaceImages/mel3.jpg", alt="img3"  onclick="OpenImage(this.src)">
                 </div>
             </div>
         </div>
@@ -438,15 +437,23 @@
             </div>
             
                 <div class="gallery">
-                    <img src="Assets/RaceImages/TEST1.jpg", alt="img1">
-                    <img src="Assets/RaceImages/test2.jpg", alt="img2">
-                    <img src="Assets/RaceImages/test3.jpg", alt="img3">
+                    <img src="Assets/RaceImages/TEST1.jpg", alt="img1" onclick="OpenImage(this.src)">
+                    <img src="Assets/RaceImages/test2.jpg", alt="img2" onclick="OpenImage(this.src)">
+                    <img src="Assets/RaceImages/test3.jpg", alt="img3" onclick="OpenImage(this.src)">
                 </div>
             </div>
         </div>
 
-
+        <div class="pageNavigation">
+            <button>&lt</button>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            
+            <span>...</span>
+            <button>&gt</button>
         </div>
+    </div> 
 
 
         </div>
@@ -454,13 +461,13 @@
 
 
 <footer>
-    V. 1.4.7
+    V. 1.4.8
     <br>
     <STRONG>Any reference is purely casual, any character too.</STRONG>
     <br>
-    <button onclick="Order()" style="background-color: #42424e; border-radius: 20px;"> [DEBUG] Sort</buttononclick></button>
+    <a href="https://github.com/SirPerryyy/FZ-web-app/" style="color: white;">Github project page link</a>
 <br>
-    <a href="mailto:simonepappalardi0@gmail.com">For any info click here to open the direct link to my email</a><br>
+    <a href="mailto:simonepappalardi0@gmail.com" style="color: white;">For any info click here to open the direct link to my email</a><br>
     (click the button on the right if the link above doesn't work for you)
     <button onclick="CopyClipboard()" style="background-color: #42424e; border-radius: 20px;">Copia</button>
     <br>THIS SITE IS PRIVATE AND WAS MADE AND IS USED EXCLUSIVELY FOR PERSONAL USE
