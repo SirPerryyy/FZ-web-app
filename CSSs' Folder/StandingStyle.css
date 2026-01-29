@@ -625,6 +625,30 @@
         .donationsButtonMobile{
                 display: none;
         }
+        .pageNavigation{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+            font-family: 'F1 Regular';
+            font-size: larger;
+            
+        }
+        .pageNavigation span:hover{
+            color: #ff0000;
+            cursor: pointer;
+        }
+        .pageNavigation button{
+            background: none;
+            border: none;
+            color: #ffffff;
+        }
+        .pageNavigation button:hover{
+            color: #ff0000;
+            cursor: pointer;
+        }
+
         /* Responsive */
         @media (max-width: 1300px) {
             .container {
