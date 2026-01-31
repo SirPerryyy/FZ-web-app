@@ -62,7 +62,14 @@
             margin: 0 auto;
             min-height: 30px;
         }
-        
+        .modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 1;
+}
         .panel, .teamPanel {
             flex: 1;
             background: #1E1E26;
@@ -1123,4 +1130,5 @@
             margin-right: -40px;
             padding: 10px;
             row-gap: 10px;
+
         }
