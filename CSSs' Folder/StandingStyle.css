@@ -226,7 +226,7 @@
         max-width: 660px;
         margin-top: 20px;
         margin-left: 40px;
-        max-height: 350px;
+        max-height: 360px;
         }
 
         .table-header2,
@@ -632,8 +632,7 @@
             gap: 10px;
             margin-top: 10px;
             font-family: 'F1 Regular';
-            font-size: larger;
-            
+            font-size: larger;   
         }
         .pageNavigation span:hover{
             color: #ff0000;
@@ -647,6 +646,19 @@
         .pageNavigation button:hover{
             color: #ff0000;
             cursor: pointer;
+        }
+        .pagesNumbers button{
+            font-family: 'F1 Regular';
+            font-size: large;
+            margin: 5px;
+        }
+        .thisPage{
+            font-family: 'F1 Regular';
+            font-size: medium;
+            margin-top: 3px;
+            display: block;
+            font-family: 'F1 Regular';
+            text-align: center;
         }
 
         /* Responsive */
@@ -681,8 +693,8 @@
                 max-width: 640px;
                 margin-top: 20px;
                 margin-left: 5px;
-                max-height: 330px;
-                height: 330px;
+                max-height: 350px;
+                height: 360px;
             }
             .navMobileContainer.active{
                 
@@ -849,7 +861,7 @@
                 max-width: 640px;
                 margin-top: 20px;
                 margin-left: 5px;
-                max-height: 350px;
+                max-height: 360px;
             }
             .container-raceInfos
             {
