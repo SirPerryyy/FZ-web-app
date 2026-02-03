@@ -1,0 +1,47 @@
+[
+{
+  "Teams": 
+  [{
+    "team": "Lotus",
+    "teamColors": "#E9D99F",
+    "points": "193"
+  },
+  {
+    "team": "Mercedes",
+    "teamColors": "#0CB7B7",
+    "points": "137"
+  },
+  {
+    "team": "Ferrari",
+    "teamColors": "#EF1A2D",
+    "points": "12"
+  },
+  {
+    "team": "McLaren",
+    "teamColors": "#FF8000",
+    "points": "8"
+  }]
+},
+{
+  "Teams": [{
+    "team": "Lotus",
+    "teamColors": "#E9D99F",
+    "points": "372"
+  },
+  {
+    "team": "Mercedes",
+    "teamColors": "#0CB7B7",
+    "points": "310"
+  },
+  {
+    "team": "Aston Martin",
+    "teamColors": "#00594F",
+    "points": "182"
+  },
+  {
+    "team": "Koenigsegg",
+    "teamColors": "#FFBE00",
+    "points": "50"
+  }]
+}
+]
