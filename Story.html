@@ -10,6 +10,7 @@
     </script>
     <script src="Scripts/scripts.js"></script>
     <script src="Scripts/DriverPageRedirect.js"></script>
+    <script src="Scripts/champsStandingsArranges.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FZ Web App Story</title>
     <link rel="icon" type="image/png" sizes="32x32" href="Assets/Logos/fxlogo2.0.png">
@@ -17,7 +18,7 @@
 
 
 </head>
-<body onload="Order()">
+<body>
 <header class="header">
     <img class="header-img"src="Assets/Logos/fxlogo2.0.png" alt="FzLogo">
     <p class="currentPage">Story Page</p>
@@ -33,6 +34,119 @@
         <button class="navMobileButton" onclick="SwitchToCalendar()">Calendar</button>
         <button class="navMobileButton" onclick="SwitchToStandings()">Standings</button>
         <button class="navMobileButton" onclick="SwitchToDrivers()">Drivers</button>
+    </div>
+</div>
+<div class="container">
+    <div class="champsPanel">    
+        <div class="datasPanel">
+            <div class="header">
+                <span style="color:#a8a8a8">Chose Championship:</span>
+                <select class="champs">
+                    <option value="1">FZ Season 1</option>
+                    <option value="2">FZ Season 2</option>
+                </select>
+            </div>
+            <br>
+            <span class="seasonN" style="position: absolute; left: 46%; font-size: x-large ; color: rgb(180, 0, 0) ">SEASON 1</spanstyle></span>
+            <br><br>
+            <span style="position: absolute; left: 20%; font-family: 'F1 Regular';">DRIVER'S STANDINGS </span>
+            <span style="position: absolute; left: 65%; font-family: 'F1 Regular';">CONSTRUCTOR'S STANDINGS </span>
+            <br>
+        <div class="tablesContainer">
+            <div class="table">
+                <div class="table-title">
+                    <div class="table-text">Pos</div>
+                    <div class="table-text">Driver</div>
+                    <div class="table-text">Team</div>
+                    <div class="table-text">Points</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-text">1</div>
+                    <div class="table-name">loading</div>
+                    <div class="table-team">loading</div>
+                    <div class="table-points">0</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-text">2</div>
+                    <div class="table-name">loading</div>
+                    <div class="table-team">loading</div>
+                    <div class="table-points">0</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-text">3</div>
+                    <div class="table-name">loading</div>
+                    <div class="table-team">loading</div>
+                    <div class="table-points">0</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-text">4</div>
+                    <div class="table-name">loading</div>
+                    <div class="table-team">loading</div>
+                    <div class="table-points">0</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-text">5</div>
+                    <div class="table-name">loading</div>
+                    <div class="table-team">loading</div>
+                    <div class="table-points">0</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-text">6</div>
+                    <div class="table-name">loading</div>
+                    <div class="table-team">loading</div>
+                    <div class="table-points">0</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-text">7</div>
+                    <div class="table-name">loading</div>
+                    <div class="table-team">loading</div>
+                    <div class="table-points">0</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-text">8</div>
+                    <div class="table-name">loading</div>
+                    <div class="table-team">loading</div>
+                    <div class="table-points">0</div>
+                </div>
+                <div class="table-row" style="border-bottom: none;">
+                    <div class="table-text">9</div>
+                    <div class="table-name">loading</div>
+                    <div class="table-team">loading</div>
+                    <div class="table-points">0</div>
+                </div>
+            </div>
+            <div class="table">
+                <div class="table-title" style="grid-template-columns: 11% 75% 100px">
+                    <div class="table-text">Pos</div>
+                    <div class="table-text">Driver</div>
+                    <div class="table-text">Points</div>
+                </div>
+                <div class="tableTeam-row">
+                    <div class="table-text">1</div>
+                    <div class="table-tname">loading</div>
+                    <div class="table-points">0</div>
+                </div>
+                <div class="tableTeam-row">
+                    <div class="table-text">2</div>
+                    <div class="table-tname">loading</div>
+                    <div class="table-points">0</div>
+                </div>
+                <div class="tableTeam-row">
+                    <div class="table-text">3</div>
+                    <div class="table-tname">loading</div>
+                    <div class="table-points">0</div>
+                </div>
+                <div class="tableTeam-row" style="border-bottom: none;">
+                    <div class="table-text">4</div>
+                    <div class="table-tname">loading</div>
+                    <div class="table-points">0</div>
+                </div>
+            </div>
+            <script>
+                StandingsDataLoad();
+            </script>
+        </div>
+        </div>
     </div>
 </div>
 
@@ -249,11 +363,11 @@ e se, un giorno, Kimi arrivasse primo… davanti a Sir Perry?
         </p>
         </div>
         
-    </div>
+</div>
 </div>
 
 <footer>
-    V. 1.5.0
+    V. 1.6.0
     <br>
     <STRONG>Any reference is purely casual, any character too.</STRONG>
     <br>
