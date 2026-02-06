@@ -1,5 +1,149 @@
 [
   {
+    "RaceTitle": "RACE 4: Canada",
+    "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg",
+    "Img1Path": "Assets/RaceImages/can1.jpg",
+    "Img2Path": "Assets/RaceImages/can3.jpg",
+    "Img3Path": "Assets/RaceImages/can2.jpg",
+    "Drivers": [
+      {
+        "DriverName": "Bobbi",
+        "DriverTeamFlexBox": "flexboxRedbull",
+        "DriverTime": "1:14:763",
+        "DriverPoints": "+26",
+        "HasFL": true
+      },
+      {
+        "DriverName": "Doggy",
+        "DriverTeamFlexBox": "flexboxMercedes",
+        "DriverTime": "1:15:401",
+        "DriverPoints": "+21",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Sir Perry",
+        "DriverTeamFlexBox": "flexboxMercedes",
+        "DriverTime": "1:14:943",
+        "DriverPoints": "+17",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Twenty Miles",
+        "DriverTeamFlexBox": "flexboxWilliams",
+        "DriverTime": "1:16:782",
+        "DriverPoints": "+15",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Pablo Carpincho",
+        "DriverTeamFlexBox": "flexboxWilliams",
+        "DriverTime": "1:17:101",
+        "DriverPoints": "+10",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Luca",
+        "DriverTeamFlexBox": "flexboxRedbull",
+        "DriverTime": "1:16:712",
+        "DriverPoints": "+4",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Kimi Fernandes",
+        "DriverTeamFlexBox": "flexboxLotus",
+        "DriverTime": "1:15:467",
+        "DriverPoints": "+1",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Pier La Mert",
+        "DriverTeamFlexBox": "flexboxBrawn",
+        "DriverTime": "1:19:357",
+        "DriverPoints": "+0",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Alvaro Preguica",
+        "DriverTeamFlexBox": "flexboxLotus",
+        "DriverTime": "1:16:204",
+        "DriverPoints": "+0",
+        "HasFL": false
+      }
+    ]
+  },
+  {
+    "RaceTitle": "RACE 4: Canada [SPRINT RACE]",
+    "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg",
+    "Img1Path": "Assets/RaceImages/cans1.jpg",
+    "Img2Path": "Assets/RaceImages/cans3.jpg",
+    "Img3Path": "Assets/RaceImages/cans2.jpg",
+    "Drivers": [
+      {
+        "DriverName": "Doggy",
+        "DriverTeamFlexBox": "flexboxMercedes",
+        "DriverTime": "1:16:123",
+        "DriverPoints": "+10",
+        "HasFL": true
+      },
+      {
+        "DriverName": "Twenty Miles",
+        "DriverTeamFlexBox": "flexboxWilliams",
+        "DriverTime": "1:15:893",
+        "DriverPoints": "+6",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Sir Perry",
+        "DriverTeamFlexBox": "flexboxMercedes",
+        "DriverTime": "1:16:738",
+        "DriverPoints": "+4",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Bobbi",
+        "DriverTeamFlexBox": "flexboxRedbull",
+        "DriverTime": "1:16:607",
+        "DriverPoints": "+1",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Alvaro Preguica",
+        "DriverTeamFlexBox": "flexboxLotus",
+        "DriverTime": "1:17:199",
+        "DriverPoints": "+1",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Pier La Mert",
+        "DriverTeamFlexBox": "flexboxBrawn",
+        "DriverTime": "1:20:481",
+        "DriverPoints": "+0",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Kimi Fernandes",
+        "DriverTeamFlexBox": "flexboxLotus",
+        "DriverTime": "1:18:674",
+        "DriverPoints": "+0",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Pablo Carpincho",
+        "DriverTeamFlexBox": "flexboxWilliams",
+        "DriverTime": "2:03:106",
+        "DriverPoints": "DNF",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Luca",
+        "DriverTeamFlexBox": "flexboxRedbull",
+        "DriverTime": "1:52:651",
+        "DriverPoints": "DNF",
+        "HasFL": false
+      }
+    ]
+  },
+  {
     "RaceTitle": "RACE 3: Barcellona",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/960px-Flag_of_Spain.svg.png",
     "Img1Path": "Assets/RaceImages/esp1.jpg",
