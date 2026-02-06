@@ -252,19 +252,19 @@
   },
   "Luca":{
     "driverPanelPointsOVR": {
-      "value": "nd",
-      "color": "#eeca00"
+      "value": 84,
+      "color": "#81501f"
     },
     "constrTitles": 0,
-      "attValue": "nd",
+      "attValue": 85,
       "expValue":  92,
-      "pacValue": "nd",
-      "qlfValue": "nd",
-      "stgValue": "nd",
-      "fplValue": "nd",
-      "defValue": "nd",
-      "cnsValue": "nd",
-      "fylValue": "nd",
+      "pacValue": 85,
+      "qlfValue": 85,
+      "stgValue": 89,
+      "fplValue": 70,
+      "defValue": 79,
+      "cnsValue": 77,
+      "fylValue": 74,
       "rfxValue":  97,
     "driverPanelDriverBiography": {
         "nationalityFlag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/250px-Flag_of_Italy.svg.png",
@@ -294,19 +294,19 @@
   },
   "Bobbi":{
     "driverPanelPointsOVR": {
-      "value": "nd",
+      "value": 97,
       "color": "#eeca00"
     },
     "constrTitles": 0,
-      "attValue": "nd",
+      "attValue": 92,
       "expValue":  92,
-      "pacValue": "nd",
-      "qlfValue": "nd",
-      "stgValue": "nd",
-      "fplValue": "nd",
-      "defValue": "nd",
-      "cnsValue": "nd",
-      "fylValue": "nd",
+      "pacValue": 99,
+      "qlfValue": 98,
+      "stgValue": 98,
+      "fplValue": 90,
+      "defValue": 95,
+      "cnsValue": 99,
+      "fylValue": 99,
       "rfxValue":  97,
     "driverPanelDriverBiography": {
         "nationalityFlag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/250px-Flag_of_Italy.svg.png",
@@ -377,19 +377,3 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
