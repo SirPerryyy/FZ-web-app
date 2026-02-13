@@ -50,6 +50,16 @@ async function ArrangeDataInPage(debug=false)
 
     for(let i = 1; i <= totalPages; i++)
     {
+            if(i == 3)
+            {
+                const lastPage = document.querySelector('.lastPage');
+                lastPage.style.display = "inline"
+                lastPage.textContent = totalPages;
+                lastPage.addEventListener('click', () => {
+                    LoadPage(totalPages);
+                });
+                break;
+            }
             const button = document.createElement("button");
             button.textContent = `${i} `;
             button.addEventListener('click', () => {
@@ -59,7 +69,39 @@ async function ArrangeDataInPage(debug=false)
     }
     LoadPage(1);
 }
+let numberInput;
+function CustomPageTextBox()
+{
+    const pageSelectorClass = document.querySelector('.pagesSelector')
+    const numberInputField = document.querySelector('.numberInput');
+    
+    numberInput = numberInputField
+    numberInputField.max = totalPages;
 
+    switch (pageSelectorClass.style.display)
+    {
+        case "":
+        pageSelectorClass.style.display = "flex"
+        break;
+        case "none":
+            pageSelectorClass.style.display = "flex"
+            break
+        case "flex":
+            pageSelectorClass.style.display = "none"
+            break
+    }
+}
+function LoadCustomPage()
+{
+    const customPageNumber = numberInput.value;
+
+    if(customPageNumber <= totalPages && customPageNumber > 0)
+    {
+        LoadPage(customPageNumber)
+        return;
+    }
+
+}
 function LoadPage(pageNumber)
 {
     const raceRow = document.querySelectorAll('.row-race');
