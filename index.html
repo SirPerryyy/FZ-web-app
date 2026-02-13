@@ -532,9 +532,14 @@
             <div class="pagesNumbers">
 
             </div>
-            <div class ="customPageSelector"><span>...</span></div>
+            <div class ="customPageSelector"><button onclick="CustomPageTextBox()">...</button></div>
+            <button class="lastPage"></button>
             <button onclick="NextPage()">&gt</button>
             <br>
+        </div>
+        <div class="pagesSelector">
+            <input class="numberInput" type="number" min="1"> 
+            <button onclick="LoadCustomPage()">Go</button>
         </div>
         <span class="thisPage" style="color: red">Currently viewing page 1</span>
         
