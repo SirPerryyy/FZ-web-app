@@ -62,14 +62,7 @@
             margin: 0 auto;
             min-height: 30px;
         }
-        .modal-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  z-index: 1;
-}
+        
         .panel, .teamPanel {
             flex: 1;
             background: #1E1E26;
@@ -338,7 +331,14 @@
             height: 200px;
             object-fit: cover;
         }
-
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            z-index: 1;
+        }
         .standingsButton{
             border-radius: 10px;
             background-color: transparent; 
@@ -662,12 +662,55 @@
         .thisPage{
             font-family: 'F1 Regular';
             font-size: medium;
-            margin-top: 3px;
+            margin-top: 5px;
             display: block;
             font-family: 'F1 Regular';
             text-align: center;
         }
 
+        .customPageSelector button{
+            font-family: 'F1 Regular';
+            font-size: large;
+            margin: 1px;
+        }
+        .pagesSelector{
+            display: none;
+            align-items: center;
+            justify-content: center;
+            gap: 10px; 
+        }
+        .pagesSelector button{
+            font-family: 'F1 Regular';
+            font-size: 20px;
+            text-align: center;
+            border-radius: 4px;
+            border: 1px solid white;
+            color: rgb(255, 255, 255);
+            width: 45px;
+            height: 40px;
+            background-color: rgba(226, 0, 0, 0.616);
+        }
+        .pagesSelector button:hover{
+            cursor: pointer;
+        }
+        .numberInput{
+            font-family: 'F1 Bold';
+            height: 40px;
+            font-size: 28px;
+            align-self: center;
+            text-align: center;
+            width: 100px;
+            border-radius: 3px;
+            border-style:solid;
+            color: rgb(173, 37, 19);
+            background-color: rgba(78, 78, 78, 0.486);
+        }
+        .lastPage{
+            display: none;
+            font-family: 'F1 Regular';
+            font-size: large;
+            margin: 5px;
+        }
         /* Responsive */
         @media (max-width: 1300px) {
             .container {
@@ -1130,5 +1173,4 @@
             margin-right: -40px;
             padding: 10px;
             row-gap: 10px;
-
         }
