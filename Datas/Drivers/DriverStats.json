@@ -278,7 +278,7 @@
         "raceAttended": 0,
         "podiums": 0,
         "raceBestPos": 0,
-        "seasons": 0,
+        "seasons": 1,
         "points": 0,
         "dnfs": 0,
         "wins":0
@@ -320,7 +320,7 @@
         "raceAttended": 0,
         "podiums": 0,
         "raceBestPos": 0,
-        "seasons": 0,
+        "seasons": 1,
         "points": 0,
         "dnfs": 0,
         "wins":0
@@ -372,6 +372,48 @@
         "nameColor": "#FF0000",
         "driverImage": "CSSs' Folder/DriversPictures/Pier.png",
         "driverNumber": 10,
+        "driverTeamMainColor": "#d2f700",
+        "backgroundGradient": "linear-gradient(135deg,#c4c4c4, #d9ff009c, #ffffff8c, #93b10070)"
+    }
+  },
+    "Robert":{
+    "driverPanelPointsOVR": {
+      "value": "nd",
+      "color": "#2b2b2b"
+    },
+          "constrTitles": 0,
+      "attValue": "nd",
+      "expValue": "nd",
+      "pacValue": "nd",
+      "qlfValue": "nd",
+      "stgValue": "nd",
+      "fplValue": "nd",
+      "defValue": "nd",
+      "cnsValue": "nd",
+      "fylValue": "nd",
+      "rfxValue": "nd",
+    "driverPanelDriverBiography": {
+        "nationalityFlag": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm1ECYrXIqpebEh6Lc1dL01RllRlZQ9pRx9A&s",
+        "nationality": "ROM",
+        "team": "Mercedes Brawn",
+        "pastTeams": "0",
+        "textColor" : "#ccc"
+      },
+    "allTimeStats": {
+        "championships": 0,
+        "raceAttended": 0,
+        "podiums": 0,
+        "raceBestPos": 8,
+        "seasons": "1",
+        "points": 0,
+        "dnfs": 0,
+        "wins":0
+      },
+    "driverInfo": {
+        "name": "Rober Visoiu",
+        "nameColor": "#00357a",
+        "driverImage": "CSSs' Folder/DriversPictures/Robert.png",
+        "driverNumber": 24,
         "driverTeamMainColor": "#d2f700",
         "backgroundGradient": "linear-gradient(135deg,#c4c4c4, #d9ff009c, #ffffff8c, #93b10070)"
     }
