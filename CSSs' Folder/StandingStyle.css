@@ -226,7 +226,7 @@
         max-width: 660px;
         margin-top: 20px;
         margin-left: 40px;
-        max-height: 360px;
+        height: 393px;
         }
 
         .table-header2,
@@ -743,8 +743,7 @@
                 max-width: 640px;
                 margin-top: 20px;
                 margin-left: 5px;
-                max-height: 350px;
-                height: 360px;
+                height: 374px;
             }
             .navMobileContainer.active{
                 
@@ -911,7 +910,7 @@
                 max-width: 640px;
                 margin-top: 20px;
                 margin-left: 5px;
-                max-height: 360px;
+                height: 374px;
             }
             .container-raceInfos
             {
@@ -1052,7 +1051,7 @@
                 max-width: auto;
                 margin-top: 20px;
                 margin-left: 5px;
-                max-height: 350px;
+                height: 374px;
             }
             .container-raceInfos
             {
