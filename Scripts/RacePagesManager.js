@@ -137,7 +137,18 @@ function LoadPage(pageNumber)
             const flexBox = nameRow.querySelector('.flexboxClass');
             
             const currentDriver = DataPage[pageNumber][index].Drivers[driverIndex];
-            
+            if(currentDriver === undefined) 
+            {  
+                    const tablePanel = row.querySelector('.table-panel')
+                    tableRow.style.display = "none";
+                    if (screen.width <= 378) {
+                        tablePanel.style.height = '342px';
+                        return;
+                    }
+                    tablePanel.style.height = '362px';
+                    return;
+            }
+        
             driverName.innerHTML = currentDriver.DriverName;
             flexBox.innerHTML = "<span class='" + currentDriver.DriverTeamFlexBox + "'></span>";
             driverPoints.textContent = currentDriver.DriverPoints;
