@@ -102,8 +102,8 @@
     "driverPanelDriverBiography": {
         "nationalityFlag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1000px-Flag_of_Brazil.svg.png",
         "nationality": "BRA",
-        "team": "Lotus",
-        "pastTeams": "0",
+        "team": "None",
+        "pastTeams": "1 (Lotus)",
         "textColor" : "#ccc"
       },
     "allTimeStats": {
@@ -121,8 +121,8 @@
         "nameColor": "#503000",
         "driverImage": "CSSs' Folder/DriversPictures/Alvaro.png",
         "driverNumber": 11,
-        "driverTeamMainColor": "#fcce00",
-        "backgroundGradient": "linear-gradient(135deg, #fcce00, #131313, #968700e0, #3a3b0070)"
+        "driverTeamMainColor": "#b8b8b870",
+        "backgroundGradient": "linear-gradient(135deg, #3b3b3b, #131313, #bebebee0, #b8b8b870)"
     }
   },
   "Pablo":{
@@ -144,8 +144,8 @@
     "driverPanelDriverBiography": {
         "nationalityFlag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/250px-Flag_of_Mexico.svg.png",
         "nationality": "MEX",
-        "team": "Williams",
-        "pastTeams": "2 (Ferrari, Aston Martin)",
+        "team": "Lotus",
+        "pastTeams": "3 (Ferrari, Aston Martin, Williams)",
         "textColor" : "#ccc"
       },
     "allTimeStats": {
@@ -163,8 +163,8 @@
         "nameColor": "#de3f00",
         "driverImage": "CSSs' Folder/DriversPictures/Pablo.png",
         "driverNumber": 38,
-        "driverTeamMainColor": "#006ec9",
-        "backgroundGradient": "linear-gradient(135deg, #006ec9, #b8e5ff98, #0087c59f, #006ace96)"
+        "driverTeamMainColor": "#fcce00",
+        "backgroundGradient": "linear-gradient(135deg, #fcce00, #131313, #968700e0, #3a3b0070)"
     }
   },
   "Doggy":{
@@ -395,7 +395,7 @@
     "driverPanelDriverBiography": {
         "nationalityFlag": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm1ECYrXIqpebEh6Lc1dL01RllRlZQ9pRx9A&s",
         "nationality": "ROM",
-        "team": "Mercedes Brawn",
+        "team": "Williams",
         "pastTeams": "0",
         "textColor" : "#ccc"
       },
@@ -414,8 +414,8 @@
         "nameColor": "#6c0097",
         "driverImage": "CSSs' Folder/DriversPictures/Robert.png",
         "driverNumber": 24,
-        "driverTeamMainColor": "#d2f700",
-        "backgroundGradient": "linear-gradient(135deg,#c4c4c4, #d9ff009c, #ffffff8c, #93b10070)"
+        "driverTeamMainColor": "#006ec9",
+        "backgroundGradient": "linear-gradient(135deg, #006ec9, #b8e5ff98, #0087c59f, #006ace96)"
     }
   }
 }
