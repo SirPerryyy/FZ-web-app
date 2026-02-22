@@ -411,6 +411,67 @@
             border-top-left-radius: 10px;
             left: 29px; width: 78px; height: 50px; top: 417px;
         }
+        
+        .driverStarContainer{
+            position: absolute;
+            padding: 6px;
+            background-color: #7a7a83;
+            width: 140px;
+            height: 70px;
+            border-radius: 4px;
+            top: 2.3%;
+            right: 5%;
+            font-family: 'F1 Bold';
+            color: white;
+        }
+        .driverStarContainer:hover{
+            cursor: pointer;
+        }
+        .starCount{
+            position: absolute;
+            font-size: 45px;
+            right: 11%;
+        }
+
+        .driverStar{
+            position: absolute;
+            fill: #e6bf00;
+            fill: rgb(78, 78, 78);
+            width: 60px;
+            height: 60px;
+            top: 50%;
+            left:0px;
+            transform: translateY(-50%);
+        }
+        .modaloverlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.199);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(2px);
+            z-index: 1;
+        }
+        .starPanelFail{
+            position: absolute;
+            text-align: center;
+            font-family: 'F1 Regular';
+            font-size: 30px;
+            color: red;
+            background: #c5c5c5ea;
+            padding: 7px;
+            box-shadow: #131327d5;
+            border-radius: 8px;
+            width: 300px;
+            top: 470px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            height: auto;
+            max-height: 600px;
+            border:3px solid #13132775;
+        }
+
         @media (max-width: 1300px) {
             .currentPage{
                 display: inherit;
@@ -581,7 +642,14 @@
                 scale: 50%;
                 
             }
-
+            .driverStarContainer{
+            position: absolute;
+            padding: 3px;
+            transform: scale(0.8);
+            border-radius: 4px;
+            top: 22%;
+            left:30%;
+        }
         .driverPanelDriverNumber{
             left: 20%;
             transform: translateX(-50%);
