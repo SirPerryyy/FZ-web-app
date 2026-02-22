@@ -161,7 +161,7 @@ async function GetIpData()
 {
     try {
         const response = await fetch(
-            'https://ip-intelligence.abstractapi.com/v1/?api_key=687e001e15c34bed850e5ba93525ae61&ip_address=93.146.162.174&fields=ip_address,security.is_vpn'
+            'https://ip-intelligence.abstractapi.com/v1/?api_key=687e001e15c34bed850e5ba93525ae61&fields=ip_address,security.is_vpn'
         );
         if(response.status == 429){
         ToggleErrorPanel("requestsLimitExceded"); return null;}
