@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9D6RSG5F2R"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -9,7 +10,10 @@
 
           gtag('config', 'G-9D6RSG5F2R');
     </script>
+
     <script src="Scripts/scripts.js"></script>
+    <script type="module" src="Scripts/DatabaseFetch.js"></script>
+    <script src="Scripts/StarsSystem.js"></script>
     <script src="Scripts/DriverPageRedirect.js"></script>
     <meta charset="UTF-8">
     <title>FZ Web App Driver</title>
@@ -19,6 +23,7 @@
     
 </head>
 <body onload="LoadProfile()">
+    <div class="modaloverlay"></div>
     <header>
         <img class="header-img"src="Assets/Logos/fxlogo2.0.png" alt="FzLogo">
         <p class="currentPage">The Drivers<div class="currentName" style="text-decoration: none; color:#ccc">PAGE IS LOADING!</div></p>
@@ -35,10 +40,24 @@
             <button class="navMobileButton" onclick="SwitchToStandings()">Standings</button>
         </div>
     </div>
+    
+    <div class="starPanelFail" style="display: none;">
+        <div class="starPanelErrText">ERROR MESSAGE</div>
+        <input class="dontShowAgainBeta" type="checkbox" id="dontShowAgainBeta" name="betaWarn" value="canShowBetaWarn" style="display: none; transform: scale(2); margin-top: 20px; margin-bottom: 20px;">
+        <label class="dontShowAgainBetaLabel" for="dontShowAgainBeta" style="display: none; font-size: large; color: #000000; font-family: unset;"> Don't show this again</label>
+        <button class="closeButton" style="background-color: rgb(124, 0, 21); width: 100px; height: 50px; color: white; font-size: 20px; font-family: 'F1 Bold';" onclick="ToggleErrorPanel('close')">Close</button>    
+    </div>
+    
     <main>
         <div class="container">
             <div class="driverPanelProfile">
                 <div class="driverPanelName" style="color:#ffffff;" >PAGE IS LOADING!</div>
+                <!--STARS-->
+                    <div class="driverStarContainer" onmouseover="animateStar('over')" onmouseout="animateStar('out')" onclick="AddStar()">
+                        <svg class="driverStar" width="216px" height="216px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="2.352"> <path d="M16.926 20.2a1 1 0 0 1-.466-.115l-4.471-2.352-4.471 2.348a1 1 0 0 1-1.451-1.054l.854-4.98L3.3 10.521a1 1 0 0 1 .555-1.706l5-.727 2.237-4.531A1 1 0 0 1 11.989 3a1 1 0 0 1 .9.558l2.236 4.53 5 .727a1 1 0 0 1 .555 1.706l-3.618 3.527.854 4.98a1 1 0 0 1-.99 1.172z"></path> </g><g id="SVGRepo_iconCarrier"> <path d="M16.926 20.2a1 1 0 0 1-.466-.115l-4.471-2.352-4.471 2.348a1 1 0 0 1-1.451-1.054l.854-4.98L3.3 10.521a1 1 0 0 1 .555-1.706l5-.727 2.237-4.531A1 1 0 0 1 11.989 3a1 1 0 0 1 .9.558l2.236 4.53 5 .727a1 1 0 0 1 .555 1.706l-3.618 3.527.854 4.98a1 1 0 0 1-.99 1.172z"></path> </g></svg>
+                        <div class="starCount">load</div>
+                    </div>
+                <!--PROFILE ELEMENTS-->
                     <div class="driverPanelDriverImageBackground">
                         <img class="driverPanelDriverImage" src="">
                         <div class="driverPanelDriverNumber" style="color:#000000">0</div>
@@ -169,7 +188,7 @@
 <footer>
     <span style="color:rgb(199, 0, 139); background: #000000;">LEGEND-> ATT(attack)| EXP(experience)| PAC(pace)| QLF(qualify)| STG (strategy)| FPL (fairplay)| DEF(defense)| CNS(constancy)| FYL(flyng laps)| RFX (reflex)</span>
     <br> 
-    V. 1.6.0
+    V. 1.7.0 [BETA FEAT. (2202.26)]
     <br>
     <STRONG>Any reference is purely casual, any character too.</STRONG>
     <br>
