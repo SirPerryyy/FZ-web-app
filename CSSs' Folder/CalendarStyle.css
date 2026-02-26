@@ -63,97 +63,6 @@
             margin: 0 auto;
             min-height: 30px;
         }
-.standingsButton {
-    padding: 6px 10px;
-    background-color: transparent;
-    cursor: pointer;
-    border-radius: 10px;
-    margin-top: 5px;
-    margin-bottom: 0;
-    font-size: 38px;
-    letter-spacing: 2px;
-    font-weight: 200px;
-    color: #15151E;
-    transition-duration: 0.4s;
-    position: absolute;
-    top: 190px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-        .standingsButton:hover{
-            color: #ccc;
-            background-color: #15151e50;
-        }
-.calendarButton {
-    padding: 6px 10px;
-    border-radius: 10px;
-    background-color: transparent;
-    cursor: pointer;
-    margin-top: 5px;
-    margin-bottom: 0;
-    font-size: 28px;
-    letter-spacing: 1px;
-    font-weight: 200px;
-    color: #15151E;
-    transition-duration: 0.4s;
-    top: 190px;
-    left: 20%;
-    transform: translateX(-20%);
-    position: absolute;
-    text-decoration: underline;
-}
-        .calendarButton:hover{
-            color: #ccc;
-            background-color: #15151e50;
-        }
-
-.driversButton {
-    padding: 6px 10px;
-    border-radius: 10px;
-    background-color: transparent;
-    cursor: pointer;
-    margin-top: 5px;
-    margin-bottom: 0;
-    font-size: 28px;
-    letter-spacing: 1px;
-    font-weight: 200px;
-    color: #15151E;
-    transition-duration: 0.4s;
-    position: absolute;
-    top: 190px;
-    left: 80%;
-    transform: translateX(-70%);
-}
-        .driversButton:hover{
-            color: #ccc;
-            background-color: #15151e50;
-        }
-        .menu-button {
-            display: none;
-            padding: 6px 10px;
-            background: transparent;
-            border: none;
-            border-radius: 10px;
-            font-size: 32px;
-            cursor: pointer;
-            color: #15151E;
-            position: absolute;
-            top: 60%;
-            left: 10%;
-            transform: translateX(-50%);
-            font-family: 'F1 Bold';
-            background-color: #15151e44;
-            text-decoration: underline #15151e44;
-            
-        }
-        .menu-button:hover{
-            color: #ccc;
-            background-color: #15151e50;
-            text-decoration: underline #ccc;
-        }
-        .navMobileContainer{
-            display: none;
-        }
 
         .contatinerCalendar{
             flex: 1;
@@ -238,68 +147,9 @@
             position: absolute;
         }
         @media (max-width: 1300px) {
-            .container {
-                flex-direction: column;
-            }
-            .currentPage{
-                display: inherit;
-                color: #ccc;
-                font-family: "F1 Regular";
-            }
-            .navMobileContainer.active{
-                
-                display: flex;
-                flex-direction: column;   
-                align-items: center;      
-                gap: 20px;                
-                padding: 20px 0;
-            }
-            .navMobileRow{
-                background: #15151e50;
-                font-family: "F1 Regular";
-                border-radius: 10px;
-                transition: ease-out 0.3s;
-                padding: 15px;
-                margin-bottom: 20px;         
-    
-                border-bottom: 2px solid #15151E;
-            }
-            .navMobileButton{
-                padding: 10px;
-                font-size: 20px;
-                cursor: pointer;
-                color:#E10600;
-                font-family: inherit;
-                font-style: bold;
-                background-color:#131327;
-                border: none;
-                border-radius: 3px;
-            }
-            .navMobileButton:hover{
-                color: #ccc;
-                
-            }
-            .nav {
-                display: none;
-                position: absolute;
-                top: 100%;
-                right: 20px;
-                flex-direction: column;
-                background: #1E1E26;
-                padding: 15px;
-                border-radius: 10px;
-                box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-                z-index: 100;
-            }
-
+            
             .nav.active {
                 display: flex;
-            }
-
-            .menu-button {
-                display: inherit;
-                color: #15151E;
-                left: 50%;
             }
             body {
                 background: repeating-linear-gradient(170deg, #E10600, #2C2C35, #15151E 2000px);
@@ -312,69 +162,7 @@
             }
         }
         @media (max-width: 784px) {
-            .container {
-                flex-direction: column;
-            }
-            .currentPage{
-                display: inherit;
-                color: #ccc;
-                font-family: "F1 Regular";
-            }
-            .navMobileContainer.active{
-                
-                display: flex;
-                flex-direction: column;   
-                align-items: center;      
-                gap: 20px;                
-                padding: 20px 0;
-            }
-            .navMobileRow{
-                background: #15151e50;
-                font-family: "F1 Regular";
-                border-radius: 10px;
-                transition: ease-out 0.3s;
-                padding: 15px;
-                margin-bottom: 20px;         
-    
-                border-bottom: 2px solid #15151E;
-            }
-            .navMobileButton{
-                padding: 10px;
-                font-size: 20px;
-                cursor: pointer;
-                color:#E10600;
-                font-family: inherit;
-                font-style: bold;
-                background-color:#131327;
-                border: none;
-                border-radius: 3px;
-            }
-            .navMobileButton:hover{
-                color: #ccc;
-                
-            }
-            .nav {
-                display: none;
-                position: absolute;
-                top: 100%;
-                right: 20px;
-                flex-direction: column;
-                background: #1E1E26;
-                padding: 15px;
-                border-radius: 10px;
-                box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-                z-index: 100;
-            }
-
-            .nav.active {
-                display: flex;
-            }
-
-            .menu-button {
-                display: inherit;
-                color: #15151E;
-                left: 50%;
-            }
+            
             .table-panel {
                 display: flex;
                 flex-direction: column;
@@ -397,14 +185,7 @@
             }
         }
         @media (max-width: 738px) {
-            .container {
-                flex-direction: column;
-            }
-            .currentPage{
-                display: inherit;
-                color: #ccc;
-                font-family: "F1 Regular";
-            }
+            
             .panelCalenar{
                 flex: 1;
                 background: #1E1E26;
@@ -438,39 +219,7 @@
                 border-bottom: 1px solid rgba(255,255,255,0.2);
                 margin-bottom: 5px;
             } 
-            .navMobileContainer.active{
-                
-                display: flex;
-                flex-direction: column;   
-                align-items: center;      
-                gap: 20px;                
-                padding: 20px 0;
-            }
-            .navMobileRow{
-                background: #15151e50;
-                font-family: "F1 Regular";
-                border-radius: 10px;
-                transition: ease-out 0.3s;
-                padding: 15px;
-                margin-bottom: 20px;         
-    
-                border-bottom: 2px solid #15151E;
-            }
-            .navMobileButton{
-                padding: 10px;
-                font-size: 20px;
-                cursor: pointer;
-                color:#E10600;
-                font-family: inherit;
-                font-style: bold;
-                background-color:#131327;
-                border: none;
-                border-radius: 3px;
-            }
-            .navMobileButton:hover{
-                color: #ccc;
-                
-            }
+            
             .table-panel {
                 display: flex;
                 flex-direction: column;
@@ -510,39 +259,5 @@
                 left: 37%;
                 transform: translateX(-50%);
             }
-            .nav {
-                display: none;
-                position: absolute;
-                top: 100%;
-                right: 20px;
-                flex-direction: column;
-                background: #1E1E26;
-                padding: 15px;
-                border-radius: 10px;
-                box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-                z-index: 100;
-            }
-
-            .nav.active {
-                display: flex;
-            }
-
-            .menu-button {
-                display: inherit;
-                color: #15151E;
-                left: 50%;
-            }
-        }
-        footer{
-            background-color: #1e1e26a9;
-            color: #42424e;
-            text-align: center;
-            bottom:0;
-            margin-top: 170px;
-            gap: 10px;
-            margin-bottom: -40px;
-            margin-left: -40px;
-            margin-right: -40px;
-            padding: 10px;
-            row-gap: 10px;
+            
         }
