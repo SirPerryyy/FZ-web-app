@@ -362,68 +362,9 @@
             text-decoration: underline #ccc;
             background-color: #15151e50;
         }
-        .calendarButton{
-            padding: 6px 10px;
-            border-radius: 10px;
-            background-color: transparent; 
-            cursor:pointer;
-            margin-top: 5px;
-            margin-bottom: 0;
-            font-size: 28px;
-            letter-spacing: 1px;
-            font-weight: 200px;
-            color: #15151E;
-            transition-duration: 0.4s;
-            top: 190px;
-            left: 20%;
-            transform: translateX(-20%);
-            position: absolute;
-        }
-        .calendarButton:hover{
-            color: #ccc;
-            background-color: #15151e50;
-        }
-.driversButton {
-    padding: 6px 10px;
-    border-radius: 10px;
-    background-color: transparent;
-    cursor: pointer;
-    margin-top: 5px;
-    margin-bottom: 0;
-    font-size: 28px;
-    letter-spacing: 1px;
-    font-weight: 200px;
-    padding: 6px 10px;
-    color: #15151E;
-    transition-duration: 0.4s;
-    position: absolute;
-    top: 190px;
-    left: 80%;
-    transform: translateX(-70%);
-}
         .driversButton:hover{
             color: #ccc;
             background-color: #15151e50;
-        }
-        .donationsButton{
-            padding: 6px 10px;
-            border-radius: 10px;
-            background-color: transparent; 
-            cursor:pointer;
-            margin-top: 5px;
-            margin-bottom: 0;
-            font-size: 20px;
-            letter-spacing: 1px;
-            font-weight: 200px;
-            color: #15151E;
-            transition-duration: 0.4s;
-            top: 10px;
-            left: 1%;
-            position: absolute;
-        }
-        .donationsButton:hover{
-            color: #ff0000;
-            animation: pulse 1.2s infinite;
         }
 
         @keyframes pulse{
