@@ -1,28 +1,3 @@
-
-        *{
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            caret-color: transparent;
-    }
-        @font-face {
-            font-family: "F1 Bold";
-            src: url('Fonts/Formula1-Bold.ttf') format('truetype');
-        }
-        @font-face {
-            font-family: "F1 SemiBold";
-            src: url('Fonts/Formula1-Display-SemiBold.ttf') format('truetype');
-        }
-        @font-face {
-            font-family: "F1 Regular";
-            src: url('Fonts/Formula1-Regular1.ttf') format('truetype');
-        }
-        @font-face {
-            font-family: "F1 Wide";
-            src: url('Fonts/Formula1-Wide.ttf') format('truetype');
-        }
-        
-        
         .currentPage{
             display: none;
             font-size: 19px;
@@ -33,7 +8,9 @@
             position: absolute;
         }
 
-
+        .driversButton {
+            text-decoration: underline;
+        }
         .container {
             flex: 1;
             gap: 100px;
