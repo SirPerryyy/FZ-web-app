@@ -1,5 +1,77 @@
 [
   {
+    "RaceTitle": "RACE 7: Valencia",
+    "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/1280px-Flag_of_Spain.svg.png",
+    "Img1Path": "Assets\\RaceImages\\val2.jpg",
+    "Img2Path": "Assets\\RaceImages\\val1.jpg",
+    "Img3Path": "Assets\\RaceImages\\val3.jpg",
+    "Drivers": [
+      {
+        "DriverName": "Bobbi",
+        "DriverTeamFlexBox": "flexboxRedbull",
+        "DriverTime": "1:38:375",
+        "DriverPoints": "+24",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Sir Perry",
+        "DriverTeamFlexBox": "flexboxMercedes",
+        "DriverTime": "1:38:116",
+        "DriverPoints": "+22",
+        "HasFL": true
+      },
+      {
+        "DriverName": "Kimi Fernandes",
+        "DriverTeamFlexBox": "flexboxLotus",
+        "DriverTime": "1:39:309",
+        "DriverPoints": "+18",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Doggy",
+        "DriverTeamFlexBox": "flexboxMercedes",
+        "DriverTime": "1:39:215",
+        "DriverPoints": "+14",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Pablo Carpincho",
+        "DriverTeamFlexBox": "flexboxLotus",
+        "DriverTime": "1:39:884",
+        "DriverPoints": "+10",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Luca",
+        "DriverTeamFlexBox": "flexboxRedbull",
+        "DriverTime": "1:38:495",
+        "DriverPoints": "+4",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Twenty Miles",
+        "DriverTeamFlexBox": "flexboxWilliams",
+        "DriverTime": "1:40:730",
+        "DriverPoints": "+1",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Pier La Mert",
+        "DriverTeamFlexBox": "flexboxBrawn",
+        "DriverTime": "DNS",
+        "DriverPoints": "+0",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Robert Visoiu",
+        "DriverTeamFlexBox": "flexboxWilliams",
+        "DriverTime": "DNS",
+        "DriverPoints": "+0",
+        "HasFL": false
+      }
+    ]
+  },
+  {
     "RaceTitle": "RACE 6: Imola",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/1280px-Flag_of_Italy.svg.png",
     "Img1Path": "Assets/RaceImages/im1.jpg",
