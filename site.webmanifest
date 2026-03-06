@@ -1,0 +1,12 @@
+{
+  "name": "Formula Z Web App",
+  "short_name": "Formula Z",
+  "icons":
+    {
+      "src": "Assets//Logos//fxlogo2.0.png",
+      "sizes": "288x67",
+      "type": "image/png"
+    },
+  "theme_color": "#a60808",
+  "background_color": "#a60808"
+}
