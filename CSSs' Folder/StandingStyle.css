@@ -258,9 +258,17 @@
             height: 20px;
             display: inline-block; 
         }
-        .flexboxRedbull
+        .flexboxRedbullOld
         {
             background-color: rgb(255, 255, 255);
+            border-radius: 4px;
+            width: 10px;
+            height: 20px;
+            display: inline-block; 
+        }
+        .flexboxRedbull
+        {
+            background-color: rgb(16, 0, 163);
             border-radius: 4px;
             width: 10px;
             height: 20px;
