@@ -286,10 +286,10 @@
     "driverInfo": {
         "name": "Luca",
         "nameColor": "#777777",
-        "driverImage": "CSSs' Folder/DriversPictures/Luca.png",
+        "driverImage": "CSSs' Folder/DriversPictures/Luca1.png",
         "driverNumber": 27,
-        "driverTeamMainColor": "#eeeeee",
-        "backgroundGradient": "linear-gradient(135deg, #eeeeee, #fc0800, #c7c7c769, #d1d1d1cb)"
+        "driverTeamMainColor": "rgb(16, 0, 163)",
+        "backgroundGradient": "linear-gradient(135deg, #0400e7, #fc0800, #3f3f3f9f, #0300afcb)"
     }
   },
   "Bobbi":{
@@ -328,10 +328,10 @@
     "driverInfo": {
         "name": "Bobbi",
         "nameColor": "#00b6e4",
-        "driverImage": "CSSs' Folder/DriversPictures/Bobbi.png",
+        "driverImage": "CSSs' Folder/DriversPictures/Bobbi1.png",
         "driverNumber": 5,
-        "driverTeamMainColor": "#eeeeee",
-        "backgroundGradient": "linear-gradient(135deg, #eeeeee, #fc0800, #c7c7c769, #d1d1d1cb)"
+        "driverTeamMainColor": "rgb(16, 0, 163)",
+        "backgroundGradient": "linear-gradient(135deg, #0400e7, #fc0800, #3f3f3f9f, #0300afcb)"
     }
   },
     "Pier":{
