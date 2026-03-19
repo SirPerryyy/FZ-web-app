@@ -59,4 +59,3 @@ function toggleMenu() {
 function OpenImage(src) {
     window.location.href = src;
 }
-console.log("SCRIPT LOADED");

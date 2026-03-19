@@ -8,8 +8,6 @@ const supabaseUrl = "https://dhtnntmxtfksvjvktwju.supabase.co";
 const supabaseKey = "sb_publishable_BVlTv8E4LcYMv2MeA1u4jA_tIXvmdlL";
 const supaClient = createClient(supabaseUrl, supabaseKey);
 
-export var DataStarDriver = [];
-
 function SupaClientGlobal()
 {
     window.SupaClientRef = supaClient;

@@ -1,17 +1,28 @@
 let currentDriverId;
 let hasLike;
 let thisMachineIpDatas;
+let supaDataThisIp;
+
+function CurrentDriver()
+{ 
+    const params = new URLSearchParams(window.location.search);
+    const driver = params.get("id");
+
+    currentDriverId = driver;
+}
 
 async function FetchDataFromDatabase() {
+    CurrentDriver();
     const { data, error } = await SupaClientRef
     .from('stars_for_each_driver')
     .select()
+    .eq('id', currentDriverId)
 
     if(error != null) {console.error(error); return;}
 
     DataStarDriver = data;
     
-    console.log(DataStarDriver);
+    //console.log(DataStarDriver);
 
     thisMachineIpDatas = await GetIpData();
     
@@ -34,19 +45,15 @@ function UpdateStarLook(status)
     }
 }
 
-function UpdateStarsDataForDriver(drivers)
+function UpdateStarsDataForDriver(driverData)
 {
-    const params = new URLSearchParams(window.location.search);
-    const driver = params.get("id");
-    currentDriverId = driver;
-    const currentDriver = drivers.find(item => item.id === driver);
-    if (currentDriver != null){
+    if (driverData != null){
         const starIndicator = document.querySelector('.starCount');
-        starIndicator.textContent = currentDriver.stars;
+        starIndicator.textContent = driverData[0].stars;
 
         return;
     }
-    console.error(currentDriver + " have not been found on our database!")
+    console.error(driverData[0].id + " have not been found on our database!")
 }
 
 async function CheckIpStarsSlot() {
@@ -58,7 +65,8 @@ async function CheckIpStarsSlot() {
     
     if(error!=null){console.error(error); return;}
 
-    console.log(data)
+    //console.log(data)
+
     if(data.length > 0 && (data[0].StarGivenToIdSlot1 == currentDriverId || data[0].StarGivenToIdSlot2 == currentDriverId))
     {
         UpdateStarLook(0)
@@ -66,7 +74,7 @@ async function CheckIpStarsSlot() {
         return;
     }
     hasLike = false;
-    console.log("Nothing Found");
+    //console.log("Nothing Found");
     
 }
 
@@ -112,9 +120,6 @@ function ToggleErrorPanel(mode){
         case "requestsLimitExceded":
             setPanel("You have exceeded the request limit! Please wait a moment and then try again.");
             break;
-        case "betaFeature":
-            setPanel("This feature is currently in beta testing, so please report any bugs you find! DATA WILL BE RESETED AT THE END OF THE BETA PHASE!.", false, true);
-            break;
 
         default:
             setPanel("DEBUG");
@@ -122,8 +127,7 @@ function ToggleErrorPanel(mode){
     }
 }
 
-let betaShowed = false;
-function setPanel(message, close = false, beta = false) {
+function setPanel(message, close = false) {
     
     const modalOverlay = document.querySelector('.modaloverlay');
     const panelTxt = document.querySelector('.starPanelErrText');
@@ -136,23 +140,10 @@ function setPanel(message, close = false, beta = false) {
     panelTxt.textContent = message;
     modalOverlay.style.display = "inline";
     
-    beta = panelTxt.textContent == "This feature is currently in beta testing, so please report any bugs you find! DATA WILL BE RESETED AT THE END OF THE BETA PHASE!." ? true : false;
-    
-    if(beta)
-    {
-        betaCheckbox.style.display = "inline";
-        betaCheckboxLabel.style.display = "inline";
-        betaShowed = true;
-    }
     if(close)
     {
         modalOverlay.style.display = "none";
         panel.style.display = "none";
-        if(betaShowed)
-        {
-            window.localStorage.setItem("showBetaDialogAgain", betaCheckbox.checked);
-            betaShowed = false;
-        }
     }
     
 }
@@ -167,7 +158,7 @@ async function GetIpData()
         ToggleErrorPanel("requestsLimitExceded"); return null;}
         const ipData = await response.json();
 
-        console.log("ip data:", ipData);
+        //console.log("ip data:", ipData);
         return ipData;
 
     } catch (error) {
@@ -188,17 +179,15 @@ async function AddStar()
         console.error("YOU ARE USING A VPN! YOU ARE NOT ALLOWED TO DO SO!")
         return;
     }
-    if(window.localStorage.getItem("showBetaDialogAgain") == null || window.localStorage.getItem("showBetaDialogAgain") == 'false')
-    {
-        ToggleErrorPanel("betaFeature");
-    }
 
     if(hasLike) {await DeleteStar(); return;}
 
     if (await IpsGetFromSupa(thisMachineIpDatas.ip_address))
     {
-        if(thisIpStarsData[0].StarGivenToIdSlot1 == currentDriverId){console.log("Cant add star! SLOT 1 =>" + thisIpStarsData[0].StarGivenToIdSlot1 + " == " + currentDriverId); return;}
-        if(thisIpStarsData[0].StarGivenToIdSlot2 == currentDriverId){console.log("Cant add star! SLOT 2 =>" + thisIpStarsData[0].StarGivenToIdSlot2 + " == " + currentDriverId); return;}
+        if(thisIpStarsData[0].StarGivenToIdSlot1 == currentDriverId){//console.log("Cant add star! SLOT 1 =>" + thisIpStarsData[0].StarGivenToIdSlot1 + " == " + currentDriverId); 
+            return;}
+        if(thisIpStarsData[0].StarGivenToIdSlot2 == currentDriverId){//console.log("Cant add star! SLOT 2 =>" + thisIpStarsData[0].StarGivenToIdSlot2 + " == " + currentDriverId);
+            return;}
 
         if(thisIpStarsData[0].StarGivenToIdSlot1 == null && thisIpStarsData[0].StarGivenToIdSlot2 != currentDriverId)
             {
@@ -242,11 +231,11 @@ async function IpsGetFromSupa(thisIp, isDeleteStar = false)
     
     thisIpData = await SelectIpRowFromSupa(thisIp);
 
-    console.log(thisIpData);
+    //console.log(thisIpData);
     let tries = 0;
     while(tries < 3)
     {
-        console.log("Try " + tries + " | ip:" + thisIpData);
+        //console.log("Try " + tries + " | ip:" + thisIpData);
         if(tries > 1) {
             thisIpData = await SelectIpRowFromSupa(thisIp);
         }
@@ -255,13 +244,13 @@ async function IpsGetFromSupa(thisIp, isDeleteStar = false)
         {
             if (thisIpData[0].ip != undefined && thisIpData[0].starsAvailable >= 1) 
             {
-                console.log("Ip found! " + thisIpData[0].ip + " | Stars remaining to this ip: " + thisIpData[0].starsAvailable);
+                //console.log("Ip found! " + thisIpData[0].ip + " | Stars remaining to this ip: " + thisIpData[0].starsAvailable);
                 thisIpStarsData = thisIpData;
                 return true;
             }
             else if (!isDeleteStar)
             {
-                console.log("Cant add more stars! " + thisIpData[0].starsAvailable + " Remaining.")
+                //console.log("Cant add more stars! " + thisIpData[0].starsAvailable + " Remaining.")
                 ToggleErrorPanel("starsLimitExceded")
                 thisIpStarsData = thisIpData;
                 return false;
@@ -273,7 +262,7 @@ async function IpsGetFromSupa(thisIp, isDeleteStar = false)
         }
         else
         {
-            console.log("Ip not found in database. Adding you!")
+            //console.log("Ip not found in database. Adding you!")
 
             const {error} = await SupaClientRef
                 .from('ips_starsAvailable')

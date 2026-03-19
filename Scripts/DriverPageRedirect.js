@@ -25,8 +25,6 @@ async function LoadProfile()
         return;
     }
 
-    console.log(driverID);
-
     const flag = document.querySelector('.nationalityFlag');
     const nationality = document.querySelector('.nationality');
     const team = document.querySelector('.team');
@@ -110,4 +108,3 @@ function Test(driver)
 {
     console.log(driver);
 }
-console.log("SCRIPT LOADED");

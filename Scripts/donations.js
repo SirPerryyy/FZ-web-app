@@ -16,7 +16,7 @@ function DonationRead()
         bg.style.display = "inline";
         panelGood.style.display = "inline";
 
-        console.log("donation success!" + donation)
+        //console.log("donation success!" + donation)
         FireworksConfetti();
     }
     else if (donation === -1)
@@ -24,10 +24,10 @@ function DonationRead()
         bg.style.display = "inline";
         panelFail.style.display = "inline";
 
-        console.log("donation cancelled!" + donation)
+        //console.log("donation cancelled!" + donation)
     }
 
-    console.log(donation);
+    //console.log(donation);
 }
 function RedirectPayPal()
 {
