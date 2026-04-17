@@ -1,5 +1,163 @@
 [
   {
+    "RaceTitle": "RACE 13: Austin",
+    "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg",
+    "Img1Path": "Assets\\RaceImages\\usa1.jpg",
+    "Img2Path": "Assets\\RaceImages\\usa3.jpg",
+    "Img3Path": "Assets\\RaceImages\\usa2.jpg",
+    "Drivers": [
+      {
+        "DriverName": "Bobbi",
+        "DriverTeamFlexBox": "flexboxRedbull",
+        "DriverTime": "1:36:921",
+        "DriverPoints": "+25",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Sir Perry",
+        "DriverTeamFlexBox": "flexboxMercedes",
+        "DriverTime": "1:36:522",
+        "DriverPoints": "+21",
+        "HasFL": true
+      },
+      {
+        "DriverName": "Kimi Fernandes",
+        "DriverTeamFlexBox": "flexboxLotus",
+        "DriverTime": "1:37:717",
+        "DriverPoints": "+18",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Pablo Carpincho",
+        "DriverTeamFlexBox": "flexboxLotus",
+        "DriverTime": "1:38:285",
+        "DriverPoints": "+15",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Twenty Miles",
+        "DriverTeamFlexBox": "flexboxWilliams",
+        "DriverTime": "1:40:389",
+        "DriverPoints": "+10",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Luca",
+        "DriverTeamFlexBox": "flexboxRedbull",
+        "DriverTime": "DNF",
+        "DriverPoints": "+0",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Alvaro Preguica",
+        "DriverTeamFlexBox": "flexboxWilliams",
+        "DriverTime": "DNS",
+        "DriverPoints": "+0",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Doggy",
+        "DriverTeamFlexBox": "flexboxMercedes",
+        "DriverTime": "DNS",
+        "DriverPoints": "+0",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Pier La Mert",
+        "DriverTeamFlexBox": "flexboxBrawn",
+        "DriverTime": "DNS",
+        "DriverPoints": "+0",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Robert Visoiu",
+        "DriverTeamFlexBox": "flexboxBrawn",
+        "DriverTime": "DNS",
+        "DriverPoints": "+0",
+        "HasFL": false
+      }
+    ]
+  },
+  {
+    "RaceTitle": "RACE 13: Austin [SPRINT RACE]",
+    "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg",
+    "Img1Path": "Assets\\RaceImages\\usasp1.jpg",
+    "Img2Path": "Assets\\RaceImages\\usasp2.jpg",
+    "Img3Path": "Assets\\RaceImages\\usasp3.jpg",
+    "Drivers": [
+      {
+        "DriverName": "Bobbi",
+        "DriverTeamFlexBox": "flexboxRedbull",
+        "DriverTime": "1:37:619",
+        "DriverPoints": "+9",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Sir Perry",
+        "DriverTeamFlexBox": "flexboxMercedes",
+        "DriverTime": "1:36:976",
+        "DriverPoints": "+7",
+        "HasFL": true
+      },
+      {
+        "DriverName": "Alvaro Preguica",
+        "DriverTeamFlexBox": "flexboxWilliams",
+        "DriverTime": "1:38:293",
+        "DriverPoints": "+4",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Kimi Fernandes",
+        "DriverTeamFlexBox": "flexboxLotus",
+        "DriverTime": "1:37:932",
+        "DriverPoints": "+2",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Twenty Miles",
+        "DriverTeamFlexBox": "flexboxWilliams",
+        "DriverTime": "1:39:016",
+        "DriverPoints": "+1",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Luca",
+        "DriverTeamFlexBox": "flexboxRedbull",
+        "DriverTime": "1:39:927",
+        "DriverPoints": "+0",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Pablo Carpincho",
+        "DriverTeamFlexBox": "flexboxLotus",
+        "DriverTime": "1:37:993",
+        "DriverPoints": "+0",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Doggy",
+        "DriverTeamFlexBox": "flexboxMercedes",
+        "DriverTime": "DNS",
+        "DriverPoints": "+0",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Pier La Mert",
+        "DriverTeamFlexBox": "flexboxBrawn",
+        "DriverTime": "DNS",
+        "DriverPoints": "+0",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Robert Visoiu",
+        "DriverTeamFlexBox": "flexboxBrawn",
+        "DriverTime": "DNS",
+        "DriverPoints": "+0",
+        "HasFL": false
+      }
+    ]
+  },
+  {
     "RaceTitle": "RACE 12: Spa Francorchamps",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/1280px-Flag_of_Belgium.svg.png",
     "Img1Path": "Assets\\RaceImages\\bel1.jpg",
