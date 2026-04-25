@@ -85,8 +85,12 @@
             align-items: center;
             padding: 5px 0;
         }
+        .table-row{
+            cursor: pointer;
+        }
         .row{
              background: rgba(0, 0, 0, 0.35);
+            
             margin-top: 8px;
             font-family: "F1 Regular";
             border-radius: 10px;
@@ -130,6 +134,165 @@
             text-align: center;
             position: absolute;
         }
+        
+        .modal-overlayCal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0);
+            animation: modalAnim 3s 1;
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(6px);
+            z-index: 1;
+        }
+        @keyframes modalAnim{
+            0%{
+                backdrop-filter: blur(1px);
+            -webkit-backdrop-filter: blur(1px);
+            }
+            50%{
+                backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
+            }
+            100%{
+                backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(6px);
+            }
+        }
+        .panelRaceCalendar{
+            display: none;
+            position:absolute;
+            background: #33333f;
+            border-radius: 8px;
+            max-width: 1300px;
+            padding: 50px 40px;
+            margin: 0 auto;
+            min-width: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(2px);
+            z-index: 2;
+            overflow-y: auto;
+            animation: panelAnim 0.3s 1;
+        }
+        
+        @keyframes panelAnim {
+            0%{
+                transform: translateX(-50%) scale(0.7);
+            }
+            75%{
+                transform: translateX(-50%) scale(1.05);
+            }
+            100%{
+                transform: translateX(-50%) scale(1);
+            }
+        }
+        .panel-races h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: 'F1 SemiBold';
+            color: #ffffe6;
+            font-size: 24px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-bottom: 2px solid rgba(255,255,255,0.2);
+            padding-bottom: 10px;
+        }
+        .container-raceInfos
+        {
+            flex: 1;
+            display: flex;
+            gap: 100px;
+            max-width: 1700px;
+            margin: 0 auto;
+            min-height: 30px;
+            
+        }
+        .row-race{
+            background: rgba(0, 0, 0, 0.35);
+            margin-top: 8px;
+            font-family: "F1 Regular";
+            border-radius: 10px;
+            max-width: 635px;
+            padding: 15px;
+        }
+        .row-race img {
+            margin-left: 30px;
+            width: 50px;  
+            height: 30px; 
+            object-fit: cover; 
+            border-radius: 4px; 
+        }
+        .circuitName {
+            font-family: "F1 Bold";
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 30px;
+            font-size: xx-large;
+            letter-spacing: 1px;       
+        }
+
+        .table-panel-race {
+        display: flex;
+        flex-direction: column;
+        background: #1E1E26;
+        padding: 15px;
+        border-radius: 8px;
+        max-width: 660px;
+        margin-top: 20px;
+        margin-left: 40px;
+        height: 393px;
+        }
+
+        .table-header-race,
+        .table-row-race {
+        display: grid;
+        grid-template-columns: 40px 350px 140px 20px 60px; 
+        align-items: center;
+        padding: 5px 0;
+        }
+
+        .table-header-race {
+            
+        font-weight: bold;
+        color: #ccc;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        margin-bottom: 5px;
+        }
+
+        .col.name{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .col.lap{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #ccc
+        }
+
+        .table-row-race {
+        color: #fff;
+        }
+
+        .closeButton {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            height: 30px;
+            width: 30px;
+            background: transparent;
+            border: none;
+            background-color: #E10600;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+
         @media (max-width: 1300px) {
             
             .nav.active {
@@ -242,6 +405,34 @@
                 align-self: center;
                 left: 37%;
                 transform: translateX(-50%);
+            }
+
+            .panelRaceCalendar{
+                margin: 6px;
+                padding: 20px;
+                width: 350px;
+                max-width: 350px;
+                overflow-y: unset;
+                
+            }
+            .col.lap{
+                display: none;
+            }
+            .col.spacer{
+                display: none;
+            }
+            .col.points{
+                display: none;
+            }
+            .container-raceInfos{
+                max-width: 330px;
+            } 
+            .table-header-race {
+            
+                font-weight: bold;
+                color: #ccc;
+                border-bottom: none;
+                margin-bottom: 5px;
             }
             
         }
