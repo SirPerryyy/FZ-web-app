@@ -1,6 +1,9 @@
+
+
 let currentDriverId;
 let hasLike;
 let thisMachineIpDatas;
+let isVpn;
 let supaDataThisIp;
 
 function CurrentDriver()
@@ -24,7 +27,7 @@ async function FetchDataFromDatabase() {
     
     //console.log(DataStarDriver);
 
-    thisMachineIpDatas = await GetIpData();
+    await GetIpData();
     
     UpdateStarsDataForDriver(DataStarDriver);
     await CheckIpStarsSlot(this);
@@ -61,7 +64,7 @@ async function CheckIpStarsSlot() {
     const {data, error} = await SupaClientRef
         .from('ips_starsAvailable')
         .select()
-        .eq('ip', thisMachineIpDatas.ip_address);
+        .eq('ip', thisMachineIpDatas);
     
     if(error!=null){console.error(error); return;}
 
@@ -148,24 +151,27 @@ function setPanel(message, close = false) {
     
 }
 
-async function GetIpData()
-{
+async function GetIpData() {
+    const endpoint = 'http://ip-api.com/json/?fields=status,message,asname,query';
+
     try {
-        const response = await fetch(
-            'https://ip-intelligence.abstractapi.com/v1/?api_key=687e001e15c34bed850e5ba93525ae61&fields=ip_address,security.is_vpn'
-        );
-        if(response.status == 429){
-        ToggleErrorPanel("requestsLimitExceded"); return null;}
-        const ipData = await response.json();
+        const res = await fetch(endpoint);
+        const response = await res.json();
 
-        //console.log("ip data:", ipData);
-        return ipData;
-
-    } catch (error) {
-        console.error(error);
-        ToggleErrorPanel("requestsLimitExceded");
+        if (response.status !== 'success') {
+            ToggleErrorPanel("requestsLimitExceded");
+            console.log('query failed: ' + response.message);
+            return;
+        }
+        if(response.asname.length <= 6)
+        {
+            isVpn = true;
+            return;
+        }
+        thisMachineIpDatas = response.query;
+    } catch (err) {
+        console.log("Network error:", err);
     }
-    return null;
 }
 
 let thisIpStarsData;
@@ -173,7 +179,7 @@ let thisIpStarsData;
 async function AddStar() 
 {
 
-    if(thisMachineIpDatas.security.is_vpn == true)
+    if(isVpn == true)
     {
         ToggleErrorPanel("vpnError")
         console.error("YOU ARE USING A VPN! YOU ARE NOT ALLOWED TO DO SO!")
@@ -182,7 +188,7 @@ async function AddStar()
 
     if(hasLike) {await DeleteStar(); return;}
 
-    if (await IpsGetFromSupa(thisMachineIpDatas.ip_address))
+    if (await IpsGetFromSupa(thisMachineIpDatas))
     {
         if(thisIpStarsData[0].StarGivenToIdSlot1 == currentDriverId){//console.log("Cant add star! SLOT 1 =>" + thisIpStarsData[0].StarGivenToIdSlot1 + " == " + currentDriverId); 
             return;}
@@ -197,7 +203,7 @@ async function AddStar()
                         starsAvailable : thisIpStarsData[0].starsAvailable - 1,
                         StarGivenToIdSlot1 : currentDriverId
                     })
-                    .eq('ip', thisMachineIpDatas.ip_address); 
+                    .eq('ip', thisMachineIpDatas); 
 
                 if(error != null) {console.error(error); return;}
             }
@@ -209,7 +215,7 @@ async function AddStar()
                         starsAvailable : thisIpStarsData[0].starsAvailable - 1,
                         StarGivenToIdSlot2 : currentDriverId
                     })
-                    .eq('ip', thisMachineIpDatas.ip_address); 
+                    .eq('ip', thisMachineIpDatas); 
                 
                 if(error != null) {console.error(error); return;} 
             }
@@ -278,7 +284,7 @@ async function IpsGetFromSupa(thisIp, isDeleteStar = false)
 
 async function DeleteStar() 
 {
-    if(await IpsGetFromSupa(thisMachineIpDatas.ip_address, true))
+    if(await IpsGetFromSupa(thisMachineIpDatas, true))
     {
         if(thisIpStarsData[0].StarGivenToIdSlot1 == currentDriverId)
             {
@@ -288,7 +294,7 @@ async function DeleteStar()
                         starsAvailable : thisIpStarsData[0].starsAvailable + 1,
                         StarGivenToIdSlot1 : null
                     })
-                    .eq('ip', thisMachineIpDatas.ip_address); 
+                    .eq('ip', thisMachineIpDatas); 
 
                 if(error != null) {console.error(error); return;}
 
@@ -308,7 +314,7 @@ async function DeleteStar()
                         starsAvailable : thisIpStarsData[0].starsAvailable + 1,
                         StarGivenToIdSlot2 : null
                     })
-                    .eq('ip', thisMachineIpDatas.ip_address); 
+                    .eq('ip', thisMachineIpDatas); 
                 
                 if(error != null) {console.error(error); return;} 
 
