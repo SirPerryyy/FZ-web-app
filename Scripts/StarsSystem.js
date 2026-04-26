@@ -4,6 +4,7 @@ let currentDriverId;
 let hasLike;
 let thisMachineIpDatas;
 let isVpn;
+let locked = true;
 let supaDataThisIp;
 
 function CurrentDriver()
@@ -178,7 +179,10 @@ let thisIpStarsData;
 
 async function AddStar() 
 {
-
+    if(locked == true)
+    {
+        return;
+    }
     if(isVpn == true)
     {
         ToggleErrorPanel("vpnError")
