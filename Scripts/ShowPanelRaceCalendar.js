@@ -82,12 +82,8 @@ function PopulateRace(row, data)
             const currentDriver = data.Drivers[driverIndex];
             if(currentDriver === undefined) 
             {  
-                const tablePanel = document.querySelector('.table-panel-row')
+                const tablePanel = document.querySelector('.panelRaceCalendar')
                 tableRow.style.display = "none";
-                if (screen.width <= 378) {
-                    tablePanel.style.height = '342px';
-                    return;
-                }
                 return;
             }
         
