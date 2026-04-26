@@ -2,7 +2,7 @@
 
 function RedirectToProfile(driverID)
 {
-    window.location.href = `DriverProfile.html?id=${driverID}`;
+    window.location.href = `./DriverProfile?id=${driverID}`;
 }
 
 async function LoadProfile()
