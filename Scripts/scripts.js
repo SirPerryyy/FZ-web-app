@@ -10,19 +10,19 @@ function CopyClipboard() {
         }
 function SwitchToCalendar()
         {
-            window.location.href = "CalendarPage.html";
+            window.location.href = "./CalendarPage";
         }
 function SwitchToDrivers()
         {
-            window.location.href = "Drivers.html";
+            window.location.href = "./Drivers";
         }
 function SwitchToStandings()
         {
-            window.location.href = "index.html";
+            window.location.href = "./";
         }
 function SwitchToStory()
 {
-    window.location.href = "Story.html";
+    window.location.href = "./Story";
 }
 function Order()
         {
