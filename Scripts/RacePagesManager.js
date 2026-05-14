@@ -131,6 +131,7 @@ function LoadPage(pageNumber)
 
         tableRows.forEach((tableRow) => {
             const nameRow = tableRow.querySelector('.name');
+            
             const driverName = nameRow.querySelector('.driverName');
             const driverFL = tableRow.querySelector('.lap');
             const driverPoints = tableRow.querySelector('.points');
@@ -164,10 +165,12 @@ function LoadPage(pageNumber)
 
         const images = row.querySelectorAll('.raceImage');
 
+        if(screen.width > 738)
+        {
         images[0].src = DataPage[pageNumber][index].Img1Path;
         images[1].src = DataPage[pageNumber][index].Img2Path;
         images[2].src = DataPage[pageNumber][index].Img3Path;
-
+        }
         driverIndex = 0;
         index++;
     });
