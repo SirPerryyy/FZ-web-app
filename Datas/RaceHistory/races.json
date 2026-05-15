@@ -2,9 +2,9 @@
   {
     "RaceTitle": "RACE 17: Toscana",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg?utm_source=it.wikipedia.org&utm_campaign=index&utm_content=original",
-    "Img1Path": "Assets\\RaceImages\\tos1",
-    "Img2Path": "Assets\\RaceImages\\tos2",
-    "Img3Path": "Assets\\RaceImages\\tos3",
+    "Img1Path": "Assets\\RaceImages\\tos1.jpg",
+    "Img2Path": "Assets\\RaceImages\\tos2.jpg",
+    "Img3Path": "Assets\\RaceImages\\tos3.jpg",
     "Drivers": [
       {
         "DriverName": "Doggy",
@@ -81,9 +81,9 @@
   {
     "RaceTitle": "RACE 17: Toscana [SPRINT RACE]",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg?utm_source=it.wikipedia.org&utm_campaign=index&utm_content=original",
-    "Img1Path": "Assets\\RaceImages\\tossp1",
-    "Img2Path": "Assets\\RaceImages\\tossp2",
-    "Img3Path": "Assets\\RaceImages\\tossp3",
+    "Img1Path": "Assets\\RaceImages\\tossp1.jpg",
+    "Img2Path": "Assets\\RaceImages\\tossp2.jpg",
+    "Img3Path": "Assets\\RaceImages\\tossp3.jpg",
     "Drivers": [
       {
         "DriverName": "Kimi Fernandes",
