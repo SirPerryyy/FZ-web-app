@@ -1,5 +1,163 @@
 [
   {
+    "RaceTitle": "RACE 17: Palmadera",
+    "FlagURL": "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/250px-Flag_of_Brazil.svg.png",
+    "Img1Path": "Assets\\RaceImages\\pal1.jpg",
+    "Img2Path": "Assets\\RaceImages\\pal2.jpg",
+    "Img3Path": "Assets\\RaceImages\\pal3.jpg",
+    "Drivers": [
+      {
+        "DriverName": "Doggy",
+        "DriverTeamFlexBox": "flexboxMercedes",
+        "DriverTime": "1:06:054",
+        "DriverPoints": "+25",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Kimi Fernandes",
+        "DriverTeamFlexBox": "flexboxLotus",
+        "DriverTime": "1:06:152",
+        "DriverPoints": "+21",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Sir Perry",
+        "DriverTeamFlexBox": "flexboxMercedes",
+        "DriverTime": "1:06:394",
+        "DriverPoints": "+18",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Alvaro Preguica",
+        "DriverTeamFlexBox": "flexboxWilliams",
+        "DriverTime": "1:06:103",
+        "DriverPoints": "+15",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Pablo Carpincho",
+        "DriverTeamFlexBox": "flexboxLotus",
+        "DriverTime": "1:06:573",
+        "DriverPoints": "+10",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Twenty Miles",
+        "DriverTeamFlexBox": "flexboxWilliams",
+        "DriverTime": "1:05:975",
+        "DriverPoints": "+6",
+        "HasFL": true
+      },
+      {
+        "DriverName": "Bobbi",
+        "DriverTeamFlexBox": "flexboxRedbull",
+        "DriverTime": "DNS",
+        "DriverPoints": "+0",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Luca",
+        "DriverTeamFlexBox": "flexboxRedbull",
+        "DriverTime": "DNS",
+        "DriverPoints": "+0",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Pier La Mert",
+        "DriverTeamFlexBox": "flexboxBrawn",
+        "DriverTime": "DNS",
+        "DriverPoints": "+0",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Robert Visoiu",
+        "DriverTeamFlexBox": "flexboxBrawn",
+        "DriverTime": "DNS",
+        "DriverPoints": "+0",
+        "HasFL": false
+      }
+    ]
+  },
+  {
+    "RaceTitle": "RACE 17: Palmadera [SPRINT RACE]",
+    "FlagURL": "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/250px-Flag_of_Brazil.svg.png",
+    "Img1Path": "Assets\\RaceImages\\palsp1.jpg",
+    "Img2Path": "Assets\\RaceImages\\palsp2.jpg",
+    "Img3Path": "Assets\\RaceImages\\palsp3.jpg",
+    "Drivers": [
+      {
+        "DriverName": "Doggy",
+        "DriverTeamFlexBox": "flexboxMercedes",
+        "DriverTime": "1:05:776",
+        "DriverPoints": "+10",
+        "HasFL": true
+      },
+      {
+        "DriverName": "Sir Perry",
+        "DriverTeamFlexBox": "flexboxMercedes",
+        "DriverTime": "1:06:152",
+        "DriverPoints": "+6",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Alvaro Preguica",
+        "DriverTeamFlexBox": "flexboxWilliams",
+        "DriverTime": "1:06:150",
+        "DriverPoints": "+4",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Pablo Carpincho",
+        "DriverTeamFlexBox": "flexboxLotus",
+        "DriverTime": "1:06:313",
+        "DriverPoints": "+2",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Twenty Miles",
+        "DriverTeamFlexBox": "flexboxWilliams",
+        "DriverTime": "1:06:421",
+        "DriverPoints": "+1",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Kimi Fernandes",
+        "DriverTeamFlexBox": "flexboxLotus",
+        "DriverTime": "1:06:034",
+        "DriverPoints": "+0",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Bobbi",
+        "DriverTeamFlexBox": "flexboxRedbull",
+        "DriverTime": "DNS",
+        "DriverPoints": "+0",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Luca",
+        "DriverTeamFlexBox": "flexboxRedbull",
+        "DriverTime": "DNS",
+        "DriverPoints": "+0",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Pier La Mert",
+        "DriverTeamFlexBox": "flexboxBrawn",
+        "DriverTime": "DNS",
+        "DriverPoints": "+0",
+        "HasFL": false
+      },
+      {
+        "DriverName": "Robert Visoiu",
+        "DriverTeamFlexBox": "flexboxBrawn",
+        "DriverTime": "DNS",
+        "DriverPoints": "+0",
+        "HasFL": false
+      }
+    ]
+  },
+  {
     "RaceTitle": "RACE 16: Toscana",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg?utm_source=it.wikipedia.org&utm_campaign=index&utm_content=original",
     "Img1Path": "Assets\\RaceImages\\tos1.jpg",
