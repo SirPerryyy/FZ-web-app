@@ -413,7 +413,7 @@
                 width: 350px;
                 max-width: 350px;
                 overflow-y: unset;
-                
+                animation: none;
             }
             .col.lap{
                 display: none;
@@ -434,5 +434,8 @@
                 border-bottom: none;
                 margin-bottom: 5px;
             }
+            .modal-overlayCal {
+            animation: none;
+        }
             
         }
