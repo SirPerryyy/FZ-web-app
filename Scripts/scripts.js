@@ -8,6 +8,10 @@ function CopyClipboard() {
                     alert("Errore nella copia: " + err);
                 });
         }
+function RedirectPayPal()
+{
+    window.location.href = 'https://www.paypal.com/donate/?hosted_button_id=Q64WX7D7WCGVA';
+}
 function SwitchToCalendar()
         {
             window.location.href = "./CalendarPage";
@@ -23,6 +27,8 @@ function SwitchToStandings()
 function SwitchToStory()
 {
     window.location.href = "./Story";
+}function SwitchToTeamPage(TeamID) {
+    window.location.href = `./TeamPage?id=${TeamID}`;
 }
 function Order()
         {

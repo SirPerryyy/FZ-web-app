@@ -29,10 +29,6 @@ function DonationRead()
 
     //console.log(donation);
 }
-function RedirectPayPal()
-{
-    window.location.href = 'https://www.paypal.com/donate/?hosted_button_id=Q64WX7D7WCGVA';
-}
 
 function Close(type){
     window.location.href = `index.html`;
