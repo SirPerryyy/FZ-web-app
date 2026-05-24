@@ -7,7 +7,63 @@
             min-height: 30px;
             margin-top: 60px;
         }
+        .containerTeams{
+            flex: 1;
+            display: flex;
+            gap: 100px;
+            margin: 0 auto;
+            min-height: 30px;
+            margin-top: 60px;
+        }
         
+        .teamPanel{
+            flex: 1;
+            background: #1E1E26;
+            border-radius: 8px;
+            padding: 15px;
+            min-width: 0;
+            width: 200px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(2px);
+            height: 130px;
+            position:relative;
+        }
+
+        .teamPanel:hover{
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.87);
+            transform: scale(1.03);
+            transition: all 0.15s ease-in-out;
+            background-color: rgba(255, 255, 255, 0.342);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            cursor: pointer;
+        }
+        .teamPanelInvis{
+            flex: 1;
+            background: transparent;
+            border-radius: 8px;
+            padding: 25px;
+            min-width: 0;
+            height: 500px;
+            position:relative;
+        }
+        .teamPanel img{
+            background-color: #2C2C35;
+            border-radius: 6px;
+            padding: 3px;
+            width: 100px;
+            height: 100px;
+        }
+        .teamPanel p{
+            position: absolute;
+            top: 25%;
+            left: 42%;
+            height: 100px;
+            max-width: 160px;
+            font-family: 'F1 Regular';
+            font-size: large;
+        }
+
         .driversButton {
             text-decoration: underline;
         }
@@ -161,6 +217,18 @@
             -webkit-backdrop-filter: blur(10px);
             cursor: pointer;
         }
+        .title{
+            position: absolute;
+            margin-top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            font-family: 'F1 Wide';
+            font-weight: bold;
+            color: #ebebeb;
+            font-size: 30px;
+            letter-spacing: 1px;
+        }
 
         @media (max-width: 1300px) {
             .container {
@@ -176,6 +244,9 @@
             .container {
                 flex-direction: column;
             }
+            .containerTeams {
+                flex-direction: column;
+            }
             .driverPanel{
                 flex: none;
                 background: #1E1E26;
@@ -186,7 +257,19 @@
                 backdrop-filter: blur(2px);
                 height: 485px;
             }
-                    .driverPanelDriverImage{
+            .teamPanel{
+                flex: none;
+                background: #1E1E26;
+                border-radius: 8px;
+                padding-left: -10px;
+                width: 330px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+                backdrop-filter: blur(2px);
+            }
+            .teamPanelInvis{
+                display: none;
+            }
+            .driverPanelDriverImage{
             position:absolute;
             top: 30px;
             left: 50%;
@@ -299,5 +382,5 @@
                 align-self: center;
                 left: 37%;
                 transform: translateX(-50%);
-            }   
+            } 
         }

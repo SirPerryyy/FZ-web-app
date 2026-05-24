@@ -160,6 +160,9 @@
             color: #ff0000;
             animation: pulse 1.2s infinite;
         }
+        .donationsButtonMobile{
+                display: none;
+        }
         .standingsButton:hover{
             color: #ccc;
             background-color: #15151e50;
@@ -245,6 +248,17 @@
             margin-right: -40px;
             padding: 10px;
             row-gap: 10px;
+        }
+        @keyframes pulse{
+            0%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(1.05);
+            }
+            100%{
+                transform: scale(1);
+            }
         }
 
         @media (max-width: 1300px) {
@@ -399,6 +413,7 @@
             }
         }
         @media (max-width: 738px) {
+            
             .currentPage{
                 display: inherit;
                 color: #ccc;
@@ -499,5 +514,34 @@
                 display: inherit;
                 color: #15151E;
                 left: 50%;
+            }
+            .donationsButtonMobile{
+                display: inline;
+            padding: 6px 10px;
+            border-radius: 10px;
+            background-color: transparent; 
+            cursor:pointer;
+            margin-top: 5px;
+            margin-bottom: 0;
+            font-size: 20px;
+            letter-spacing: 1px;
+            font-weight: 200px;
+            color: #15151E;
+            transition-duration: 0.4s;
+            top: 4px;
+            left: 8%;
+            position: absolute;
+            scale: 74%;
+            }
+            .donationsButtonMobile:hover{
+                color: #ff0000;
+                animation: pulse 1.2s infinite;
+            }
+            footer{
+                margin-top: 40px;
+                margin-bottom: 0px;
+                margin-left: 0px;
+                margin-right: 0px;
+                padding: 10px;
             }
         }

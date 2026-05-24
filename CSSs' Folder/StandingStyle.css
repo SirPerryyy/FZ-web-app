@@ -53,7 +53,6 @@
             min-width: 0;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             backdrop-filter: blur(2px);
-            max-height: 80vh;
             overflow-y: auto;
             
         }
@@ -269,38 +268,7 @@
         .standingsButton{
             text-decoration: underline;
         }
-        .donationsButton{
-            padding: 6px 10px;
-            border-radius: 10px;
-            background-color: transparent; 
-            cursor:pointer;
-            margin-top: 5px;
-            margin-bottom: 0;
-            font-size: 20px;
-            letter-spacing: 1px;
-            font-weight: 200px;
-            color: #15151E;
-            transition-duration: 0.4s;
-            top: 10px;
-            left: 1%;
-            position: absolute;
-        }
-        .donationsButton:hover{
-            color: #ff0000;
-            animation: pulse 1.2s infinite;
-        }
 
-        @keyframes pulse{
-            0%{
-                transform: scale(1);
-            }
-            50%{
-                transform: scale(1.05);
-            }
-            100%{
-                transform: scale(1);
-            }
-        }
         .modaloverlay {
             display: none;
             position: fixed;
@@ -492,9 +460,6 @@
             cursor: pointer;
             border: 5px solid red;
             transition-duration: 0.1s;
-        }
-        .donationsButtonMobile{
-                display: none;
         }
         .pageNavigation{
             display: flex;
@@ -816,28 +781,6 @@
                 display: inherit;
                 color: #ccc;
                 font-family: "F1 Regular";
-            }
-            .donationsButtonMobile{
-                display: inline;
-            padding: 6px 10px;
-            border-radius: 10px;
-            background-color: transparent; 
-            cursor:pointer;
-            margin-top: 5px;
-            margin-bottom: 0;
-            font-size: 20px;
-            letter-spacing: 1px;
-            font-weight: 200px;
-            color: #15151E;
-            transition-duration: 0.4s;
-            top: 4px;
-            left: 8%;
-            position: absolute;
-            scale: 74%;
-            }
-            .donationsButtonMobile:hover{
-                color: #ff0000;
-                animation: pulse 1.2s infinite;
             }
             .panel-races{
                 padding: 10px;
