@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9D6RSG5F2R"></script>
+    <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-9D6RSG5F2R');
+    </script>
+    <script src="Scripts/scripts.js"></script>
+    <script src="Scripts/teamPage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FZ Web App Teams</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/Logos/fxlogo2.0.png">
+    <link rel="stylesheet" href="CSSs' Folder/TeamsStyle.css">
+    <link rel="stylesheet" href="CSSs' Folder/defaultStyle.css">
+
+
+</head>
+    <div class="modaloverlay"></div>
+<header class="header">
+    <img class="header-img"src="Assets/Logos/fxlogo2.0.png" alt="FzLogo">
+        <p class="currentPage">Teams</p>
+        <nav class="nav">
+            <div class="driversButton" onclick="SwitchToDrivers()">The Drivers</div>
+            <div class="calendarButton" onclick="SwitchToCalendar()">Calendar</div>
+            <div class="standingsButton" onclick="SwitchToStandings()">STANDINGS</div>
+        <div class="donationsButton" style="position: absolute; left:10px;" onclick="RedirectPayPal()">❤️Support the project</div>
+        </nav>
+        
+        <button class="menu-button" onclick="toggleMenu()">NAVIGATE</button>
+    <div class="donationsButtonMobile" onclick="RedirectPayPal()">❤️Support the project</div>
+</header>
+    <div class="navMobileContainer">
+        <div class="navMobileRow">
+            <button class="navMobileButton" onclick="SwitchToCalendar()">Calendar</button>
+            <button class="navMobileButton" onclick="SwitchToStandings()">Standings</button>
+            <button class="navMobileButton" style="margin-top: 4px;" onclick="SwitchToDrivers()">The Drivers</button>
+        </div>
+    </div>
+
+<body onload="LoadTeamInfo()">
+    <div class="container">
+        <div class="teamPanel">
+            <div class="teamName">loading</div>
+            
+            <div class="teamBG" style="background: linear-gradient(135deg, #ff000000, #b4bbc000, #28d3bc00, #b7c2db00);"></div>
+            <img class="teamLogo" src="">
+
+            <div class="teamCupContainter"></div>
+
+            <div class="teamSeasonsPanel">
+                <h2>SEASON 1</h2>
+                <p>loading</p>
+                <h2>SEASON 2</h2>
+                <p>loading</p>
+                <h2>SEASON 3</h2>
+                <p>loading</p>
+                <h2>SEASON 4</h2>
+                <p>loading</p>
+            </div>
+            <div class="teamStatsPanel">
+                <h2>Team's Titles<p>loading</p></h2>
+                <h2>Victories<p>loading</p></h2>
+                <h2>Total Points<p>loading</p></h2>
+                <h2>Unique Drivers<p>loading</p></h2>
+                <h2>Seasons Attended<p>loading</p></h2>
+                <h2>Driver's Titles<p>loading</p></h2>
+                <h2>Team's Icon<p>loading</p></h2>
+            </div>
+
+            <div class="teamImages">
+                <img src="">
+                <img src="">
+                <img src="">
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    V. 1.7.0
+    <br>
+    <STRONG>Any reference is purely casual, any character too.</STRONG>
+    <br>
+    <a href="https://github.com/SirPerryyy/FZ-web-app/" style="color: white;">Github project page link</a>
+<br>
+    <a href="mailto:simonepappalardi0@gmail.com" style="color: white;">For any info click here to open the direct link to my email</a><br>
+    (click the button on the right if the link above doesn't work for you)
+    <button onclick="CopyClipboard()" style="background-color: #42424e; border-radius: 20px;">Copia</button>
+    <br>THIS SITE IS PRIVATE AND WAS MADE AND IS USED EXCLUSIVELY FOR PERSONAL USE
+    <br>Redistribution is highly forbidden!
+    <br>La ridistribuzione è severamente vietata!
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="Scripts/donations.js"></script>
+</html>
