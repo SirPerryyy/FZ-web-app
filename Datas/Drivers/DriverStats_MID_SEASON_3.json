@@ -1,0 +1,421 @@
+{
+  "Perry":{
+      "driverPanelPointsOVR": {
+      "value": 99,
+      "color": "#eeca00"
+    },
+      "constrTitles": 0,
+      "attValue": 96,
+      "expValue": 98,
+      "pacValue": 99,
+      "qlfValue": 97,
+      "stgValue": 99,
+      "fplValue": 99,
+      "defValue": 97,
+      "cnsValue": 99,
+      "fylValue": 98,
+      "rfxValue": 96,
+      "driverPanelDriverBiography": {
+        "backgroundColor": "#bbff00",
+        "nationalityFlag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/960px-Flag_of_the_United_Kingdom_%283-5%29.svg.png",
+        "nationality": "UK",
+        "team": "Mercedes",
+        "pastTeams": 0
+      },
+      "allTimeStats": {
+        "championships": 2,
+        "raceAttended": 44,
+        "podiums": 43,
+        "raceBestPos": 1,
+        "seasons": 3,
+        "points": 645,
+        "dnfs": 1,
+        "wins": 22
+      },
+      "driverInfo": {
+        "name": "Sir Perry",
+        "nameColor": "#bbff00",
+        "driverImage": "CSSs' Folder/DriversPictures/SirPerry.png",
+        "driverNumber": 57,
+        "driverTeamMainColor": "#28d3bc",
+        "driverNumberColor": "#bbff00"
+    }
+  },
+  "Kimi":{
+    "driverPanelPointsOVR": {
+      "value": 97,
+      "color": "#eeca00"
+    },
+      "constrTitles": 2,
+      "attValue": 97,
+      "expValue": 96,
+      "pacValue": 97,
+      "qlfValue": 98,
+      "stgValue": 97,
+      "fplValue": 98,
+      "defValue": 99,
+      "cnsValue": 96,
+      "fylValue": 97,
+      "rfxValue": 99,
+    "driverPanelDriverBiography": {
+        "nationalityFlag": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/250px-Flag_of_Argentina.svg.png",
+        "nationality": "ARG",
+        "team": "Lotus",
+        "pastTeams": "0",
+        "textColor" : "#ccc"
+      },
+    "allTimeStats": {
+        "championships": 0,
+        "raceAttended": 44,
+        "podiums": 35,
+        "raceBestPos": 2,
+        "seasons": 3,
+        "points": 454,
+        "dnfs": 2,
+        "wins":7
+      },
+    "driverInfo": {
+        "name": "Kimi Fernandes",
+        "nameColor": "#781010",
+        "driverImage": "CSSs' Folder/DriversPictures/Kimi.png",
+        "driverNumber": 69,
+        "driverTeamMainColor": "#fcce00",
+        "backgroundGradient": "linear-gradient(135deg, #fcce00, #131313, #968700e0, #3a3b0070)"
+    }
+  },
+  "Alvaro":{
+    "driverPanelPointsOVR": {
+      "value": 92,
+      "color": "#acabab"
+    },
+    "constrTitles": 2,
+      "attValue": 89,
+      "expValue": 91,
+      "pacValue": 91,
+      "qlfValue": 94,
+      "stgValue": 97,
+      "fplValue": 92,
+      "defValue": 95,
+      "cnsValue": 97,
+      "fylValue": 91,
+      "rfxValue": 97,
+    "driverPanelDriverBiography": {
+        "nationalityFlag": "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/1280px-Flag_of_Brazil.svg.png",
+        "nationality": "BRA",
+        "team": "Williams",
+        "pastTeams": "1 (Lotus)",
+        "textColor" : "#ccc"
+      },
+    "allTimeStats": {
+        "championships": 0,
+        "raceAttended": 39,
+        "podiums": 20,
+        "raceBestPos": 3,
+        "seasons": 3,
+        "points": 277,
+        "dnfs": 2,
+        "wins":6
+      },
+    "driverInfo": {
+        "name": "Alvaro Preguica",
+        "nameColor": "#503000",
+        "driverImage": "CSSs' Folder/DriversPictures/Alvaro.png",
+        "driverNumber": 11,
+        "driverTeamMainColor": "#006ec9",
+        "backgroundGradient": "linear-gradient(135deg, #006ec9, #b8e5ff98, #0087c59f, #006ace96)"
+    }
+  },
+  "Pablo":{
+    "driverPanelPointsOVR": {
+      "value": 85,
+      "color": "#81501f"
+    },
+    "constrTitles": 0,
+      "attValue": 85,
+      "expValue": 86,
+      "pacValue": 84,
+      "qlfValue": 93,
+      "stgValue": 89,
+      "fplValue": 85,
+      "defValue": 87,
+      "cnsValue": 80,
+      "fylValue": 89,
+      "rfxValue": 96,
+    "driverPanelDriverBiography": {
+        "nationalityFlag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/250px-Flag_of_Mexico.svg.png",
+        "nationality": "MEX",
+        "team": "Lotus",
+        "pastTeams": "3 (Ferrari, Aston Martin, Williams)",
+        "textColor" : "#ccc"
+      },
+    "allTimeStats": {
+        "championships": 0,
+        "raceAttended": 35,
+        "podiums": 15,
+        "raceBestPos": 4,
+        "seasons": "2.5",
+        "points": 266,
+        "dnfs": 3,
+        "wins":2
+      },
+    "driverInfo": {
+        "name": "Pablo Carpincho",
+        "nameColor": "#de3f00",
+        "driverImage": "CSSs' Folder/DriversPictures/Pablo.png",
+        "driverNumber": 38,
+        "driverTeamMainColor": "#fcce00",
+        "backgroundGradient": "linear-gradient(135deg, #fcce00, #131313, #968700e0, #3a3b0070)"
+    }
+  },
+  "Doggy":{
+    "driverPanelPointsOVR": {
+      "value": 89,
+      "color": "#acabab"
+    },
+    "constrTitles": 0,
+      "attValue": 87,
+      "expValue": 91,
+      "pacValue": 89,
+      "qlfValue": 92,
+      "stgValue": 95,
+      "fplValue": 97,
+      "defValue": 91,
+      "cnsValue": 87,
+      "fylValue": 88,
+      "rfxValue": 97,
+    "driverPanelDriverBiography": {
+        "nationalityFlag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/250px-Flag_of_Italy.svg.png",
+        "nationality": "ITA",
+        "team": "Mercedes",
+        "pastTeams": "2 (Koeingseng, Mclaren)",
+        "textColor" : ""
+      },
+    "allTimeStats": {
+        "championships": 0,
+        "raceAttended": 33,
+        "podiums": 8,
+        "raceBestPos": 6,
+        "seasons": "2.5",
+        "points": 205,
+        "dnfs": 0,
+        "wins":1
+      },
+    "driverInfo": {
+        "name": "Doggy",
+        "nameColor": "#8000ff",
+        "driverImage": "CSSs' Folder/DriversPictures/Doggy.png",
+        "driverNumber": 15,
+        "driverTeamMainColor": "#28d3bc"
+        }
+  },
+  "Bear":{
+    "driverPanelPointsOVR": {
+      "value": 77,
+      "color": "#2b2b2b"
+    },
+    "constrTitles": 0,
+      "attValue": 75,
+      "expValue": 79,
+      "pacValue": 75,
+      "qlfValue": 73,
+      "stgValue": 85,
+      "fplValue": 87,
+      "defValue": 76,
+      "cnsValue": 80,
+      "fylValue": 74,
+      "rfxValue": 91,
+    "driverPanelDriverBiography": {
+        "nationalityFlag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Flag_of_the_United_States_%28DDD-F-416E_specifications%29.svg/250px-Flag_of_the_United_States_%28DDD-F-416E_specifications%29.svg.png",
+        "nationality": "USA",
+        "team": "Williams",
+        "pastTeams": "3 (Koeingseng, Mercedes, Ferrari)",
+        "textColor" : "#ccc"
+      },
+    "allTimeStats": {
+        "championships": 0,
+        "raceAttended": 30,
+        "podiums": 2,
+        "raceBestPos": 5,
+        "seasons": "2.5",
+        "points": 92,
+        "dnfs": 2,
+        "wins":0
+      },
+    "driverInfo": {
+        "name": "Twenty Miles",
+        "nameColor": "#001aff",
+        "driverImage": "CSSs' Folder/DriversPictures/Mattia.png",
+        "driverNumber": 21,
+        "driverTeamMainColor": "#006ec9",
+        "backgroundGradient": "linear-gradient(135deg, #006ec9, #b8e5ff98, #0087c59f, #006ace96)"
+    }
+  },
+  "Luca":{
+    "driverPanelPointsOVR": {
+      "value": 84,
+      "color": "#81501f"
+    },
+    "constrTitles": 0,
+      "attValue": 85,
+      "expValue":  92,
+      "pacValue": 85,
+      "qlfValue": 85,
+      "stgValue": 89,
+      "fplValue": 70,
+      "defValue": 79,
+      "cnsValue": 77,
+      "fylValue": 74,
+      "rfxValue":  97,
+    "driverPanelDriverBiography": {
+        "nationalityFlag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/250px-Flag_of_Italy.svg.png",
+        "nationality": "ITA",
+        "team": "RedBull",
+        "pastTeams": "0",
+        "textColor" : "#ccc"
+      },
+    "allTimeStats": {
+        "championships": 0,
+        "raceAttended": 8,
+        "podiums": 2,
+        "raceBestPos": 0,
+        "seasons": 1,
+        "points": 80,
+        "dnfs": 2,
+        "wins":2
+      },
+    "driverInfo": {
+        "name": "Luca",
+        "nameColor": "#777777",
+        "driverImage": "CSSs' Folder/DriversPictures/Luca1.png",
+        "driverNumber": 27,
+        "driverTeamMainColor": "rgb(16, 0, 163)",
+        "backgroundGradient": "linear-gradient(135deg, #0400e7, #fc0800, #3f3f3f9f, #0300afcb)"
+    }
+  },
+  "Bobbi":{
+    "driverPanelPointsOVR": {
+      "value": 97,
+      "color": "#eeca00"
+    },
+    "constrTitles": 0,
+      "attValue": 92,
+      "expValue":  92,
+      "pacValue": 99,
+      "qlfValue": 98,
+      "stgValue": 98,
+      "fplValue": 90,
+      "defValue": 95,
+      "cnsValue": 99,
+      "fylValue": 99,
+      "rfxValue":  97,
+    "driverPanelDriverBiography": {
+        "nationalityFlag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/250px-Flag_of_Italy.svg.png",
+        "nationality": "ITA",
+        "team": "RedBull",
+        "pastTeams": "0",
+        "textColor" : "#ccc"
+      },
+    "allTimeStats": {
+        "championships": 0,
+        "raceAttended": 9,
+        "podiums": 8,
+        "raceBestPos": 0,
+        "seasons": 1,
+        "points": 203,
+        "dnfs": 1,
+        "wins":4
+      },
+    "driverInfo": {
+        "name": "Bobbi",
+        "nameColor": "#00b6e4",
+        "driverImage": "CSSs' Folder/DriversPictures/Bobbi1.png",
+        "driverNumber": 5,
+        "driverTeamMainColor": "rgb(16, 0, 163)",
+        "backgroundGradient": "linear-gradient(135deg, #0400e7, #fc0800, #3f3f3f9f, #0300afcb)"
+    }
+  },
+    "Pier":{
+    "driverPanelPointsOVR": {
+      "value": 76,
+      "color": "#2b2b2b"
+    },
+          "constrTitles": 0,
+      "attValue": 76,
+      "expValue": 74,
+      "pacValue": 79,
+      "qlfValue": 75,
+      "stgValue": 81,
+      "fplValue": 88,
+      "defValue": 73,
+      "cnsValue": 80,
+      "fylValue": 74,
+      "rfxValue": 90,
+    "driverPanelDriverBiography": {
+        "nationalityFlag": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/330px-Flag_of_France.svg.png",
+        "nationality": "FRA",
+        "team": "Mercedes Brawn",
+        "pastTeams": "1 (Mercedes)",
+        "textColor" : "#ccc"
+      },
+    "allTimeStats": {
+        "championships": 0,
+        "raceAttended": 4,
+        "podiums": 0,
+        "raceBestPos": 8,
+        "seasons": "2",
+        "points": 9,
+        "dnfs": 0,
+        "wins":0
+      },
+    "driverInfo": {
+        "name": "Pier La Mert",
+        "nameColor": "#FF0000",
+        "driverImage": "CSSs' Folder/DriversPictures/Pier.png",
+        "driverNumber": 10,
+        "driverTeamMainColor": "#d2f700",
+        "backgroundGradient": "linear-gradient(135deg,#c4c4c4, #d9ff009c, #ffffff8c, #93b10070)"
+    }
+  },
+    "Robert":{
+    "driverPanelPointsOVR": {
+      "value": "68",
+      "color": "#2b2b2b"
+    },
+          "constrTitles": 0,
+      "attValue": "63",
+      "expValue": "50",
+      "pacValue": "68",
+      "qlfValue": "65",
+      "stgValue": "80",
+      "fplValue": "88",
+      "defValue": "60",
+      "cnsValue": "70",
+      "fylValue": "64",
+      "rfxValue": "89",
+    "driverPanelDriverBiography": {
+        "nationalityFlag": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm1ECYrXIqpebEh6Lc1dL01RllRlZQ9pRx9A&s",
+        "nationality": "ROM",
+        "team": "Mercedes Brawn",
+        "pastTeams": "0",
+        "textColor" : "#ccc"
+      },
+    "allTimeStats": {
+        "championships": 0,
+        "raceAttended": 2,
+        "podiums": 0,
+        "raceBestPos": 8,
+        "seasons": "1",
+        "points": 0,
+        "dnfs": 0,
+        "wins":0
+      },
+    "driverInfo": {
+        "name": "Rober Visoiu",
+        "nameColor": "#6c0097",
+        "driverImage": "CSSs' Folder/DriversPictures/Robert.png",
+        "driverNumber": 24,
+        "driverTeamMainColor": "#d2f700",
+        "backgroundGradient": "linear-gradient(135deg,#c4c4c4, #d9ff009c, #ffffff8c, #93b10070)"
+    }
+  }
+}
