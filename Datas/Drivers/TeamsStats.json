@@ -1,0 +1,193 @@
+{
+  "MercedesFZ": {
+    "teamName": "Mercedes Amg Petronas FZ Team",
+    "teamColor": "color: #28d3bc",
+    "bG": "background: linear-gradient(135deg, #28d3bc, #b4bbc0b6, #28d3bc9f, #b7c2db94)",
+    "teamLogoSrc": "Assets/Logos/mer.png",
+    "cupSrc": "Assets/Logos/merCupIcon.png",
+    "Seasons": [
+      "Sir Perry",
+      "Sir Perry &nbsp & &nbsp Pier La Mert &nbsp &nbsp",
+      "Sir Perry &nbsp & &nbsp Doggy &nbsp &nbsp [CUP]",
+      "???"
+    ],
+    "Stats": {
+      "titles": 1,
+      "wins": "27 &nbsp &nbsp  [24 Sir Perry | 3 Doggy]",
+      "totalPoints": 1172,
+      "uniqueDrivers": 3,
+      "seasonsAttended": 3,
+      "driversChamps": "3 &nbsp [Sir Perry]",
+      "icon": "Sir Perry"
+    },
+    "ImagesSrcs": [
+      "Assets/PageConstantImages/mer1.jpg",
+      "Assets/PageConstantImages/mer2.jpg",
+      "Assets/PageConstantImages/mer3.jpg"
+    ]
+  },
+  "LotusFZ": {
+    "teamName": "Lotus FZ Team",
+    "teamColor": "color: #fcce00",
+    "bG": "background: linear-gradient(135deg, rgb(252, 206, 0), rgba(255, 190, 89, 0.79), rgba(150, 135, 0, 0.88), rgba(195, 134, 18, 0.44))",
+    "teamLogoSrc": "Assets/Logos/lot.png",
+    "cupSrc": "Assets/Logos/lotCupIcon.png",
+    "Seasons": [
+      "Kimi Fernandes &nbsp & &nbsp Alvaro Preguica &nbsp &nbsp [CUP]",
+      "Kimi Fernandes &nbsp & &nbsp Alvaro Preguica &nbsp &nbsp [CUP]",
+      "Kimi Fernandes &nbsp & &nbsp Alvaro Preguica / Pablo Carpincho &nbsp &nbsp",
+      "Kimi Fernandes &nbsp & &nbsp Sir Perry"
+    ],
+    "Stats": {
+      "titles": 2,
+      "wins": "15 &nbsp &nbsp  [9 Kimi | 6 Alvaro]",
+      "totalPoints": 1031,
+      "uniqueDrivers": 4,
+      "seasonsAttended": 4,
+      "driversChamps": 0,
+      "icon": "Kimi Fernandes"
+    },
+    "ImagesSrcs": [
+      "Assets/PageConstantImages/lot1.jpg",
+      "Assets/PageConstantImages/lot2.jpg",
+      "Assets/PageConstantImages/lot3.jpg"
+    ]
+  },
+  "RedbullFZ": {
+    "teamName": "Redbull FZ Racing",
+    "teamColor": "color: rgb(3, 0, 175)",
+    "bG": "background: linear-gradient(135deg, #0400e7, #fc0800, #3f3f3f9f, #0300afcb);",
+    "teamLogoSrc": "Assets/Logos/redb.png",
+    "logoFixedSize": "width: 500px; height: 400px; top: 60px",
+    "cupSrc": "",
+    "Seasons": [
+      "Did not join",
+      "Did not join",
+      "Bobbi &nbsp & &nbsp Luca",
+      "???"
+    ],
+    "Stats": {
+      "titles": 0,
+      "wins": "10 &nbsp &nbsp  [6 Bobbi | 2 Luca]",
+      "totalPoints": 405,
+      "uniqueDrivers": 2,
+      "seasonsAttended": 1,
+      "driversChamps": 0,
+      "icon": "Bobbi"
+    },
+    "ImagesSrcs": [
+      "Assets/PageConstantImages/red3.jpg",
+      "",
+      ""
+    ]
+  },
+  "WilliamsFZ": {
+    "teamName": "Williams",
+    "teamColor": "color: rgb(0, 110, 201)",
+    "bG": "background: linear-gradient(135deg, #006ec9, #b8e5ff98, #0087c59f, #006ace96);",
+    "teamLogoSrc": "Assets/Logos/wil.png",
+    "logoFixedSize": "width: 320px; height: 270px; top: 140px",
+    "cupSrc": "",
+    "Seasons": [
+      "Did not join",
+      "Did not join",
+      "Twenty Miles &nbsp & &nbsp Capobara / Alvaro Preguica",
+      "???"
+    ],
+    "Stats": {
+      "titles": 0,
+      "wins": 0,
+      "totalPoints": 283,
+      "uniqueDrivers": 3,
+      "seasonsAttended": 1,
+      "driversChamps": 0,
+      "icon": "Twenty Miles"
+    },
+    "ImagesSrcs": [
+      "Assets/PageConstantImages/wil3.jpg",
+      "",
+      ""
+    ]
+  },
+  "BrawnFZ": {
+    "teamName": "Mercedes Brawn GP FZ",
+    "teamColor": "color: rgb(204, 255, 92);",
+    "bG": "  background: linear-gradient(135deg, rgb(226, 255, 85), rgba(217, 255, 0, 0.61), rgba(142, 255, 239, 0.64), rgba(147, 177, 0, 0.85));",
+    "teamLogoSrc": "Assets/Logos/bgp.png",
+    "cupSrc": "",
+    "Seasons": [
+      "Did not join",
+      "Did not join",
+      "Pier La Mert &nbsp & &nbsp Robert Visoiu",
+      "???"
+    ],
+    "Stats": {
+      "titles": 0,
+      "wins": 0,
+      "totalPoints": 0,
+      "uniqueDrivers": 2,
+      "seasonsAttended": 1,
+      "driversChamps": 0,
+      "icon": "Pier La Mert"
+    },
+    "ImagesSrcs": [
+      "Assets/PageConstantImages/brawn3.jpg",
+      "",
+      ""
+    ]
+  },
+  "AstonMartinFZ": {
+    "teamName": "Aston Martin",
+    "teamColor": "color: rgb(0 101 54 / 91%)",
+    "bG": "  background: linear-gradient(135deg, rgb(0 105 35 / 74%), rgb(0 101 54 / 91%), rgb(193 193 193 / 64%), rgb(0 109 54 / 85%));",
+    "teamLogoSrc": "https://upload.wikimedia.org/wikipedia/fr/thumb/c/c2/Logo_Aston_Martin.svg/1280px-Logo_Aston_Martin.svg.png",
+    "cupSrc": "",
+    "Seasons": [
+      "Did not join",
+      "Pablo Carpincho &nbsp & &nbsp Skrall",
+      "Did not join",
+      "Did not join"
+    ],
+    "Stats": {
+      "titles": 0,
+      "wins": "2 &nbsp &nbsp  [2 Pablo Carpincho]",
+      "totalPoints": 182,
+      "uniqueDrivers": 2,
+      "seasonsAttended": 1,
+      "driversChamps": 0,
+      "icon": "Pablo Carpincho"
+    },
+    "ImagesSrcs": [
+      "Assets/PageConstantImages/ast2.jpg",
+      "",
+      ""
+    ]
+  },
+  "KoenigseggFZ": {
+    "teamName": "Koenigsegg",
+    "teamColor": "color: rgb(203 159 0)",
+    "bG": "  background: linear-gradient(135deg, rgb(245, 208, 0), rgb(203 159 0 / 91%), rgb(111 111 111 / 59%), rgb(245 208 0 / 52%));",
+    "teamLogoSrc": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Koenigsegg_logotype2014.png",
+    "cupSrc": "",
+    "Seasons": [
+      "Did not join",
+      "Twenty Miles &nbsp & &nbsp Doggy",
+      "Did not join",
+      "Did not join"
+    ],
+    "Stats": {
+      "titles": 0,
+      "wins": "0",
+      "totalPoints": 50,
+      "uniqueDrivers": 2,
+      "seasonsAttended": 1,
+      "driversChamps": 0,
+      "icon": "Doggy"
+    },
+    "ImagesSrcs": [
+      "Assets/PageConstantImages/koe2.jpg",
+      "",
+      ""
+    ]
+  }
+}
