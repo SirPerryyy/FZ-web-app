@@ -144,10 +144,14 @@
         }
         
         .teamImages img{
-            width: 500px;
-            height: 400px;
+            width: 480px;
+            height: 270px;
             border-radius: 10px;
             display: none;
+        }
+
+        .teamImages img:hover{
+            cursor: pointer;
         }
 
         @media (max-width: 1300px) {
