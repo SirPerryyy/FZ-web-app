@@ -65,3 +65,10 @@ function toggleMenu() {
 function OpenImage(src) {
     window.location.href = src;
 }
+function GoToTeam(teamID){
+    if(screen.width < 738)
+    {
+        return;
+    }
+    window.location.href = `./TeamPage.html?id=${teamID}`;
+}

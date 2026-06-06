@@ -74,7 +74,7 @@ async function LoadTeamInfo()
         if(team.ImagesSrcs[i] != "")
         {
             images[i].style = "display: inline"
-            images[i] = team.ImagesSrcs[i]; 
+            images[i].src = team.ImagesSrcs[i]; 
         }
     }
 
