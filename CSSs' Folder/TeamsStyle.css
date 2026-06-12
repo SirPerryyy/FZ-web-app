@@ -324,7 +324,40 @@
                 min-width: 0;
                 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
                 backdrop-filter: blur(2px);
-                height: 485px;
+                height: 2500px;
             }
+            .teamName{
+                font-size: 23px;
+            }
+            .teamSeasonsPanel{
+                top: 1296px;
+                left: 9px;
+                width: 95%;
+                height: 560px;
+            }.teamStatsPanel{
+                top: 725px;
+                left: 9px;
+                width: 95%;
+                height: 550px;
+            }
+            .teamBG{
+                top: 175px;
+            }
+            .teamLogo{
+                top: 190px;
+            }
+            .teamCupContainter{
+                transform: scale(0.8);
+                left: -30px;
+                top: 540px;
+            }
+            .teamImages{
+                top: 2000px;
+                left: 8px;
+                transform: scale(0.68);
+                display: flex;
+                gap: 36px;
+                flex-direction: column;
+            }     
             
 }
