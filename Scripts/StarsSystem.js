@@ -124,6 +124,15 @@ function ToggleErrorPanel(mode){
         case "requestsLimitExceded":
             setPanel("You have exceeded the request limit! Please wait a moment and then try again.");
             break;
+        
+        case "serviceDown" :
+            setPanel("Network error while fetching data from external source.")
+            break;
+        
+        case "serviceNotAvailable":
+            console.log("a")
+            setPanel("At the moment our external provider is not reachable due to insufficient founds. Consider donating something to support this project...")
+            break;
 
         default:
             setPanel("DEBUG");
@@ -151,26 +160,27 @@ function setPanel(message, close = false) {
     }
     
 }
-
+let isServiceNotAvailable = true;
 async function GetIpData() {
-    const endpoint = 'http://ip-api.com/json/?fields=status,message,asname,query';
-
+    const endpoint = 'https://ipapi.co/json/?fields=status,message,asname,query';
+    
     try {
         const res = await fetch(endpoint);
         const response = await res.json();
 
-        if (response.status !== 'success') {
-            ToggleErrorPanel("requestsLimitExceded");
-            console.log('query failed: ' + response.message);
-            return;
-        }
+        //if (response.status !== 'success') {
+          //  ToggleErrorPanel("requestsLimitExceded");
+          //  console.log('query failed: ' + response.message);
+          //  return;
+        //}
         if(response.asname.length <= 6)
         {
             isVpn = true;
             return;
         }
         thisMachineIpDatas = response.query;
-    } catch (err) {
+    } 
+    catch (err) {
         console.log("Network error:", err);
     }
 }
@@ -179,6 +189,11 @@ let thisIpStarsData;
 
 async function AddStar() 
 {
+    if(isServiceNotAvailable)
+        {
+            ToggleErrorPanel("serviceNotAvailable")
+            return;
+        }
     if(locked == true)
     {
         return;
