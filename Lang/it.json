@@ -1,0 +1,49 @@
+{
+    "Global":{
+        "button_standings" : "CLASSIFICHE",
+        "button_drivers" : "Piloti",
+        "button_calendar" : "Calendario",
+        "button_navigate" : "PAGINE",
+        "button_donate" : "❤️Supporta il progetto"
+    }, 
+    "IndexPage":{
+        "standings_driver" : "CLASSIFICA PILOTI",
+        "standings_constr" : "CLASSIFICA COSTRUTTORI",
+        "standings_details_team" : "Team",
+        "table_details_pos" : "Pos",
+        "table_header_drivers" : "<div>Pos</div> <div>Pilota</div> <div>Punti</div>",
+        "table_header_teams" : "<div>Pos</div> <div>Team</div> <div>Punti</div>",
+        "story_invite" : "LEGGI LA NOSTRA STORIA ->",
+        "race_history" : "CRONOLOGIA GARE"
+    },
+    "DriverProfilePage" : {
+        "stats_title" : "Statistiche totali",
+        "stats_driv_titles" : "Mondiali Pilota",
+        "stats_constr_titles" : "Mondiali Costruttore",
+        "stats_career_wins" : "Vittorie",
+        "stats_race_entered" : "Partenze",
+        "stats_podiums" : "Podi",
+        "stats_best_champ_pos" : "Miglior Piazzamento In stagione",
+        "stats_seasons" : "Stagioni",
+        "stats_points" : "Punti Totali",
+        "stats_dnfs" : "DNFs",
+        "profile_title" : "Biografia Pilota",
+        "profile_nation" : "Nazionalità",
+        "profile_team" : "Team",
+        "profile_past_teams" : "Team Passati"
+    },
+    "TeamPage" : {
+        "stats_titles" : "Titoli Team",
+        "stats_victories" : "Vittorie",
+        "stats_points" : "Punti Totali",
+        "stats_unique_drivers" : "Istorico Piloti",
+        "stats_stagioni" : "Stagioni",
+        "stats_driv_titles" : "Titoli Pilota",
+        "stats_team_icon" : "Icona del Team"
+    },
+    "StoryPage": {
+        "button_chose_champ" : "Scegli Stagione",
+        "table_of_cont" : "Tabella Contenuti"
+    }
+   
+}

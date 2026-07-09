@@ -13,6 +13,7 @@
     <script src="Scripts/DriverPageRedirect.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script src="Scripts/RacePagesManager.js"></script>
+    <script src="Scripts/loadLang.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FZ Web App</title>
     <link rel="icon" type="image/png" sizes="32x32" href="Assets/Logos/fxlogo2.0.png">
@@ -21,7 +22,7 @@
 
 
 </head>
-<body onload="DonationRead()">
+<body onload="DonationRead(), LoadLangIndex()">
     <div class="modaloverlay"></div>
 <header class="header">
     <img class="header-img"src="Assets/Logos/fxlogo2.0.png" alt="FzLogo">
@@ -41,7 +42,6 @@
         <button class="navMobileButton" onclick="SwitchToDrivers()">Drivers</button>
     </div>
 </div>
-
 <main>
     <div class="donationsPanelDone">La tua donazione è andata a buon fine!<br><br>Ti ringraziamo di cuore!
         <br><button class="closeButton" style="background-color: rgb(41, 248, 41)" onclick="Close()">Close</button>
@@ -122,7 +122,7 @@
         </div>
         <!-- COSTRUTTORI -->
         <div class="teamPanel">
-            <h2>Constructors' Standings</h2>
+            <h2>Teams' Standings</h2>
 
             <div class="table-header">
                 <div>Pos</div>

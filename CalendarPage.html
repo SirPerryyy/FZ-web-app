@@ -11,6 +11,7 @@
     </script>
     <script src="Scripts/scripts.js"></script>
     <script src="Scripts/ShowPanelRaceCalendar.js"></script>
+    <script src="Scripts/loadLang.js"></script>
     <meta charset="UTF-8">
     <title>FZ Web App Calendar</title>
     <link rel="icon" type="image/png" sizes="32x32" href="Assets/Logos/fxlogo2.0.png">
@@ -20,7 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 </head>
-<body>
+<body onload="GlobalLoadLang()">
     <header>
         <img class="header-img"src="Assets/Logos/fxlogo2.0.png" alt="FzLogo">
         <p class="currentPage">Calendar Page</p>
