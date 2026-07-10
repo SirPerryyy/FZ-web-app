@@ -41,6 +41,8 @@ async function LoadLangIndex()
 {
     await SetlangJsonVariable();
 
+    if (localStorage.getItem('landID') != 'it') return;
+
     LoadLangGlobal()
     
     const page = langJson.IndexPage;
@@ -68,11 +70,15 @@ async function GlobalLoadLang()
 {
     await SetlangJsonVariable();
 
+    if (localStorage.getItem('landID') != 'it') return;
+
     LoadLangGlobal()
 }
 async function LoadLangDrivProf()
 {
     await SetlangJsonVariable();
+
+    if (localStorage.getItem('landID') != 'it') return;
 
     LoadLangGlobal()
     
@@ -101,12 +107,16 @@ async function LoadLangTeamPage()
 {
     await SetlangJsonVariable();
 
+    if (localStorage.getItem('landID') != 'it') return;
+
     LoadLangGlobal()
 }
 
 async function LoadLangStory()
 {
     await SetlangJsonVariable();
+
+    if (localStorage.getItem('landID') != 'it') return;
 
     LoadLangGlobal()
 } 
@@ -121,13 +131,13 @@ function GetLangPrefID()
     if(localStorage.getItem('langID') == null)
     {
         var userLang = navigator.language || navigator.userLanguage;
-        if(userLang == it || userLang == en)
+        if(userLang == 'it')
         {
             localStorage.setItem('langID', userLang);
         }
         else
         {
-            localStorage.setItem('langID', en);
+            localStorage.setItem('langID', 'en');
         }
     }
     return localStorage.getItem('langID')
