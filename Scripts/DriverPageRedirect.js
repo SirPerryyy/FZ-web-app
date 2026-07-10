@@ -73,7 +73,7 @@ async function LoadProfile()
     rfxValue.innerText = driver.rfxValue;
 
     champs.innerText = driver.allTimeStats.championships;
-    wins.innerText = driver.allTimeStats.wins;
+    wins.innerHTML = driver.allTimeStats.wins + ` <span class="advDetail">/${driver.allTimeStats.raceAttended}</span>`;
     rcAtt.innerText = driver.allTimeStats.raceAttended;
     podiums.innerText = driver.allTimeStats.podiums;
     bestPos.innerText = driver.allTimeStats.raceBestPos;
