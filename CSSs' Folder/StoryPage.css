@@ -1,3 +1,6 @@
+        html{
+            scroll-behavior: smooth;
+        }
         .navMobile
         {
             display: none;
@@ -9,6 +12,15 @@
             max-width: 1700px;
             margin: 0 auto;
             min-height: 30px;
+            height: auto;
+        }
+        ol{
+            font-size: larger;
+            color:white;
+            font-family: 'F1 Bold';
+            margin-left : 30;
+            line-height: 1.5;
+            
         }
         .container{
             flex: 1;
@@ -90,10 +102,42 @@
             border-radius: 4px;
             border: none;
         }
-
+        .tableOfCont{
+            color: white;
+            font-family: 'F1 Regular';
+        }
+        .seasonTitle{
+            font-family: 'F1 Wide';
+            font-size:x-large;
+            text-align: center;
+            margin-top: 20px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+            border-top: 2px solid rgba(255, 255, 255, 0.2)
+        }
+        .imgContainer{
+            display: flex;
+            flex-direction: row;
+            flex: 1 1 auto;
+            margin-left : -20px;
+        }
+        img{
+            margin-top: 30px;
+            margin-left: 25px;
+            max-width: 32%;
+            height: auto;
+            object-fit: cover;
+        }
+        p{
+            font-family: 'F1 Regular';
+            font-size: large;
+            font-weight: 60;
+            color: #cfcfcf;
+            margin-top: 10px;
+            line-height: 25px;
+        }
         .panel{
             flex: 1;
-            height: 2500px;
+            height: auto;
             background-color: #1E1E26;
             border-radius: 8px;
             padding: 25px;
@@ -113,33 +157,20 @@
             font-size: 30px;
             border-bottom: 2px solid rgba(255,255,255,0.2);;
         }
+        ol {
+            counter-reset: item;
+        }
 
-        .season2h2{
-            text-align: center;
-            font-family: 'F1 Wide';
-            text-wrap: nowrap;
-            font-size: 30px;
-            border-bottom: 2px solid rgba(255,255,255,0.2);;
+        li {
+            margin-top: 10px;
+            background-color: #22226681;
+            border-radius: 10px;
+            display: block;
         }
-        .season p{
-            position: relative;
-            font-family: 'F1 Regular';
-            color:#cfcfcf;
-            top: 10px;
-            font-size: 17px;
-            line-height: 1.5;
-        }
-        .season img{
-            position: absolute;
-            overflow: hidden;
-            width: 500px;
-            height: 300px;
-        }
-        .season span{
-            position:absolute;
-            font-family: 'F1 Bold';
-            text-wrap: nowrap;
-            font-size: 18px;
+
+        li:before {
+            content: counters(item, ".")" ";
+            counter-increment: item;
         }
 
         @media (max-width: 1300px) {
@@ -151,7 +182,6 @@
                 left: 50%;
             }
             .champsPanel{
-                display: none;
             }
                         .container {
                 margin-top: 0px;
@@ -174,7 +204,6 @@
                 flex-direction: column;
             }
             .champsPanel{
-                display: none;
             }
             .driverPanel{
                 margin-top: 10px;
@@ -202,38 +231,17 @@
                 margin-top: 0px;
                 flex-direction: column;
             }
-                    .season{
+        .season{
             flex: 1;
             min-width: 0;
         }
         .champsPanel{
-                display: none;
+                
             }
         .datasPanel{
             gap: 7%;
         }
-        .season h2{
-            text-align: center;
-            font-family: 'F1 Wide';
-            text-wrap: nowrap;
-            font-size: 27px;
-            border-bottom: 2px solid rgba(255,255,255,0.2);;
-        }
-        .season2h2{
-            text-align: center;
-            font-family: 'F1 Wide';
-            text-wrap: nowrap;
-            font-size: 27px;
-            margin-top: -300px;
-            border-bottom: 2px solid rgba(255,255,255,0.2);;
-        }
         
-        .season img{
-            display: none;
-        }
-        .season span{
-            display: none;
-        }
             .currentPage{
                 display: inherit;
                 color: #ccc;
@@ -272,5 +280,40 @@
                 left: 37%;
                 transform: translateX(-50%);
             }
-            
+
+            .imgContainer{
+                flex-direction: column;
+            }
+            img{
+                max-width: 100%;
+            }
+            h3{
+                display: none;
+            }
+            .datasPanel{
+                padding: 10px;
+            }
+            .datasPanel select{
+                position: relative;
+                margin-top: 20px;
+                left:50%;
+                transform: translateX(-50%);
+            }
+            .table-title
+            { 
+                 grid-template-columns: 15% 30% 38% 100px;
+            }
+            .tablesContainer{
+                flex-direction: column;
+            }
+            .table
+            {
+                width: 100%;
+            }
+            .seasonN{
+                transform: translateX(-37%);
+            }
+            .tableTeamText{
+                display: none;
+            }
         }
