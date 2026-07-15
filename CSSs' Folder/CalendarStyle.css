@@ -59,17 +59,20 @@
         }
         .panelCalenar{
             flex: 1;
-            background: #1E1E26;
-            border-radius: 8px;
 
             max-width: 1300px;
             padding: 80px 40px;
             margin: 0 auto;
 
             min-width: 0;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            backdrop-filter: blur(2px);
             overflow-y: auto;
+
+            background: rgba(64, 64, 82, 0.6);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(30, 30, 38, 0.3);
         }
         .panelCalenar h2{
             font-family: 'F1 Bold';
@@ -175,6 +178,10 @@
             z-index: 2;
             overflow-y: auto;
             animation: panelAnim 0.3s 1;
+            background: rgba(128, 131, 170, 0.22);
+  margin-top: 8px;
+  font-family: "F1 Regular";
+  border-radius: 10px;
         }
         
         @keyframes panelAnim {
@@ -333,20 +340,6 @@
         }
         @media (max-width: 738px) {
             
-            .panelCalenar{
-                flex: 1;
-                background: #1E1E26;
-                border-radius: 8px;
-
-                max-width: 1300px;
-                padding: 10px 10px;
-                margin: 0 auto;
-
-                min-width: 0;
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-                backdrop-filter: blur(2px);
-                overflow-y: auto;
-            }
             .sprintRaceText{
                 display: none;
                 
@@ -364,7 +357,7 @@
                 grid-template-columns: 30px 50px 180px 0px 50px;
                 color: #ccc;
                 border-bottom: 1px solid rgba(255,255,255,0.2);
-                margin-bottom: 5px;
+                margin-bottom: 5px;;
             } 
             
             .table-panel {
@@ -398,6 +391,7 @@
             margin-bottom: 50px;
             min-height: 270px;
             position: relative;
+            max-width: 370px;
             } 
             .header-img{
                 scale: 80%;
@@ -408,12 +402,16 @@
             }
 
             .panelRaceCalendar{
+                align-self: center;
                 margin: 6px;
-                padding: 20px;
-                width: 350px;
-                max-width: 350px;
+                padding: 12px;
+                width: 340px;
                 overflow-y: unset;
                 animation: none;
+            background: rgba(90, 92, 119, 0.555);
+            }
+            .modal-overlayCal{
+                width: 360px;
             }
             .col.lap{
                 display: none;

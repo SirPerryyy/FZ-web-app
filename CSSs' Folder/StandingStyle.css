@@ -9,6 +9,10 @@
             margin-bottom: 50px;
             min-height: 270px;
             position: relative;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(7.3px);
+            -webkit-backdrop-filter: blur(7.3px);
+            border: 1px solid rgba(11, 0, 145, 1);
         }
             header img {
                 margin-top: 70px;
@@ -52,8 +56,13 @@
             padding: 25px;
             min-width: 0;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            backdrop-filter: blur(2px);
-            overflow-y: auto;
+            overflow-y: auto;/* From https://css.glass */
+background: rgba(64, 64, 82, 0.6);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(30, 30, 38, 0.3);
             
         }
 
@@ -125,7 +134,7 @@
             text-align: right;
             font-weight: bold;
         }
-
+        
 
         .container-races{
             flex: 1;
@@ -146,12 +155,14 @@
         }
         .panel-races{
             flex: 1;
-            background: #1E1E26;
-            border-radius: 8px;
             padding: 25px;
             min-width: 0;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            backdrop-filter: blur(2px);
+            background: rgba(44, 44, 53, 0.43137254901960786);
+background:rgba(64, 64, 82, 0.6);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+border: 1px solid rgba(44, 44, 53, 0.3);
             
             overflow-y: auto;
             
@@ -179,7 +190,7 @@
             
         }
         .row-race{
-            background: rgba(0, 0, 0, 0.35);
+            background: rgba(0, 0, 0, 0.22);
             margin-top: 8px;
             font-family: "F1 Regular";
             border-radius: 10px;
@@ -202,13 +213,18 @@
         .table-panel {
         display: flex;
         flex-direction: column;
-        background: #1E1E26;
         padding: 15px;
         border-radius: 8px;
         max-width: 660px;
         margin-top: 20px;
         margin-left: 40px;
         height: 393px;
+        background: rgba(64, 64, 82, 0.6);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(30, 30, 38, 0.6);
         }
 
         .table-header2,
@@ -360,9 +376,6 @@
             color: #ccc;
             background-color: #15151e91;
             text-decoration: underline #ccc;
-        }
-        .navMobileContainer{
-            display: none;
         }
 
         .container-story{
@@ -567,46 +580,12 @@
             .table-panel {
                 display: flex;
                 flex-direction: column;
-                background: #1E1E26;
                 padding: 5px;
                 border-radius: 8px;
                 max-width: 640px;
                 margin-top: 20px;
                 margin-left: 5px;
                 height: 374px;
-            }
-            .navMobileContainer.active{
-                
-                display: flex;
-                flex-direction: column;   
-                align-items: center;      
-                gap: 20px;                
-                padding: 20px 0;
-            }
-            .navMobileRow{
-                background: #15151e50;
-                font-family: "F1 Regular";
-                border-radius: 10px;
-                transition: ease-out 0.3s;
-                padding: 15px;
-                margin-bottom: 20px;         
-    
-                border-bottom: 2px solid #15151E;
-            }
-            .navMobileButton{
-                padding: 10px;
-                font-size: 20px;
-                cursor: pointer;
-                color:#E10600;
-                font-family: inherit;
-                font-style: bold;
-                background-color:#131327;
-                border: none;
-                border-radius: 3px;
-            }
-            .navMobileButton:hover{
-                color: #ccc;
-                
             }
             .nav {
                 display: none;
@@ -640,7 +619,6 @@
                 min-height: 330px;
             }
             .row-race{
-                background: rgba(0, 0, 0, 0.35);
                 margin-top: 8px;
                 font-family: "F1 Regular";
                 border-radius: 10px;
@@ -676,39 +654,6 @@
                 height: 160px;
                 object-fit: cover;
             }
-                        .navMobileContainer.active{
-                
-                display: flex;
-                flex-direction: column;   
-                align-items: center;      
-                gap: 20px;                
-                padding: 20px 0;
-            }
-            .navMobileRow{
-                background: #15151e50;
-                font-family: "F1 Regular";
-                border-radius: 10px;
-                transition: ease-out 0.3s;
-                padding: 15px;
-                margin-bottom: 20px;         
-    
-                border-bottom: 2px solid #15151E;
-            }
-            .navMobileButton{
-                padding: 10px;
-                font-size: 20px;
-                cursor: pointer;
-                color:#E10600;
-                font-family: inherit;
-                font-style: bold;
-                background-color:#131327;
-                border: none;
-                border-radius: 3px;
-            }
-            .navMobileButton:hover{
-                color: #ccc;
-                
-            }
             .nav {
                 display: none;
                 position: absolute;
@@ -734,7 +679,6 @@
             .table-panel {
                 display: flex;
                 flex-direction: column;
-                background: #1E1E26;
                 padding: 5px;
                 border-radius: 8px;
                 max-width: 640px;
@@ -752,7 +696,6 @@
                 min-height: 330px;
             }
             .row-race{
-                background: rgba(0, 0, 0, 0.35);
                 margin-top: 8px;
                 font-family: "F1 Regular";
                 border-radius: 10px;
@@ -804,39 +747,6 @@
             .panel-story button:hover{
             border: 2px solid red;
             }
-            .navMobileContainer.active{
-                
-                display: flex;
-                flex-direction: column;   
-                align-items: center;      
-                gap: 20px;                
-                padding: 20px 0;
-            }
-            .navMobileRow{
-                background: #15151e50;
-                font-family: "F1 Regular";
-                border-radius: 10px;
-                transition: ease-out 0.3s;
-                padding: 15px;
-                margin-bottom: 20px;         
-    
-                border-bottom: 2px solid #15151E;
-            }
-            .navMobileButton{
-                padding: 10px;
-                font-size: 20px;
-                cursor: pointer;
-                color:#E10600;
-                font-family: inherit;
-                font-style: bold;
-                background-color:#131327;
-                border: none;
-                border-radius: 3px;
-            }
-            .navMobileButton:hover{
-                color: #ccc;
-                
-            }
             .gallery {
                 flex-wrap: wrap;
                 justify-content: flex-start;
@@ -851,10 +761,12 @@
                 height: 100px;
                 object-fit: cover;
             }
+            .panel{
+                margin-top: 170px;
+            }
             .table-panel {
                 display: flex;
                 flex-direction: column;
-                background: #1E1E26;
                 border-radius: 8px;
                 max-width: auto;
                 margin-top: 20px;
@@ -872,7 +784,6 @@
                 min-height: 340px;
             }
             .row-race{
-                background: rgba(0, 0, 0, 0.35);
                 margin-top: 8px;
                 font-family: "F1 Regular";
                 border-radius: 10px;
@@ -908,7 +819,6 @@
             }
             .panel-races{
                 flex: 1;
-                background: #1E1E26;
                 border-radius: 8px;
                 padding: 10px;
                 min-width: 0;

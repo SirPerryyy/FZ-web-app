@@ -36,11 +36,20 @@
     <div class="donationsButtonMobile" onclick="RedirectPayPal()">❤️Support the project</div>
     <button class="menu-button" onclick="toggleMenu()">NAVIGATE</button>
 </header>
-    <div class="navMobileContainer">
-    <div class="navMobileRow">
-        <button class="navMobileButton" onclick="SwitchToCalendar()">Calendar</button>
-        <button class="navMobileButton" onclick="SwitchToDrivers()">Drivers</button>
+
+<div class="bottomHeaderMobile">
+
+    <div class="calendarButton" style="left: 50.6%; transform: translateX(-50%); top:-5%; width: 140px; border-color: white;">
+    <img src="Assets/Logos/fxlogo2.0.png" style="align-self: center; width: 117px; height: 32px; position: absolute; transform: translateX(-50.5%); top: 16px">
+        </div>
+    <div class="calendarButton" onclick="SwitchToCalendar()">
+        <img src="Assets/Logos/calendarIcon.png" style="align-self: center; width: 70px; height: 70px; position: absolute; transform: translateX(-50.5%); top: 2px">
     </div>
+    <div class="driversButton" onclick="SwitchToDrivers()">
+        <img src="Assets/Logos/driversIcon.png" style="align-self: center; width: 57px; height: 57px; position: absolute; transform: translateX(-50.5%); top: 7px">
+    </div>
+
+  </div>
 </div>
 <main>
     <div class="donationsPanelDone">La tua donazione è andata a buon fine!<br><br>Ti ringraziamo di cuore!
@@ -61,7 +70,7 @@
                 <div>Points</div>
             </div>
 
-            <div class="row" onclick="RedirectToProfile('Perry')" style="transform: scale(1.02);">
+            <div class="row" onclick="RedirectToProfile('Perry')" style="transform: scale(1.02); font-family: 'F1 Bold';">
                 <div class="pos">1</div>
                 <div class="name", style="display: flex; align-items: center; gap: 5px; color: gold;"> <span class="flexboxMercedes"></span>Sir Perry</div>
                 <div class="points">420</div>
@@ -137,7 +146,7 @@
                 <div class="teamPoints">466</div>
             </div>
 
-            <div class="rowTeams" style="transform: scale(1.02);" onclick="GoToTeam('MercedesFZ')">
+            <div class="rowTeams" style="transform: scale(1.02);  font-family: 'F1 Bold';" onclick="GoToTeam('MercedesFZ')">
                 <div class="teamPos">2</div>
                 <img src="Assets/Logos/mer.png" alt="MercedesLogo">
                 <div class="teamName"  style="color: gold;">Mercedes Amg Petronas FZ Team</div>

@@ -21,14 +21,15 @@
             display: flex;
         }
         .driverPanelProfile{
-            background: #1E1E26;
-            border-radius: 8px;
             padding: 25px;
             min-width: 0;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            backdrop-filter: blur(2px);
             height: 1200px;
             width: 100%;
+            background: rgba(59, 59, 77, 0.788);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(44, 44, 53, 0.3);
         }
         .driverPanelName{
             text-align: center;
@@ -334,39 +335,6 @@
             .container{
                 gap:20px
             }
-            .navMobileContainer.active{
-                
-                display: flex;
-                flex-direction: column;   
-                align-items: center;      
-                gap: 20px;                
-                padding: 20px 0;
-            }
-            .navMobileRow{
-                background: #15151e50;
-                font-family: "F1 Regular";
-                border-radius: 10px;
-                transition: ease-out 0.3s;
-                padding: 15px;
-                margin-bottom: 20px;         
-    
-                border-bottom: 2px solid #15151E;
-            }
-            .navMobileButton{
-                padding: 10px;
-                font-size: 20px;
-                cursor: pointer;
-                color:#E10600;
-                font-family: inherit;
-                font-style: bold;
-                background-color:#131327;
-                border: none;
-                border-radius: 3px;
-            }
-            .navMobileButton:hover{
-                color: #ccc;
-                
-            }
             .nav {
                 display: none;
                 position: absolute;
@@ -411,39 +379,7 @@
                 color: #ccc;
                 font-family: "F1 Regular";
             }
-            .navMobileContainer.active{
-                
-                display: flex;
-                flex-direction: column;   
-                align-items: center;      
-                gap: 20px;                
-                padding: 20px 0;
-            }
-            .navMobileRow{
-                background: #15151e50;
-                font-family: "F1 Regular";
-                border-radius: 10px;
-                transition: ease-out 0.3s;
-                padding: 15px;
-                margin-bottom: 20px;         
-    
-                border-bottom: 2px solid #15151E;
-            }
-            .navMobileButton{
-                padding: 10px;
-                font-size: 20px;
-                cursor: pointer;
-                color:#E10600;
-                font-family: inherit;
-                font-style: bold;
-                background-color:#131327;
-                border: none;
-                border-radius: 3px;
-            }
-            .navMobileButton:hover{
-                color: #ccc;
-                
-            }
+            
             .nav {
                 display: none;
                 position: absolute;
@@ -482,12 +418,9 @@
             }
             .driverPanel{
                 flex: none;
-                background: #1E1E26;
                 border-radius: 8px;
                 padding-left: -10px;
                 min-width: 0;
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-                backdrop-filter: blur(2px);
                 height: 485px;
             }
             .driverPanelDriverImageBackground{
@@ -508,14 +441,12 @@
             transform: translateX(-50%);
         }
             .driverPanelProfile{
-            background: #1E1E26;
-            border-radius: 8px;
             padding: 25px;
             min-width: 0;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            backdrop-filter: blur(2px);
             height: 1800px;
             width: 100%;
+            
+                margin-top: 100px;
         }
         .driverPanelName{
             text-align: center;
@@ -619,7 +550,7 @@
             height: 500px;
         }
         .driverPanelDriverImageBackground{
-            left:-50%;
+            left:-52.5%;
             top:-140px;
         }
         .driverPanelLogo{
@@ -730,5 +661,16 @@
             color: #9b9b9b;
             font-size: 20px;
             letter-spacing: 1px;
-        }
+        }.header {
+            background-color: #2c2c356e;
+            border-radius: 30px;
+            color: #15151E;
+            text-align: center;
+            font-size: 25px;
+            font-family: 'F1 Bold';
+            box-shadow: 0 10px 10px rgba(0,0,0,0.6);
+            margin-bottom: 50px;
+            min-height: 270px;
+            position: relative;
+            } 
 }

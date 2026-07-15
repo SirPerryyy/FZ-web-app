@@ -21,7 +21,7 @@
 <body>
 <header class="header">
     <img class="header-img"src="Assets/Logos/fxlogo2.0.png" alt="FzLogo">
-    <p class="currentPage">Story Page</p>
+        <p class="currentPage">Story Page</p>
     <nav class="nav">
         <div class="calendarButton" onclick="SwitchToCalendar()">Calendar</div>
         <div class="driversButton" onclick="SwitchToDrivers()">The Drivers</div>
@@ -31,12 +31,19 @@
     <button class="menu-button" onclick="toggleMenu()">NAVIGATE</button>
     <div class="donationsButtonMobile" onclick="RedirectPayPal()">❤️Support the project</div>
 </header>
-    <div class="navMobileContainer">
-    <div class="navMobileRow">
-        <button class="navMobileButton" onclick="SwitchToCalendar()">Calendar</button>
-        <button class="navMobileButton" onclick="SwitchToStandings()">Standings</button>
-        <button class="navMobileButton" onclick="SwitchToDrivers()">Drivers</button>
+<div class="bottomHeaderMobile">
+
+    <div class="calendarButton" style="left: 50.6%; transform: translateX(-50%); top:-5%; width: 140px;"  onclick="SwitchToStandings()">
+    <img src="Assets/Logos/fxlogo2.0.png" style="align-self: center; width: 117px; height: 32px; position: absolute; transform: translateX(-50.5%); top: 16px">
+        </div>
+    <div class="calendarButton" onclick="SwitchToCalendar()">
+        <img src="Assets/Logos/calendarIcon.png" style="align-self: center; width: 70px; height: 70px; position: absolute; transform: translateX(-50.5%); top: 2px">
     </div>
+    <div class="driversButton" onclick="SwitchToDrivers()">
+        <img src="Assets/Logos/driversIcon.png" style="align-self: center; width: 57px; height: 57px; position: absolute; transform: translateX(-50.5%); top: 7px">
+    </div>
+
+  </div>
 </div>
 <div class="container">
     <div class="champsPanel">    
