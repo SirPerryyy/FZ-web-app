@@ -9,27 +9,28 @@
       "Sir Perry",
       "Sir Perry &nbsp & &nbsp Pier La Mert &nbsp &nbsp",
       "Sir Perry &nbsp & &nbsp Doggy &nbsp &nbsp [CUP]",
-      "???"
+      "Doggy &nbsp & &nbsp Pablo Carpincho"
     ],
     "Stats": {
       "titles": 1,
       "wins": "27 &nbsp &nbsp  [24 Sir Perry | 3 Doggy]",
       "totalPoints": 1172,
-      "uniqueDrivers": 3,
-      "seasonsAttended": 3,
+      "uniqueDrivers": 4,
+      "seasonsAttended": 4,
       "driversChamps": "3 &nbsp [Sir Perry]",
       "icon": "Sir Perry"
     },
     "ImagesSrcs": [
       "Assets/PageConstantImages/mer1.jpg",
       "Assets/PageConstantImages/mer2.jpg",
-      "Assets/PageConstantImages/mer3.jpg"
+      "Assets/PageConstantImages/mer3.jpg",
+      "Assets/PageConstantImages/mer4.jpg"
     ]
   },
   "LotusFZ": {
-    "teamName": "Lotus FZ Team",
-    "teamColor": "color: #fcce00",
-    "bG": "background: linear-gradient(135deg, rgb(252, 206, 0), rgba(255, 190, 89, 0.79), rgba(150, 135, 0, 0.88), rgba(195, 134, 18, 0.44))",
+    "teamName": "Lotus Racing",
+    "teamColor": "color: #B59A52",
+    "bG": "background: linear-gradient(135deg, #d3af4d, #77622677, #9c7b21, #3a3b0070)",
     "teamLogoSrc": "Assets/Logos/lot.png",
     "cupSrc": "Assets/Logos/lotCupIcon.png",
     "Seasons": [
@@ -50,7 +51,8 @@
     "ImagesSrcs": [
       "Assets/PageConstantImages/lot1.jpg",
       "Assets/PageConstantImages/lot2.jpg",
-      "Assets/PageConstantImages/lot3.jpg"
+      "Assets/PageConstantImages/lot3.jpg",
+      "Assets/PageConstantImages/lot4.jpg"
     ]
   },
   "RedbullFZ": {
@@ -64,7 +66,7 @@
       "Did not join",
       "Did not join",
       "Bobbi &nbsp & &nbsp Luca",
-      "???"
+      "Bobbi &nbsp & &nbsp Luca"
     ],
     "Stats": {
       "titles": 0,
@@ -77,7 +79,7 @@
     },
     "ImagesSrcs": [
       "Assets/PageConstantImages/red3.jpg",
-      "",
+      "Assets/PageConstantImages/red4.jpg",
       ""
     ]
   },
@@ -91,8 +93,8 @@
     "Seasons": [
       "Did not join",
       "Did not join",
-      "Twenty Miles &nbsp & &nbsp Capobara / Alvaro Preguica",
-      "???"
+      "Twenty Miles &nbsp & &nbsp Pablo Carpincho / Alvaro Preguica",
+      "Did not join"
     ],
     "Stats": {
       "titles": 0,
@@ -119,7 +121,7 @@
       "Did not join",
       "Did not join",
       "Pier La Mert &nbsp & &nbsp Robert Visoiu",
-      "???"
+      "Did not join"
     ],
     "Stats": {
       "titles": 0,
@@ -187,6 +189,114 @@
     "ImagesSrcs": [
       "Assets/PageConstantImages/koe2.jpg",
       "",
+      ""
+    ]
+  },
+  "RenaultFZ": {
+    "teamName": "Renault",
+    "teamColor": "color: #f7d200",
+    "bG": "background: linear-gradient(135deg, #f7e700, #74720098, #c2c5009f, #5a5c0096);",
+    "teamLogoSrc": "Assets/Logos/ren.png",
+    "cupSrc": "",
+    "Seasons": [
+      "Did not join",
+      "Did not join",
+      "Did not join",
+      "Twenty Miles &nbsp & &nbsp Alvaro Preguica"
+    ],
+    "Stats": {
+      "titles": 0,
+      "wins": "0",
+      "totalPoints": 0,
+      "uniqueDrivers": 2,
+      "seasonsAttended": 1,
+      "driversChamps": 0,
+      "icon": "Twenty Miles"
+    },
+    "ImagesSrcs": [
+      "Assets/PageConstantImages/ren4.jpg",
+      "",
+      ""
+    ]
+  },
+  "AudiFZ": {
+    "teamName": "Audi FZ Team",
+    "teamColor": "color: #a10322;",
+    "bG": "background: linear-gradient(135deg,#b8011a, #850122ab, #61000052, #df011ea4);",
+    "teamLogoSrc": "Assets/Logos/audi.png",
+    "cupSrc": "",
+    "Seasons": [
+      "Did not join",
+      "Did not join",
+      "Did not join",
+      "Robert Visoiu &nbsp & &nbsp Pier La Mert"
+    ],
+    "Stats": {
+      "titles": 0,
+      "wins": "0",
+      "totalPoints": 0,
+      "uniqueDrivers": 2,
+      "seasonsAttended": 1,
+      "driversChamps": 0,
+      "icon": "Robert Visoiu"
+    },
+    "ImagesSrcs": [
+      "Assets/PageConstantImages/audi4.jpg",
+      "",
+      ""
+    ]
+  },
+  "FerrariFZ": {
+    "teamName": "Scuderia Ferrari",
+    "teamColor": "color: #e80013",
+    "bG": "background: linear-gradient(135deg,#e80013, #ffd500d5, #eb1000c7, #b9b9b970);",
+    "teamLogoSrc": "Assets/Logos/fer.png",
+    "cupSrc": "",
+    "Seasons": [
+      "Pablo Carpincho &nbsp & &nbsp Twenty Miles",
+      "Did not join",
+      "Did not join",
+      "Andrea Valli &nbsp & &nbsp Miguel Marsala"
+    ],
+    "Stats": {
+      "titles": 0,
+      "wins": "0",
+      "totalPoints": 0,
+      "uniqueDrivers": 2,
+      "seasonsAttended": 2,
+      "driversChamps": 0,
+      "icon": "Andrea"
+    },
+    "ImagesSrcs": [
+      "Assets/PageConstantImages/fer1.jpg",
+      "Assets/PageConstantImages/fer4.jpg",
+      ""
+    ]
+  },
+  "MclarenFZ": {
+    "teamName": "Mclaren FZ",
+    "teamColor": "color: #FF8000",
+    "bG": "background: linear-gradient(135deg,#e46e00, #00b1b146, #db7500ef, #dfa401a4);",
+    "teamLogoSrc": "Assets/Logos/mc.png",
+    "cupSrc": "",
+    "Seasons": [
+      "Skrall",
+      "Did not join",
+      "Did not join",
+      "Flashark &nbsp & &nbsp Smooth Operator"
+    ],
+    "Stats": {
+      "titles": 0,
+      "wins": "0",
+      "totalPoints": 0,
+      "uniqueDrivers": 2,
+      "seasonsAttended": 2,
+      "driversChamps": 0,
+      "icon": "Skrall"
+    },
+    "ImagesSrcs": [
+      "Assets/PageConstantImages/mc1.jpg",
+      "Assets/PageConstantImages/mc4.jpg",
       ""
     ]
   }

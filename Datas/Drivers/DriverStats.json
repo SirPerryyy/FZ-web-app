@@ -5,7 +5,7 @@
       "color": "#eeca00"
     },
     "constrTitles": 1,
-    "attValue": 96,
+    "attValue": 98,
     "expValue": 98,
     "pacValue": 99,
     "qlfValue": 97,
@@ -19,8 +19,8 @@
       "backgroundColor": "#bbff00",
       "nationalityFlag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/960px-Flag_of_the_United_Kingdom_%283-5%29.svg.png",
       "nationality": "UK",
-      "team": "Mercedes",
-      "pastTeams": 0
+      "team": "Lotus",
+      "pastTeams": "1 (Mercedes)"
     },
     "allTimeStats": {
       "championships": 3,
@@ -37,8 +37,9 @@
       "nameColor": "#bbff00",
       "driverImage": "CSSs' Folder/DriversPictures/SirPerry.png",
       "driverNumber": 57,
-      "driverTeamMainColor": "#28d3bc",
-      "driverNumberColor": "#bbff00"
+      "driverNumberColor": "#bbff00",
+      "driverTeamMainColor": "#B59A52",
+      "backgroundGradient" : "linear-gradient(135deg, #d3af4d, #77622677, #9c7b21, #3a3b0070)"
     }
   },
   "Kimi": {
@@ -79,8 +80,8 @@
       "nameColor": "#781010",
       "driverImage": "CSSs' Folder/DriversPictures/Kimi.png",
       "driverNumber": 69,
-      "driverTeamMainColor": "#fcce00",
-      "backgroundGradient": "linear-gradient(135deg, #fcce00, #131313, #968700e0, #3a3b0070)"
+      "driverTeamMainColor": "#B59A52",
+      "backgroundGradient" : "linear-gradient(135deg, #d3af4d, #77622677, #9c7b21, #3a3b0070)"
     }
   },
   "Alvaro": {
@@ -102,8 +103,8 @@
     "driverPanelDriverBiography": {
       "nationalityFlag": "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/1280px-Flag_of_Brazil.svg.png",
       "nationality": "BRA",
-      "team": "Williams",
-      "pastTeams": "1 (Lotus)",
+      "team": "Renault",
+      "pastTeams": "2 (Williams, Lotus)",
       "textColor": "#ccc"
     },
     "allTimeStats": {
@@ -121,31 +122,31 @@
       "nameColor": "#503000",
       "driverImage": "CSSs' Folder/DriversPictures/Alvaro.png",
       "driverNumber": 11,
-      "driverTeamMainColor": "#006ec9",
-      "backgroundGradient": "linear-gradient(135deg, #006ec9, #b8e5ff98, #0087c59f, #006ace96)"
+      "driverTeamMainColor": "#ffdb3b",
+      "backgroundGradient": "linear-gradient(135deg, #f7e700, #74720098, #c2c5009f, #5a5c0096)"
     }
   },
   "Pablo": {
     "driverPanelPointsOVR": {
-      "value": 85,
-      "color": "#81501f"
+      "value": 89,
+      "color": "#acabab"
     },
     "constrTitles": 0,
-    "attValue": 85,
-    "expValue": 86,
-    "pacValue": 84,
-    "qlfValue": 93,
-    "stgValue": 89,
-    "fplValue": 85,
-    "defValue": 87,
-    "cnsValue": 80,
-    "fylValue": 89,
-    "rfxValue": 96,
+    "attValue": 87,
+    "expValue": 93,
+    "pacValue": 85,
+    "qlfValue": 95,
+    "stgValue": 93,
+    "fplValue": 95,
+    "defValue": 85,
+    "cnsValue": 85,
+    "fylValue": 90,
+    "rfxValue": 94,
     "driverPanelDriverBiography": {
       "nationalityFlag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/250px-Flag_of_Mexico.svg.png",
       "nationality": "MEX",
-      "team": "Lotus",
-      "pastTeams": "3 (Ferrari, Aston Martin, Williams)",
+      "team": "Mercedes",
+      "pastTeams": "4 (Lotus, Williams, Aston Martin, Ferrari)",
       "textColor": "#ccc"
     },
     "allTimeStats": {
@@ -163,25 +164,24 @@
       "nameColor": "#de3f00",
       "driverImage": "CSSs' Folder/DriversPictures/Pablo.png",
       "driverNumber": 38,
-      "driverTeamMainColor": "#fcce00",
-      "backgroundGradient": "linear-gradient(135deg, #fcce00, #131313, #968700e0, #3a3b0070)"
+      "driverTeamMainColor": "#28d3bc"
     }
   },
   "Doggy": {
     "driverPanelPointsOVR": {
-      "value": 89,
-      "color": "#acabab"
+      "value": 95,
+      "color": "#ecb500"
     },
     "constrTitles": 1,
-    "attValue": 87,
-    "expValue": 91,
-    "pacValue": 89,
-    "qlfValue": 92,
+    "attValue": 95,
+    "expValue": 95,
+    "pacValue": 97,
+    "qlfValue": 93,
     "stgValue": 95,
     "fplValue": 97,
-    "defValue": 91,
-    "cnsValue": 87,
-    "fylValue": 88,
+    "defValue": 95,
+    "cnsValue": 90,
+    "fylValue": 96,
     "rfxValue": 97,
     "driverPanelDriverBiography": {
       "nationalityFlag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/250px-Flag_of_Italy.svg.png",
@@ -210,25 +210,25 @@
   },
   "Bear": {
     "driverPanelPointsOVR": {
-      "value": 77,
-      "color": "#2b2b2b"
+      "value": 85,
+      "color": "#81501f"
     },
     "constrTitles": 0,
-    "attValue": 75,
-    "expValue": 79,
-    "pacValue": 75,
-    "qlfValue": 73,
-    "stgValue": 85,
-    "fplValue": 87,
-    "defValue": 76,
+    "attValue": 83,
+    "expValue": 85,
+    "pacValue": 84,
+    "qlfValue": 79,
+    "stgValue": 90,
+    "fplValue": 85,
+    "defValue": 79,
     "cnsValue": 80,
     "fylValue": 74,
     "rfxValue": 91,
     "driverPanelDriverBiography": {
       "nationalityFlag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Flag_of_the_United_States_%28DDD-F-416E_specifications%29.svg/250px-Flag_of_the_United_States_%28DDD-F-416E_specifications%29.svg.png",
       "nationality": "USA",
-      "team": "Williams",
-      "pastTeams": "3 (Koeingseng, Mercedes, Ferrari)",
+      "team": "Renault",
+      "pastTeams": "3 (Williams, Koeingseng, Ferrari)",
       "textColor": "#ccc"
     },
     "allTimeStats": {
@@ -246,8 +246,8 @@
       "nameColor": "#001aff",
       "driverImage": "CSSs' Folder/DriversPictures/Mattia.png",
       "driverNumber": 21,
-      "driverTeamMainColor": "#006ec9",
-      "backgroundGradient": "linear-gradient(135deg, #006ec9, #b8e5ff98, #0087c59f, #006ace96)"
+      "driverTeamMainColor": "#ffdb3b",
+      "backgroundGradient": "linear-gradient(135deg, #f7e700, #74720098, #c2c5009f, #5a5c0096)"
     }
   },
   "Luca": {
@@ -294,12 +294,12 @@
   },
   "Bobbi": {
     "driverPanelPointsOVR": {
-      "value": 97,
+      "value": 98,
       "color": "#eeca00"
     },
     "constrTitles": 0,
-    "attValue": 92,
-    "expValue": 92,
+    "attValue": 96,
+    "expValue": 99,
     "pacValue": 99,
     "qlfValue": 98,
     "stgValue": 98,
@@ -353,8 +353,8 @@
     "driverPanelDriverBiography": {
       "nationalityFlag": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/330px-Flag_of_France.svg.png",
       "nationality": "FRA",
-      "team": "Mercedes Brawn",
-      "pastTeams": "1 (Mercedes)",
+      "team": "Audi FZ",
+      "pastTeams": "2 (Mercedes Brawn, Mercedes)",
       "textColor": "#ccc"
     },
     "allTimeStats": {
@@ -372,8 +372,8 @@
       "nameColor": "#FF0000",
       "driverImage": "CSSs' Folder/DriversPictures/Pier.png",
       "driverNumber": 10,
-      "driverTeamMainColor": "#d2f700",
-      "backgroundGradient": "linear-gradient(135deg,#c4c4c4, #d9ff009c, #ffffff8c, #93b10070)"
+      "driverTeamMainColor": "#5a0000",
+      "backgroundGradient": "linear-gradient(135deg,#b8011a, #850122ab, #61000052, #df011ea4)"
     }
   },
   "Robert": {
@@ -395,8 +395,8 @@
     "driverPanelDriverBiography": {
       "nationalityFlag": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm1ECYrXIqpebEh6Lc1dL01RllRlZQ9pRx9A&s",
       "nationality": "ROM",
-      "team": "Mercedes Brawn",
-      "pastTeams": "0",
+      "team": "Audi FZ",
+      "pastTeams": "1 (Mercedes Brawn)",
       "textColor": "#ccc"
     },
     "allTimeStats": {
@@ -414,8 +414,176 @@
       "nameColor": "#6c0097",
       "driverImage": "CSSs' Folder/DriversPictures/Robert.png",
       "driverNumber": 24,
-      "driverTeamMainColor": "#d2f700",
-      "backgroundGradient": "linear-gradient(135deg,#c4c4c4, #d9ff009c, #ffffff8c, #93b10070)"
+      "driverTeamMainColor": "#5a0000",
+      "backgroundGradient": "linear-gradient(135deg,#b8011a, #850122ab, #61000052, #df011ea4)"
+    }
+  },
+  "Andrea": {
+    "driverPanelPointsOVR": {
+      "value": "nd",
+      "color": "#2b2b2b"
+    },
+    "constrTitles": 0,
+    "attValue": "nd",
+    "expValue": "nd",
+    "pacValue": "nd",
+    "qlfValue": "nd",
+    "stgValue": "nd",
+    "fplValue": "nd",
+    "defValue": "nd",
+    "cnsValue": "nd",
+    "fylValue": "nd",
+    "rfxValue": "nd",
+    "driverPanelDriverBiography": {
+      "nationalityFlag": "https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg?utm_source=it.wikipedia.org&utm_campaign=index&utm_content=original",
+      "nationality": "ITA",
+      "team": "Scuderia Ferrari",
+      "pastTeams": "0",
+      "textColor": "#ccc"
+    },
+    "allTimeStats": {
+      "championships": 0,
+      "raceAttended": 0,
+      "podiums": 0,
+      "raceBestPos": 0,
+      "seasons": "1",
+      "points": 0,
+      "dnfs": 0,
+      "wins": 0
+    },
+    "driverInfo": {
+      "name": "Andrea Valli",
+      "nameColor": "#ffffff",
+      "driverImage": "CSSs' Folder/DriversPictures/Andrea.png",
+      "driverNumber": 7,
+      "driverTeamMainColor": "#e80013",
+      "backgroundGradient": "linear-gradient(135deg,#e80013, #ffd500d5, #eb1000c7, #b9b9b970)"
+    }
+  },
+    "Miguel": {
+    "driverPanelPointsOVR": {
+      "value": "nd",
+      "color": "#2b2b2b"
+    },
+    "constrTitles": 0,
+    "attValue": "nd",
+    "expValue": "nd",
+    "pacValue": "nd",
+    "qlfValue": "nd",
+    "stgValue": "nd",
+    "fplValue": "nd",
+    "defValue": "nd",
+    "cnsValue": "nd",
+    "fylValue": "nd",
+    "rfxValue": "nd",
+    "driverPanelDriverBiography": {
+      "nationalityFlag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/3840px-Flag_of_Spain.svg.png",
+      "nationality": "ESP",
+      "team": "Scuderia Ferrari",
+      "pastTeams": "0",
+      "textColor": "#ccc"
+    },
+    "allTimeStats": {
+      "championships": 0,
+      "raceAttended": 0,
+      "podiums": 0,
+      "raceBestPos": 0,
+      "seasons": "1",
+      "points": 0,
+      "dnfs": 0,
+      "wins": 0
+    },
+    "driverInfo": {
+      "name": "Miguel Marsala",
+      "nameColor": "#ca0000",
+      "driverImage": "CSSs' Folder/DriversPictures/Miguel.png",
+      "driverNumber": 74,
+      "driverTeamMainColor": "#e80013",
+      "backgroundGradient": "linear-gradient(135deg,#e80013, #ffd500d5, #eb1000c7, #b9b9b970)"
+    }
+  },
+    "Shark": {
+    "driverPanelPointsOVR": {
+      "value": "nd",
+      "color": "#2b2b2b"
+    },
+    "constrTitles": 0,
+    "attValue": "nd",
+    "expValue": "nd",
+    "pacValue": "nd",
+    "qlfValue": "nd",
+    "stgValue": "nd",
+    "fplValue": "nd",
+    "defValue": "nd",
+    "cnsValue": "nd",
+    "fylValue": "nd",
+    "rfxValue": "nd",
+    "driverPanelDriverBiography": {
+      "nationalityFlag": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfCI0rKQKijQwVngyPyOZUZBQciE43w13iH_OfzfCmjQ&s",
+      "nationality": "GHN",
+      "team": "Mclaren",
+      "pastTeams": "0",
+      "textColor": "#ccc"
+    },
+    "allTimeStats": {
+      "championships": 0,
+      "raceAttended": 0,
+      "podiums": 0,
+      "raceBestPos": 0,
+      "seasons": "1",
+      "points": 0,
+      "dnfs": 0,
+      "wins": 0
+    },
+    "driverInfo": {
+      "name": "Flashark",
+      "nameColor": "#00488b",
+      "driverImage": "CSSs' Folder/DriversPictures/Shark.png",
+      "driverNumber": 23,
+      "driverTeamMainColor": "#FF8000",
+      "backgroundGradient": "linear-gradient(135deg,#e46e00, #00b1b146, #db7500ef, #dfa401a4)"
+    }
+  },
+    "Operator": {
+    "driverPanelPointsOVR": {
+      "value": "nd",
+      "color": "#2b2b2b"
+    },
+    "constrTitles": 0,
+    "attValue": "nd",
+    "expValue": "nd",
+    "pacValue": "nd",
+    "qlfValue": "nd",
+    "stgValue": "nd",
+    "fplValue": "nd",
+    "defValue": "nd",
+    "cnsValue": "nd",
+    "fylValue": "nd",
+    "rfxValue": "nd",
+    "driverPanelDriverBiography": {
+      "nationalityFlag": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVAToEbrSwzZZoXhxDbYX97QC155wnbnLJhrd1UfBKQQ&s",
+      "nationality": "SEN",
+      "team": "Mclaren",
+      "pastTeams": "0",
+      "textColor": "#ccc"
+    },
+    "allTimeStats": {
+      "championships": 0,
+      "raceAttended": 0,
+      "podiums": 0,
+      "raceBestPos": 0,
+      "seasons": "1",
+      "points": 0,
+      "dnfs": 0,
+      "wins": 0
+    },
+    "driverInfo": {
+      "name": "Smooth Operator",
+      "nameColor": "#00ffbf",
+      "driverImage": "CSSs' Folder/DriversPictures/Operator.png",
+      "driverNumber": 67,
+      "driverTeamMainColor": "#FF8000",
+      "backgroundGradient": "linear-gradient(135deg,#e46e00, #00b1b146, #db7500ef, #dfa401a4)"
     }
   }
 }
