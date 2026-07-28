@@ -2,9 +2,9 @@
   {
     "RaceTitle": "RACE 18: Abu Dhabi",
     "FlagURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFq-DEjmvSyv3354Ku0bcFGBOmXa40nIcPFw&s",
-    "Img1Path": "Assets\\RaceImages\\Season3\\abu1.jpg",
-    "Img2Path": "Assets\\RaceImages\\Season3\\abu2.jpg",
-    "Img3Path": "Assets\\RaceImages\\Season3\\abu3.jpg",
+    "Img1Path": "Assets\\RaceImages\\abu1.jpg",
+    "Img2Path": "Assets\\RaceImages\\abu2.jpg",
+    "Img3Path": "Assets\\RaceImages\\abu3.jpg",
     "Drivers": [
       {
         "DriverName": "Kimi Fernandes",
@@ -81,9 +81,9 @@
   {
     "RaceTitle": "RACE 17: Palmadera",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/250px-Flag_of_Brazil.svg.png",
-    "Img1Path": "Assets\\RaceImages\\Season3\\pal1.jpg",
-    "Img2Path": "Assets\\RaceImages\\Season3\\pal2.jpg",
-    "Img3Path": "Assets\\RaceImages\\Season3\\pal3.jpg",
+    "Img1Path": "Assets\\RaceImages\\pal1.jpg",
+    "Img2Path": "Assets\\RaceImages\\pal2.jpg",
+    "Img3Path": "Assets\\RaceImages\\pal3.jpg",
     "Drivers": [
       {
         "DriverName": "Doggy",
@@ -160,9 +160,9 @@
   {
     "RaceTitle": "RACE 17: Palmadera [SPRINT RACE]",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/250px-Flag_of_Brazil.svg.png",
-    "Img1Path": "Assets\\RaceImages\\Season3\\palsp1.jpg",
-    "Img2Path": "Assets\\RaceImages\\Season3\\palsp2.jpg",
-    "Img3Path": "Assets\\RaceImages\\Season3\\palsp3.jpg",
+    "Img1Path": "Assets\\RaceImages\\palsp1.jpg",
+    "Img2Path": "Assets\\RaceImages\\palsp2.jpg",
+    "Img3Path": "Assets\\RaceImages\\palsp3.jpg",
     "Drivers": [
       {
         "DriverName": "Doggy",
@@ -239,9 +239,9 @@
   {
     "RaceTitle": "RACE 16: Toscana",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg?utm_source=it.wikipedia.org&utm_campaign=index&utm_content=original",
-    "Img1Path": "Assets\\RaceImages\\Season3\\tos1.jpg",
-    "Img2Path": "Assets\\RaceImages\\Season3\\tos2.jpg",
-    "Img3Path": "Assets\\RaceImages\\Season3\\tos3.jpg",
+    "Img1Path": "Assets\\RaceImages\\tos1.jpg",
+    "Img2Path": "Assets\\RaceImages\\tos2.jpg",
+    "Img3Path": "Assets\\RaceImages\\tos3.jpg",
     "Drivers": [
       {
         "DriverName": "Doggy",
@@ -318,9 +318,9 @@
   {
     "RaceTitle": "RACE 16: Toscana [SPRINT RACE]",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg?utm_source=it.wikipedia.org&utm_campaign=index&utm_content=original",
-    "Img1Path": "Assets\\RaceImages\\Season3\\tossp1.jpg",
-    "Img2Path": "Assets\\RaceImages\\Season3\\tossp2.jpg",
-    "Img3Path": "Assets\\RaceImages\\Season3\\tossp3.jpg",
+    "Img1Path": "Assets\\RaceImages\\tossp1.jpg",
+    "Img2Path": "Assets\\RaceImages\\tossp2.jpg",
+    "Img3Path": "Assets\\RaceImages\\tossp3.jpg",
     "Drivers": [
       {
         "DriverName": "Kimi Fernandes",
@@ -397,9 +397,9 @@
   {
     "RaceTitle": "RACE 15: Hockenheimring",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Flagge_F%C3%BCrstentum_Reu%C3%9F_%C3%A4ltere_Linie.svg/250px-Flagge_F%C3%BCrstentum_Reu%C3%9F_%C3%A4ltere_Linie.svg.png",
-    "Img1Path": "Assets\\RaceImages\\Season3\\nur3.jpg",
-    "Img2Path": "Assets\\RaceImages\\Season3\\nur1.jpg",
-    "Img3Path": "Assets\\RaceImages\\Season3\\nur2.jpg",
+    "Img1Path": "Assets\\RaceImages\\nur3.jpg",
+    "Img2Path": "Assets\\RaceImages\\nur1.jpg",
+    "Img3Path": "Assets\\RaceImages\\nur2.jpg",
     "Drivers": [
       {
         "DriverName": "Sir Perry",
@@ -476,9 +476,9 @@
   {
     "RaceTitle": "RACE 14: Miami",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg",
-    "Img1Path": "Assets\\RaceImages\\Season3\\mia1.jpg",
-    "Img2Path": "Assets\\RaceImages\\Season3\\mia2.jpg",
-    "Img3Path": "Assets\\RaceImages\\Season3\\mia3.jpg",
+    "Img1Path": "Assets\\RaceImages\\mia1.jpg",
+    "Img2Path": "Assets\\RaceImages\\mia2.jpg",
+    "Img3Path": "Assets\\RaceImages\\mia3.jpg",
     "Drivers": [
       {
         "DriverName": "Kimi Fernandes",
@@ -555,9 +555,9 @@
   {
     "RaceTitle": "RACE 14: Miami [SPRINT RACE]",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg",
-    "Img1Path": "Assets\\RaceImages\\Season3\\miasp1.jpg",
-    "Img2Path": "Assets\\RaceImages\\Season3\\miasp3.jpg",
-    "Img3Path": "Assets\\RaceImages\\Season3\\miasp2.jpg",
+    "Img1Path": "Assets\\RaceImages\\miasp1.jpg",
+    "Img2Path": "Assets\\RaceImages\\miasp3.jpg",
+    "Img3Path": "Assets\\RaceImages\\miasp2.jpg",
     "Drivers": [
       {
         "DriverName": "Doggy",
@@ -634,9 +634,9 @@
   {
     "RaceTitle": "RACE 13: Austin",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg",
-    "Img1Path": "Assets\\RaceImages\\Season3\\usa1.jpg",
-    "Img2Path": "Assets\\RaceImages\\Season3\\usa3.jpg",
-    "Img3Path": "Assets\\RaceImages\\Season3\\usa2.jpg",
+    "Img1Path": "Assets\\RaceImages\\usa1.jpg",
+    "Img2Path": "Assets\\RaceImages\\usa3.jpg",
+    "Img3Path": "Assets\\RaceImages\\usa2.jpg",
     "Drivers": [
       {
         "DriverName": "Bobbi",
@@ -713,9 +713,9 @@
   {
     "RaceTitle": "RACE 13: Austin [SPRINT RACE]",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg",
-    "Img1Path": "Assets\\RaceImages\\Season3\\usasp1.jpg",
-    "Img2Path": "Assets\\RaceImages\\Season3\\usasp2.jpg",
-    "Img3Path": "Assets\\RaceImages\\Season3\\usasp3.jpg",
+    "Img1Path": "Assets\\RaceImages\\usasp1.jpg",
+    "Img2Path": "Assets\\RaceImages\\usasp2.jpg",
+    "Img3Path": "Assets\\RaceImages\\usasp3.jpg",
     "Drivers": [
       {
         "DriverName": "Bobbi",
@@ -792,9 +792,9 @@
   {
     "RaceTitle": "RACE 12: Spa Francorchamps",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/1280px-Flag_of_Belgium.svg.png",
-    "Img1Path": "Assets\\RaceImages\\Season3\\bel1.jpg",
-    "Img2Path": "Assets\\RaceImages\\Season3\\bel2.jpg",
-    "Img3Path": "Assets\\RaceImages\\Season3\\bel3.jpg",
+    "Img1Path": "Assets\\RaceImages\\bel1.jpg",
+    "Img2Path": "Assets\\RaceImages\\bel2.jpg",
+    "Img3Path": "Assets\\RaceImages\\bel3.jpg",
     "Drivers": [
       {
         "DriverName": "Bobbi",
@@ -871,9 +871,9 @@
   {
     "RaceTitle": "RACE 12: Spa Francorchamps [SPRINT RACE]",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/1280px-Flag_of_Belgium.svg.png",
-    "Img1Path": "Assets\\RaceImages\\Season3\\bels1.jpg",
-    "Img2Path": "Assets\\RaceImages\\Season3\\bels2.jpg",
-    "Img3Path": "Assets\\RaceImages\\Season3\\bels3.jpg",
+    "Img1Path": "Assets\\RaceImages\\bels1.jpg",
+    "Img2Path": "Assets\\RaceImages\\bels2.jpg",
+    "Img3Path": "Assets\\RaceImages\\bels3.jpg",
     "Drivers": [
       {
         "DriverName": "Pablo Carpincho",
@@ -950,9 +950,9 @@
   {
     "RaceTitle": "RACE 11: Silverstone",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg",
-    "Img1Path": "\\Assets\\RaceImages\\Season3\\sil1.jpg",
-    "Img2Path": "\\Assets\\RaceImages\\Season3\\sil2.jpg",
-    "Img3Path": "\\Assets\\RaceImages\\Season3\\sil3.jpg",
+    "Img1Path": "\\Assets\\RaceImages\\sil1.jpg",
+    "Img2Path": "\\Assets\\RaceImages\\sil2.jpg",
+    "Img3Path": "\\Assets\\RaceImages\\sil3.jpg",
     "Drivers": [
       {
         "DriverName": "Sir Perry",
@@ -1029,9 +1029,9 @@
   {
     "RaceTitle": "RACE 10: Monza",
     "FlagURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuFoPLjEwblgXjiNTqw7-NCKj2lbkrOd9UmQ&s",
-    "Img1Path": "Assets\\RaceImages\\Season3\\mon2.jpg",
-    "Img2Path": "Assets\\RaceImages\\Season3\\mon1.jpg",
-    "Img3Path": "Assets\\RaceImages\\Season3\\mon3.jpg",
+    "Img1Path": "Assets\\RaceImages\\mon2.jpg",
+    "Img2Path": "Assets\\RaceImages\\mon1.jpg",
+    "Img3Path": "Assets\\RaceImages\\mon3.jpg",
     "Drivers": [
       {
         "DriverName": "Doggy",
@@ -1108,9 +1108,9 @@
   {
     "RaceTitle": "Race 9: Tokyo",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/330px-Flag_of_Japan.svg.png",
-    "Img1Path": "Assets\\RaceImages\\Season3\\jap3.jpg",
-    "Img2Path": "Assets\\RaceImages\\Season3\\jap1.jpg",
-    "Img3Path": "Assets\\RaceImages\\Season3\\jap2.jpg",
+    "Img1Path": "Assets\\RaceImages\\jap3.jpg",
+    "Img2Path": "Assets\\RaceImages\\jap1.jpg",
+    "Img3Path": "Assets\\RaceImages\\jap2.jpg",
     "Drivers": [
       {
         "DriverName": "Luca",
@@ -1187,9 +1187,9 @@
   {
     "RaceTitle": "RACE 8: Redbull Ring",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg",
-    "Img1Path": "Assets\\RaceImages\\Season3\\aus1.jpg",
-    "Img2Path": "Assets\\RaceImages\\Season3\\aus2.jpg",
-    "Img3Path": "Assets\\RaceImages\\Season3\\aus3.jpg",
+    "Img1Path": "Assets\\RaceImages\\aus1.jpg",
+    "Img2Path": "Assets\\RaceImages\\aus2.jpg",
+    "Img3Path": "Assets\\RaceImages\\aus3.jpg",
     "Drivers": [
       {
         "DriverName": "Sir Perry",
@@ -1259,9 +1259,9 @@
   {
     "RaceTitle": "RACE 8: Redbull Ring [SPRINT RACE]",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg",
-    "Img1Path": "Assets\\RaceImages\\Season3\\aussp3.jpg",
-    "Img2Path": "Assets\\RaceImages\\Season3\\aussp1.jpg",
-    "Img3Path": "Assets\\RaceImages\\Season3\\aussp2.jpg",
+    "Img1Path": "Assets\\RaceImages\\aussp3.jpg",
+    "Img2Path": "Assets\\RaceImages\\aussp1.jpg",
+    "Img3Path": "Assets\\RaceImages\\aussp2.jpg",
     "Drivers": [
       {
         "DriverName": "Twenty Miles",
@@ -1331,9 +1331,9 @@
   {
     "RaceTitle": "RACE 7: Valencia",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/1280px-Flag_of_Spain.svg.png",
-    "Img1Path": "Assets\\RaceImages\\Season3\\val2.jpg",
-    "Img2Path": "Assets\\RaceImages\\Season3\\val1.jpg",
-    "Img3Path": "Assets\\RaceImages\\Season3\\val3.jpg",
+    "Img1Path": "Assets\\RaceImages\\val2.jpg",
+    "Img2Path": "Assets\\RaceImages\\val1.jpg",
+    "Img3Path": "Assets\\RaceImages\\val3.jpg",
     "Drivers": [
       {
         "DriverName": "Bobbi",
@@ -1403,9 +1403,9 @@
   {
     "RaceTitle": "RACE 6: Imola",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/1280px-Flag_of_Italy.svg.png",
-    "Img1Path": "Assets\\RaceImages\\Season3\\im1.jpg",
-    "Img2Path": "Assets\\RaceImages\\Season3\\im2.jpg",
-    "Img3Path": "Assets\\RaceImages\\Season3\\im3.jpg",
+    "Img1Path": "Assets\\RaceImages\\im1.jpg",
+    "Img2Path": "Assets\\RaceImages\\im2.jpg",
+    "Img3Path": "Assets\\RaceImages\\im3.jpg",
     "Drivers": [
       {
         "DriverName": "Sir Perry",
@@ -1475,9 +1475,9 @@
   {
     "RaceTitle": "RACE 6: Imola [SPRINT RACE]",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/1280px-Flag_of_Italy.svg.png",
-    "Img1Path": "Assets\\RaceImages\\Season3\\imsp1.jpg",
-    "Img2Path": "Assets\\RaceImages\\Season3\\imsp2.jpg",
-    "Img3Path": "Assets\\RaceImages\\Season3\\imsp3.jpg",
+    "Img1Path": "Assets\\RaceImages\\imsp1.jpg",
+    "Img2Path": "Assets\\RaceImages\\imsp2.jpg",
+    "Img3Path": "Assets\\RaceImages\\imsp3.jpg",
     "Drivers": [
       {
         "DriverName": "Sir Perry",
@@ -1547,9 +1547,9 @@
   {
     "RaceTitle": "RACE 5: Mugello",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/1280px-Flag_of_Italy.svg.png",
-    "Img1Path": "Assets\\RaceImages\\Season3\\mug1.jpg",
-    "Img2Path": "Assets\\RaceImages\\Season3\\mug2.jpg",
-    "Img3Path": "Assets\\RaceImages\\Season3\\mug3.jpg",
+    "Img1Path": "Assets\\RaceImages\\mug1.jpg",
+    "Img2Path": "Assets\\RaceImages\\mug2.jpg",
+    "Img3Path": "Assets\\RaceImages\\mug3.jpg",
     "Drivers": [
       {
         "DriverName": "Luca",
@@ -1619,9 +1619,9 @@
   {
     "RaceTitle": "RACE 4: Canada",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg",
-    "Img1Path": "Assets\\RaceImages\\Season3\\can1.jpg",
-    "Img2Path": "Assets\\RaceImages\\Season3\\can3.jpg",
-    "Img3Path": "Assets\\RaceImages\\Season3\\can2.jpg",
+    "Img1Path": "Assets\\RaceImages\\can1.jpg",
+    "Img2Path": "Assets\\RaceImages\\can3.jpg",
+    "Img3Path": "Assets\\RaceImages\\can2.jpg",
     "Drivers": [
       {
         "DriverName": "Bobbi",
@@ -1691,9 +1691,9 @@
   {
     "RaceTitle": "RACE 4: Canada [SPRINT RACE]",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg",
-    "Img1Path": "Assets\\RaceImages\\Season3\\cans1.jpg",
-    "Img2Path": "Assets\\RaceImages\\Season3\\cans3.jpg",
-    "Img3Path": "Assets\\RaceImages\\Season3\\cans2.jpg",
+    "Img1Path": "Assets\\RaceImages\\cans1.jpg",
+    "Img2Path": "Assets\\RaceImages\\cans3.jpg",
+    "Img3Path": "Assets\\RaceImages\\cans2.jpg",
     "Drivers": [
       {
         "DriverName": "Doggy",
@@ -1763,9 +1763,9 @@
   {
     "RaceTitle": "RACE 3: Barcellona",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/960px-Flag_of_Spain.svg.png",
-    "Img1Path": "Assets\\RaceImages\\Season3\\esp1.jpg",
-    "Img2Path": "Assets\\RaceImages\\Season3\\esp2.jpg",
-    "Img3Path": "Assets\\RaceImages\\Season3\\esp3.jpg",
+    "Img1Path": "Assets\\RaceImages\\esp1.jpg",
+    "Img2Path": "Assets\\RaceImages\\esp2.jpg",
+    "Img3Path": "Assets\\RaceImages\\esp3.jpg",
     "Drivers": [
       {
         "DriverName": "Bobbi",
@@ -1835,9 +1835,9 @@
   {
     "RaceTitle": "RACE 2: Bahrain",
     "FlagURL": "https://th.bing.com/th/id/OIP.DM110MKHpi73BYcMBqoPuAHaEc?w=322&h=193&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
-    "Img1Path": "Assets\\RaceImages\\Season3\\bar4.jpg",
-    "Img2Path": "Assets\\RaceImages\\Season3\\bar1.jpg",
-    "Img3Path": "Assets\\RaceImages\\Season3\\bar3.jpg",
+    "Img1Path": "Assets\\RaceImages\\bar4.jpg",
+    "Img2Path": "Assets\\RaceImages\\bar1.jpg",
+    "Img3Path": "Assets\\RaceImages\\bar3.jpg",
     "Drivers": [
       {
         "DriverName": "Sir Perry",
@@ -1907,9 +1907,9 @@
   {
     "RaceTitle": "RACE 1: Melbourne",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/1280px-Flag_of_Australia.svg.png",
-    "Img1Path": "Assets\\RaceImages\\Season3\\mel1.jpg",
-    "Img2Path": "Assets\\RaceImages\\Season3\\mel3.jpg",
-    "Img3Path": "Assets\\RaceImages\\Season3\\mel2.jpg",
+    "Img1Path": "Assets\\RaceImages\\mel1.jpg",
+    "Img2Path": "Assets\\RaceImages\\mel3.jpg",
+    "Img3Path": "Assets\\RaceImages\\mel2.jpg",
     "Drivers": [
       {
         "DriverName": "Bobbi",
@@ -1979,9 +1979,9 @@
   {
     "RaceTitle": "RACE 0 [PRE SEASON TEST]: Spa Francorchamp",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/6/65/Flag_of_Belgium.svg",
-    "Img1Path": "Assets\\RaceImages\\Season3\\TEST1.jpg",
-    "Img2Path": "Assets\\RaceImages\\Season3\\test3.jpg",
-    "Img3Path": "Assets\\RaceImages\\Season3\\test2.jpg",
+    "Img1Path": "Assets\\RaceImages\\TEST1.jpg",
+    "Img2Path": "Assets\\RaceImages\\test3.jpg",
+    "Img3Path": "Assets\\RaceImages\\test2.jpg",
     "Drivers": [
       {
         "DriverName": "Bobbi",
