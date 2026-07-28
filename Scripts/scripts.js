@@ -63,7 +63,7 @@ function toggleMenu() {
     document.querySelector('.navMobileContainer').classList.toggle('active');
 }
 function OpenImage(src) {
-    window.location.href = src;
+    window.open(src);
 }
 function GoToTeam(teamID){
     window.location.href = `./TeamPage.html?id=${teamID}`;

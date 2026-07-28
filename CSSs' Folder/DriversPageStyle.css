@@ -27,7 +27,7 @@
             backdrop-filter: blur(2px);
             height: 130px;
             position:relative;
-            background: rgba(30, 30, 38, 0.74);
+            background: rgba(59, 59, 77, 0.788);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
@@ -49,8 +49,8 @@ border: 1px solid rgba(30, 30, 38, 0.3);
             background: transparent;
             border-radius: 8px;
             padding: 25px;
-            min-width: 0;
-            height: 500px;
+            width:200px;
+            height: 130px;
             position:relative;
         }
         .teamPanel img{
@@ -94,7 +94,7 @@ border: 1px solid rgba(30, 30, 38, 0.3);
             height: 500px;
             position:relative;
             /* From https://css.glass */
-background: rgba(30, 30, 38, 0.74);
+background: rgba(59, 59, 77, 0.788);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);

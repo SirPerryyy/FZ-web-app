@@ -61,6 +61,13 @@ border: 1px solid rgba(59, 29, 29, 0.3);
             margin: 0px;
             min-height: 100vh;
         }
+        .flexboxApexCup{
+            background-color: rgb(119, 0, 231);
+            border-radius: 4px;
+            width: 10px;
+            height: 20px;
+            position: absolute;
+        }
         .flexbox{
             background-color: grey;
             border-radius: 4px;
@@ -78,7 +85,8 @@ border: 1px solid rgba(59, 29, 29, 0.3);
         }
         .flexboxLotus
         {
-            background-color: rgb(245, 208, 0);
+            /*background-color: rgb(214, 169, 46);*/
+            background-color: #B59A52;
             border-radius: 4px;
             width: 10px;
             height: 20px;
@@ -111,6 +119,35 @@ border: 1px solid rgba(59, 29, 29, 0.3);
         .flexboxBrawn
         {
             background-color: rgb(213, 236, 0);
+            border-radius: 4px;
+            width: 10px;
+            height: 20px;
+            display: inline-block; 
+        }
+        .flexboxRenault{
+            background-color: #ffdb3b;
+            border-radius: 4px;
+            width: 10px;
+            height: 20px;
+            display: inline-block; 
+        }
+        .flexboxAudi{
+            /*background-color: #a10322;*/
+            background-color: #5a0000;
+            border-radius: 4px;
+            width: 10px;
+            height: 20px;
+            display: inline-block; 
+        }
+        .flexboxFerrari{
+            background-color: #e80013;
+            border-radius: 4px;
+            width: 10px;
+            height: 20px;
+            display: inline-block; 
+        }
+        .flexboxMclaren{
+            background-color: #FF8000;
             border-radius: 4px;
             width: 10px;
             height: 20px;

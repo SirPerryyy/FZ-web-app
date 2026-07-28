@@ -1,12 +1,18 @@
 let DataPage = {};
 let totalPages = 0;
 let currentPage = 1;
+const seasonFile = '';
 
 
 async function ArrangeDataInPage(debug=false) 
 {
-    const response = await fetch('Datas/RaceHistory/races.json');
+    const response = await fetch(`Datas/RaceHistory/races${seasonFile}.json`);
     const data = await response.json();
+
+    if(data == "NO DATA"){
+        LoadPage("nd")
+        return;
+    }
 
     const race = data[0]; //gara
 
@@ -107,7 +113,36 @@ function LoadPage(pageNumber)
     const raceRow = document.querySelectorAll('.row-race');
     let index = 0;
 
+    if(pageNumber == "nd")
+    {
+        const nodatCont = document.querySelector('.noDataCont')
+        nodatCont.style.display = "inline"
+
+        raceRow.forEach(row => {
+            row.style.display = "none"
+        })
+
+        const pageNav = document.querySelector('.pageNavigation')
+        pageNav.style.display = "none"
+        const page = document.querySelector('.thisPage')
+        page.style.display = "none"
+
+        return;
+    }
+
     currentPage = pageNumber;
+
+    const picturesContainers = document.querySelectorAll('.picturesContainer')
+    picturesContainers.forEach(currCont =>{
+        
+        const images = currCont.querySelectorAll('img')
+
+        images.forEach(img =>{
+            img.src = ""
+        })
+
+        currCont.style.display = 'none'
+    })
 
     raceRow.forEach(row => {
         
@@ -142,12 +177,6 @@ function LoadPage(pageNumber)
             {  
                     const tablePanel = row.querySelector('.table-panel')
                     tableRow.style.display = "none";
-                    if (screen.width <= 378) {
-                        tablePanel.style.height = '342px';
-                        return;
-                    }
-                    tablePanel.style.height = '362px';
-                    return;
             }
         
             driverName.innerHTML = currentDriver.DriverName;
@@ -197,4 +226,27 @@ function PreviousPage()
 function LogData(pageNumber)
 {     
     console.log(DataPage[pageNumber]);
+}
+
+function LoadImagesMobile(raceInPage)
+{
+    const picturesContainers = document.querySelectorAll('.picturesContainer')
+    const images = picturesContainers[raceInPage - 1].querySelectorAll('img')
+    
+    if(picturesContainers[raceInPage - 1].style.display == 'none')
+    {
+        picturesContainers[raceInPage - 1].style.display = 'flex'
+        
+        images[0].src = DataPage[currentPage][raceInPage - 1].Img1Path
+        images[1].src = DataPage[currentPage][raceInPage - 1].Img2Path
+        images[2].src = DataPage[currentPage][raceInPage - 1].Img3Path
+    }
+    else
+    {
+        picturesContainers[raceInPage - 1].style.display = 'none'
+        
+        images.forEach(img =>{
+            img.src = ""
+        })
+    }
 }

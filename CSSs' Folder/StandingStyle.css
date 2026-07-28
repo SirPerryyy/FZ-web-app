@@ -26,7 +26,12 @@
                 letter-spacing: 2px;
                 font-weight: 200px;
             }
-
+.picturesContainer{
+                display: none;
+            }
+            .picturesContainer img{
+                display: none;
+            }
         body {
             background: repeating-linear-gradient(170deg, #E10600, #2C2C35, #15151E 2000px);
             background-repeat: repeat;
@@ -48,7 +53,9 @@
             margin: 0 auto;
             min-height: 30px;
         }
-        
+        .noDataCont{
+            display: none;
+        }
         .panel, .teamPanel {
             flex: 1;
             background: #1E1E26;
@@ -218,7 +225,7 @@ border: 1px solid rgba(44, 44, 53, 0.3);
         max-width: 660px;
         margin-top: 20px;
         margin-left: 40px;
-        height: 393px;
+        height: auto;
         background: rgba(64, 64, 82, 0.6);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -267,20 +274,19 @@ border: 1px solid rgba(30, 30, 38, 0.6);
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 10px;
             border-radius: 6px;
-            
+            margin-top: 20px;
+            column-gap: 10px;
         }
 
         .gallery img:hover {
             transform: scale(1.1);
-            height: 90%;
-            
+            height: 100%;
         }
 
         .gallery img {    
             border-radius: 6px;
             width: 500px;
-            height: 200px;
-            object-fit: cover;
+            height: 250px;
         }
         .standingsButton{
             text-decoration: underline;
@@ -554,6 +560,9 @@ border: 1px solid rgba(30, 30, 38, 0.6);
             font-size: large;
             margin: 5px;
         }
+        .showImageLabel{
+            display: none;
+        }
         /* Responsive */
         @media (max-width: 1300px) {
             .container {
@@ -585,7 +594,7 @@ border: 1px solid rgba(30, 30, 38, 0.6);
                 max-width: 640px;
                 margin-top: 20px;
                 margin-left: 5px;
-                height: 374px;
+            
             }
             .nav {
                 display: none;
@@ -641,6 +650,15 @@ border: 1px solid rgba(30, 30, 38, 0.6);
             }
         }
         @media (max-width: 784px) {
+            
+        .showImageLabel{
+            color: red;
+            text-align: center;
+            display: inline;
+        }
+        .showImageLabel:hover{
+            color: rgb(255, 255, 255);
+        }
             .container {
                 flex-direction: column;
             }
@@ -648,11 +666,6 @@ border: 1px solid rgba(30, 30, 38, 0.6);
                 display: inherit;
                 color: #ccc;
                 font-family: "F1 Regular";
-            }
-            .gallery img{
-                width: 260px;
-                height: 160px;
-                object-fit: cover;
             }
             .nav {
                 display: none;
@@ -684,7 +697,6 @@ border: 1px solid rgba(30, 30, 38, 0.6);
                 max-width: 640px;
                 margin-top: 20px;
                 margin-left: 5px;
-                height: 374px;
             }
             .container-raceInfos
             {
@@ -715,6 +727,21 @@ border: 1px solid rgba(30, 30, 38, 0.6);
                 padding: 10px;
                 margin: 0px;
                 min-height: 100vh;
+            }
+            .picturesContainer{
+                display: flex;
+                flex-direction: column;
+            }
+            .picturesContainer img{
+                display: flex;
+                height: auto;
+                margin-top: 14px;
+                border-radius: 10px;
+                box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+
+                margin-left: unset;
+                width: unset;
+                object-fit: unset;
             }
         }
         @media (max-width: 738px) {
@@ -771,7 +798,6 @@ border: 1px solid rgba(30, 30, 38, 0.6);
                 max-width: auto;
                 margin-top: 20px;
                 margin-left: 5px;
-                height: 374px;
             }
             .container-raceInfos
             {

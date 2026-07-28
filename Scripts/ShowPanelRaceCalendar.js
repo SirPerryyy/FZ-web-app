@@ -1,4 +1,5 @@
-
+let picturesContainer
+let picsLabels
 
 function ClosePanelRaceCalendar() 
 {
@@ -7,14 +8,28 @@ function ClosePanelRaceCalendar()
 
     modalOverlay.style.display = 'none';
     panelRaceCalendar.style.display = 'none';
-}
+    
+    if(screen.width < 760)
+    {
+        const HeaderMobile = document.querySelector('.bottomHeaderMobile')
+        HeaderMobile.style.display = 'inline'
+    }
 
-async function LoadRaceDataCal(raceToFind)
+    ToggleImagesVisibility(-1, true)
+}
+let previousImgsPaths = ['', '', '', '', '', '']
+
+async function LoadRaceDataCal(raceToFind, season = "")
 {
-    const response = await fetch('Datas/RaceHistory/races.json');
+
+    picturesContainer = document.querySelectorAll('.picturesContainer')
+    picsLabels = document.querySelectorAll('label')
+
+    const response = await fetch(`Datas/RaceHistory/races${season}.json`);
     const data = await response.json();
     let Race1;
     let Race2;
+    
     for(let i = 0; i < data.length; i++)
     {
         if(data[i].RaceTitle.includes(raceToFind))
@@ -29,6 +44,9 @@ async function LoadRaceDataCal(raceToFind)
     }
     
     if(Race1 == undefined) {return;}
+
+    const HeaderMobile = document.querySelector('.bottomHeaderMobile')
+    HeaderMobile.style.display = 'none'
 
     const modalOverlay = document.querySelector('.modal-overlayCal');
     const panelRaceCalendar = document.querySelector('.panelRaceCalendar');
@@ -52,17 +70,27 @@ async function LoadRaceDataCal(raceToFind)
     raceName[0].innerHTML = Race1.RaceTitle;
     raceFlag[0].src = Race1.FlagURL;
 
+    previousImgsPaths[0] = Race1.Img1Path
+    previousImgsPaths[1] = Race1.Img2Path
+    previousImgsPaths[2] = Race1.Img3Path
+
     PopulateRace(rowRaces[0].querySelectorAll('.table-row-race'), Race1);
 
     if(Race2 == undefined)
     {   
+        picsLabels[1].style.display = "none"
         rowRaces[1].style.display = "none";
         return;
     }
     
+    picsLabels[1].style.display = "block"
     rowRaces[1].style.display = "block";
     raceName[1].innerHTML = Race2.RaceTitle;
     raceFlag[1].src = Race1.FlagURL;
+
+    previousImgsPaths[3] = Race2.Img1Path
+    previousImgsPaths[4] = Race2.Img2Path
+    previousImgsPaths[5] = Race2.Img3Path
 
     PopulateRace(rowRaces[1].querySelectorAll('.table-row-race'), Race2)
 }
@@ -99,4 +127,36 @@ function PopulateRace(row, data)
 
             driverIndex++;
         });
+}
+function ToggleImagesVisibility(index, reset = false){
+
+    if(reset)
+    {
+        picturesContainer[0].style.display = 'none'
+        picturesContainer[1].style.display = 'none'
+        return;
+    }
+
+    const isVisible = (picturesContainer[index].style.display == 'flex')
+
+    if(isVisible)
+    {
+        picturesContainer[index].style.display = 'none'
+    }
+    else
+    {
+        const images = document.querySelectorAll('.picturesContainer img')
+
+        images[0].src = previousImgsPaths[0] 
+        images[1].src = previousImgsPaths[1] 
+        images[2].src = previousImgsPaths[2] 
+        
+        if(picsLabels[1].style.display != 'none')
+        {
+            images[3].src = previousImgsPaths[3] 
+            images[4].src = previousImgsPaths[4] 
+            images[5].src = previousImgsPaths[5]
+        }
+        picturesContainer[index].style.display = 'flex'
+    }
 }

@@ -148,6 +148,24 @@
             -webkit-backdrop-filter: blur(6px);
             z-index: 1;
         }
+        .picturesContainer{
+            display: flex;
+            max-width: 635px;
+            flex-direction: column;
+        }
+        .picturesContainer img{
+            display: flex;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 16px;
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);;
+        }
+        .picturesContainer img:hover{
+            cursor: pointer;
+        }
+        label:hover{
+            cursor: pointer;
+        }
         @keyframes modalAnim{
             0%{
                 backdrop-filter: blur(1px);
@@ -339,14 +357,12 @@
             }
         }
         @media (max-width: 738px) {
-            
             .sprintRaceText{
                 display: none;
-                
             }
             .table-row {
                 display: grid;
-                grid-template-columns: 4px 100px 180px 0px 70px; 
+                grid-template-columns: 0px 90px 180px 0px 0px; 
                 align-items: center;
                 padding: 5px;
                 

@@ -69,12 +69,28 @@ async function LoadTeamInfo()
 
     const images = document.querySelectorAll('.teamImages img');
 
-    for(let i = 0; i < images.length; i++)
+    for(let i = 0; i < team.ImagesSrcs.length; i++)
     {
         if(team.ImagesSrcs[i] != "")
         {
             images[i].style = "display: inline"
             images[i].src = team.ImagesSrcs[i]; 
+        }
+        if(i == 3)
+        {
+            const panel = document.querySelector('.teamPanel');
+            let pixelToSet;
+            if(screen.width > 784)
+            {
+                pixelToSet = 1400  
+            }
+            else{
+                pixelToSet = 2700
+                const teamImages = document.querySelectorAll('.teamImages')
+                teamImages[1].style.top = "2400px"
+            }
+            panel.style.height = pixelToSet + "px";
+            console.log(panel.style.height)
         }
     }
 
