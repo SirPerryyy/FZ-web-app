@@ -94,7 +94,7 @@ border: 1px solid rgba(30, 30, 38, 0.3);
         }
         .row {
             display: grid;
-            grid-template-columns: 50px 1fr 80px;
+            grid-template-columns: 10px 50px 1fr 80px;
             align-items: center;
             padding: 10px 15px;
         }
@@ -105,6 +105,16 @@ border: 1px solid rgba(30, 30, 38, 0.3);
             opacity: 0.8;
             display: grid;
             grid-template-columns: 50px 1fr 80px;
+            padding: 10px 15px;
+            align-items: center;
+        }
+        .table-header-driv{
+            font-family: "F1 Regular";
+            font-weight: bold;
+            font-size: 14px;
+            opacity: 0.8;
+            display: grid;
+            grid-template-columns: 20px 60px 1fr 80px;
             padding: 10px 15px;
             align-items: center;
         }
