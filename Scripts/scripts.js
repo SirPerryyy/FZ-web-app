@@ -46,6 +46,11 @@ rows
   .forEach((row, index) => {
       panel.appendChild(row);
       row.querySelector('.pos').innerText = index + 1;
+      const newPos = row.querySelector('.pos').innerText
+      if (newPos >= 5 && newPos <= 11)
+      {
+        row.querySelector('.flexboxApexCup').style = 'background-color: rgb(119, 0, 231);'
+      }
   });
 
 teamRows
@@ -67,4 +72,7 @@ function OpenImage(src) {
 }
 function GoToTeam(teamID){
     window.location.href = `./TeamPage.html?id=${teamID}`;
+}
+function ApexInfo(){
+    alert("This box appears on drivers qualified for the apex cup, a secondary competition to allow even the slower drivers the chanse of winning something (pos 5-11)")
 }
