@@ -94,7 +94,7 @@ border: 1px solid rgba(30, 30, 38, 0.3);
         }
         .row {
             display: grid;
-            grid-template-columns: 10px 50px 1fr 80px;
+            grid-template-columns: 10px 50px 1fr 60px;
             align-items: center;
             padding: 10px 15px;
         }

@@ -69,6 +69,11 @@ border: 1px solid rgba(59, 29, 29, 0.3);
             height: 20px;
             position: inline-block;
         }
+        .col.points{
+            text-align: right;
+            margin-right: 15px;
+        }
+
         .flexboxApexCupInfo{
             border-radius: 4px;
             width: 15px;
