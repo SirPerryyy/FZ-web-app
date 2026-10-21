@@ -2,9 +2,9 @@
   {
     "RaceTitle": "RACE 5: Imola",
     "FlagURL": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/1280px-Flag_of_Italy.svg.png?utm_source=it.wikipedia.org&utm_campaign=index&utm_content=thumbnail",
-    "Img1Path": "Assets\\RaceImages\\Season4\\imo1.jpg",
-    "Img2Path": "Assets\\RaceImages\\Season4\\imo2.jpg",
-    "Img3Path": "Assets\\RaceImages\\Season4\\imo3.jpg",
+    "Img1Path": "Assets\\RaceImages\\Season4\\imo1.png",
+    "Img2Path": "Assets\\RaceImages\\Season4\\imo2.png",
+    "Img3Path": "Assets\\RaceImages\\Season4\\imo3.png",
     "Drivers": [
       {
         "DriverName": "Sir Perry",
