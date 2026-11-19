@@ -2,9 +2,9 @@
   {
     "RaceTitle": "RACE 7: Austria",
     "FlagURL": "https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg",
-    "Img1Path": "Assets\\RaceImages\\Season4\\au.jpg",
-    "Img2Path": "Assets\\RaceImages\\Season4\\au.jpg",
-    "Img3Path": "Assets\\RaceImages\\Season4\\au.jpg",
+    "Img1Path": "Assets\\RaceImages\\Season4\\au1.jpg",
+    "Img2Path": "Assets\\RaceImages\\Season4\\au2.jpg",
+    "Img3Path": "Assets\\RaceImages\\Season4\\au3.jpg",
     "Drivers": [
       {
         "DriverName": "Kimi Fernandes",
